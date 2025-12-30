@@ -1,0 +1,145 @@
+import bannerImg from "../assets/images/AKANKSHANAVYAYUGACHI.jfif";
+import universityImg from "../assets/images/university.png";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useState } from "react";
+
+const Hero = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const slides = [
+    {
+      image: bannerImg,
+      badge: "🎓 Virtual Internship",
+      title: "Virtual Internship",
+      description: "Build real skills through corporate experience. Get guided by mentors from the industry, work with real companies, and earn official certification for your portfolio.",
+      buttonText: "Know More"
+    },
+    {
+      image: universityImg,
+      badge: "🏛️ Campus to Corporate",
+      title: "Campus to Corporate",
+      description: "Mock Interviews, Advanced AI Resume Builder, Unlimited AI Practice Sessions, Full Career Skill Gap Dashboard, Detailed Analytics for TPOs, Placement Matching for colleges and extensive job opportunities, Soft Skill by Wadhwani Foundation, Skill Assessment Test, Aptitude Test, Psychometric Test, Platform for Application of Jobs",
+      buttonText: "Know More"
+    }
+  ];
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % slides.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+  };
+
+  const currentSlideData = slides[currentSlide];
+  return (
+    <section className="bg-[#fffaf4] pt-8 sm:pt-12 pb-2 sm:pb-4">
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-2 grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-14 items-center">
+
+        {/* LEFT CONTENT */}
+        <div className="text-center lg:text-left">
+          <span className="inline-flex items-center gap-2 bg-[#fff1e4] text-[#EF7F2C] text-xs sm:text-sm px-3 sm:px-4 py-2 rounded-full mb-4 sm:mb-5 font-small">
+            ● Empowering Youth Through Knowledge
+          </span>
+
+          <h1 className="text-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl text-[#3D1717] leading-tight mb-4 sm:mb-5">
+            Aspire Knowledge & <br className="hidden sm:block" /> Skills
+          </h1>
+
+          <p className="text-body text-[#3D1717] leading-relaxed mb-6 sm:mb-7 max-w-xl mx-auto lg:mx-0 opacity-80 text-sm sm:text-base lg:text-l">
+            Aspire Knowledge and Skills India Pvt. Ltd., commonly known as ASPIRE,
+            boasts a rich legacy of 28 years in the realm of skill development
+            training, talent management in the workforce, and providing pathways
+            to employment. Collaborates with Pune Management Association (PMA),
+            MCCIA, and India CSR.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
+            <button className="group bg-gradient-to-r from-[#EF7F2C] to-[#d6691f] text-white px-5 sm:px-7 py-2.5 sm:py-3 rounded-xl font-bold hover:from-[#d6691f] hover:to-[#c55a1a] transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl text-sm sm:text-base">
+              Explore Programs 
+              <span className="inline-block ml-2 group-hover:translate-x-1 transition-transform duration-300">→</span>
+            </button>
+            <button className="group border-2 border-[#3D1717] text-[#3D1717] px-5 sm:px-7 py-2.5 sm:py-3 rounded-xl font-bold hover:bg-[#3D1717] hover:text-white transform hover:scale-105 transition-all duration-300 text-sm sm:text-base">
+              Enquiry Now
+              <span className="inline-block ml-2 group-hover:translate-x-1 transition-transform duration-300">✉</span>
+            </button>
+          </div>
+        </div>
+
+        {/* RIGHT IMAGE / CAROUSEL */}
+        <div className="relative flex items-center justify-center max-w-3xl mx-auto">
+
+          {/* LEFT ARROW - Hidden on mobile */}
+          <button
+            onClick={prevSlide}
+            className="hidden lg:block absolute -left-16 xl:-left-20 top-1/2 -translate-y-1/2 bg-[#fff1e4] p-2 xl:p-3 rounded-full shadow hover:text-white transition z-20"
+          >
+            <ChevronLeft size={18} className="xl:w-6 xl:h-6 text-[#EF7F2C]" />
+          </button>
+
+          {/* IMAGE WRAPPER */}
+          <div className="relative group w-full max-w-md sm:max-w-lg lg:max-w-[510px]">
+            <div className="w-full h-48 sm:h-56 md:h-64 lg:h-72 xl:h-80 max-w-[480px] rounded-2xl shadow-xl overflow-hidden mx-auto group-hover:shadow-2xl transition-all duration-500">
+              <img
+                src={currentSlideData.image}
+                alt={`Aspire Banner ${currentSlide + 1}`}
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+              />
+            </div>
+
+            {/* DEFAULT BADGE (VISIBLE ALWAYS) */}
+            <div className="absolute bottom-3 sm:bottom-4 right-3 sm:right-4 z-10">
+              <button className="flex items-center gap-1 sm:gap-2 bg-white px-2 sm:px-4 py-1.5 sm:py-2 rounded-xl shadow-lg text-xs sm:text-sm font-semibold hover:shadow-xl hover:scale-105 transition-all duration-300 border border-orange-200">
+                {currentSlideData.badge.split(' ')[0]} <span className="hidden sm:inline">{currentSlideData.badge.split(' ').slice(1).join(' ')}</span>
+              </button>
+            </div>
+
+            {/* HOVER OVERLAY - Hidden on mobile, visible on hover for desktop */}
+            <div className="hidden lg:block absolute inset-0 bg-gradient-to-br from-white/95 to-orange-50/95 rounded-2xl p-4 xl:p-6 
+                            opacity-0 group-hover:opacity-100 
+                            transition-all duration-500 transform scale-95 group-hover:scale-100
+                            pointer-events-none group-hover:pointer-events-auto backdrop-blur-sm">
+
+              <span className="inline-block bg-gradient-to-r from-orange-100 to-orange-50 text-[#EF7F2C] text-xs px-3 py-1 rounded-full mb-3 font-semibold">
+                {currentSlideData.title}
+              </span>
+
+              <p className="text-sm text-[#3D1717] mb-4 leading-relaxed opacity-80">
+                {currentSlideData.description}
+              </p>
+
+              <button className="group bg-gradient-to-r from-[#EF7F2C] to-[#d6691f] text-white px-4 xl:px-5 py-2 rounded-xl text-sm font-semibold hover:from-[#d6691f] hover:to-[#c55a1a] transform hover:scale-105 transition-all duration-300 shadow-lg">
+                {currentSlideData.buttonText}
+                <span className="inline-block ml-2 group-hover:translate-x-1 transition-transform duration-300">→</span>
+              </button>
+            </div>
+
+            {/* SLIDE INDICATORS */}
+            {/* <div className="absolute bottom-3 left-3 flex gap-2 z-10">
+              {slides.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentSlide(index)}
+                  className={`w-3 h-3 rounded-full transition-all duration-300 ${index === currentSlide ? 'bg-[#EF7F2C] scale-125' : 'bg-white/70 hover:bg-white/90'
+                    }`}
+                />
+              ))}
+            </div> */}
+          </div>
+
+          {/* RIGHT ARROW - Hidden on mobile */}
+          <button
+            onClick={nextSlide}
+            className="hidden lg:block absolute -right-16 xl:-right-20 top-1/2 -translate-y-1/2 bg-[#fff1e4] p-2 xl:p-3 rounded-full shadow hover:text-white transition z-20"
+          >
+            <ChevronRight size={18} className="xl:w-6 xl:h-6 text-[#EF7F2C]" />
+          </button>
+
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;

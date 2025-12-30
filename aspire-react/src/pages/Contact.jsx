@@ -1,0 +1,53 @@
+import React from 'react';
+import TopHeader from "../components/TopHeader";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import ContactInfo from "../components/ContactInfo";
+import ContactForm from "../components/ContactForm";
+import aspireBgImg from "../assets/images/aspire-bg-.png";
+
+const Contact = () => {
+  return (
+    <div className="font-dm-sans">
+      <TopHeader />
+      <Navbar />
+
+      {/* BANNER SECTION */}
+      <section
+        className="relative bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: `url(${aspireBgImg})`,
+          height: '141px',
+          maxWidth: '1440px',
+          margin: '0 auto'
+        }}
+      >
+        {/* Content */}
+        <div className="flex items-center justify-center h-full">
+          <h1 className="text-4xl sm:text-3xl lg:text-2xl font-bold text-[#3D1717]">
+            Contact Us
+          </h1>
+        </div>
+      </section>
+      
+      {/* CONTACT PAGE CONTENT */}
+      <section className="bg-white py-12 sm:py-16 lg:py-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+
+          {/* CONTACT INFORMATION COMPONENT */}
+          <ContactInfo />
+
+          {/* ENQUIRY FORM COMPONENT */}
+          <div className="mt-16">
+            <ContactForm />
+          </div>
+
+        </div>
+      </section>
+
+      <Footer />
+    </div>
+  );
+};
+
+export default Contact;
