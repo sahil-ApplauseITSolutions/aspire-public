@@ -33,9 +33,9 @@ const Hero = () => {
 
   const currentSlideData = slides[currentSlide];
   return (
-    <section className="bg-[#fffaf4] pt-8 sm:pt-12 pb-2 sm:pb-4">
+    <section className="bg-[#fffaf4] pt-6 sm:pt-8 md:pt-10 lg:pt-12 pb-2 sm:pb-4 min-w-full overflow-x-hidden">
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-2 grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-14 items-center">
+      <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-2 xl:px-4 grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-14 items-center min-w-0">
 
         {/* LEFT CONTENT */}
         <div className="text-center lg:text-left">

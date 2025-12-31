@@ -462,17 +462,17 @@ const About = () => {
 
       {/* LEGACY & IMPACT SECTION - FULL WIDTH BACKGROUND */}
       {activeTab === "founder" && (
-        <section className="bg-[#f8f6f3] py-12 w-full" style={{ width: '1435px', height: '350px', maxWidth: '100%', margin: '0 auto' }}>
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 h-full flex flex-col justify-center">
+        <section className="bg-[#f8f6f3] py-12 w-full">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6">
             {/* Section Title */}
             <h2 className="text-center text-2xl font-bold text-[#3D1717] mb-8">
               Legacy & Impact
             </h2>
 
             {/* Cards Grid */}
-            <div className="flex justify-center gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {/* JetKing Learning Legacy */}
-              <div className="group bg-white p-6 rounded-2xl shadow-sm text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300 cursor-pointer border border-transparent hover:border-orange-200" style={{ width: '315px', height: '223px' }}>
+              <div className="group bg-white p-6 rounded-2xl shadow-sm text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300 cursor-pointer border border-transparent hover:border-orange-200 min-h-[223px]">
                 <div className="flex justify-center mb-4">
                   <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center group-hover:bg-orange-200 group-hover:scale-110 transition-all duration-300">
                     <GraduationCap className="w-6 h-6 text-[#EF7F2C] group-hover:scale-110 transition-transform duration-300" />
@@ -486,7 +486,7 @@ const About = () => {
               </div>
 
               {/* Skill Development Leadership */}
-              <div className="group bg-white p-6 rounded-2xl shadow-sm text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300 cursor-pointer border border-transparent hover:border-orange-200" style={{ width: '315px', height: '223px' }}>
+              <div className="group bg-white p-6 rounded-2xl shadow-sm text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300 cursor-pointer border border-transparent hover:border-orange-200 min-h-[223px]">
                 <div className="flex justify-center mb-4">
                   <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center group-hover:bg-orange-200 group-hover:scale-110 transition-all duration-300">
                     <Award className="w-6 h-6 text-[#EF7F2C] group-hover:scale-110 transition-transform duration-300" />
@@ -500,7 +500,7 @@ const About = () => {
               </div>
 
               {/* Academic & Industry Collaborations */}
-              <div className="group bg-white p-6 rounded-2xl shadow-sm text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300 cursor-pointer border border-transparent hover:border-orange-200" style={{ width: '315px', height: '223px' }}>
+              <div className="group bg-white p-6 rounded-2xl shadow-sm text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300 cursor-pointer border border-transparent hover:border-orange-200 min-h-[223px]">
                 <div className="flex justify-center mb-4">
                   <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center group-hover:bg-orange-200 group-hover:scale-110 transition-all duration-300">
                     <Users className="w-6 h-6 text-[#EF7F2C] group-hover:scale-110 transition-transform duration-300" />
@@ -514,7 +514,7 @@ const About = () => {
               </div>
 
               {/* Entrepreneurship Support */}
-              <div className="group bg-white p-6 rounded-2xl shadow-sm text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300 cursor-pointer border border-transparent hover:border-orange-200" style={{ width: '315px', height: '223px' }}>
+              <div className="group bg-white p-6 rounded-2xl shadow-sm text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300 cursor-pointer border border-transparent hover:border-orange-200 min-h-[223px]">
                 <div className="flex justify-center mb-4">
                   <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center group-hover:bg-orange-200 group-hover:scale-110 transition-all duration-300">
                     <Briefcase className="w-6 h-6 text-[#EF7F2C] group-hover:scale-110 transition-transform duration-300" />
@@ -608,9 +608,9 @@ const About = () => {
               What Defines Us
             </h2>
 
-            <div className="flex justify-center gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-7xl mx-auto">
               {/* Enablement of Employment and Entrepreneurship */}
-              <div className="group bg-white p-6 rounded-2xl border border-[#EF7F2C] border-l-4 border-l-[#EF7F2C] shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer relative overflow-hidden" style={{ width: '391px', height: '275px' }}>
+              <div className="group bg-white p-4 sm:p-6 rounded-2xl border border-[#EF7F2C] border-l-4 border-l-[#EF7F2C] shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer relative overflow-hidden min-h-[250px] sm:min-h-[275px]">
                 {/* Gradient overlay on hover */}
                 <div className="absolute inset-0 bg-gradient-to-br from-orange-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"></div>
 
@@ -631,7 +631,7 @@ const About = () => {
               </div>
 
               {/* Mentorship-based self-learning model */}
-              <div className="group bg-white p-6 rounded-2xl border border-[#EF7F2C] border-l-4 border-l-[#EF7F2C] shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer relative overflow-hidden" style={{ width: '391px', height: '275px' }}>
+              <div className="group bg-white p-4 sm:p-6 rounded-2xl border border-[#EF7F2C] border-l-4 border-l-[#EF7F2C] shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer relative overflow-hidden min-h-[250px] sm:min-h-[275px]">
                 {/* Gradient overlay on hover */}
                 <div className="absolute inset-0 bg-gradient-to-br from-orange-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"></div>
 
@@ -653,7 +653,7 @@ const About = () => {
               </div>
 
               {/* Integration of demand-driven skills */}
-              <div className="group bg-white p-6 rounded-2xl border border-[#EF7F2C] border-l-4 border-l-[#EF7F2C] shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer relative overflow-hidden" style={{ width: '391px', height: '275px' }}>
+              <div className="group bg-white p-4 sm:p-6 rounded-2xl border border-[#EF7F2C] border-l-4 border-l-[#EF7F2C] shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer relative overflow-hidden min-h-[250px] sm:min-h-[275px]">
                 {/* Gradient overlay on hover */}
                 <div className="absolute inset-0 bg-gradient-to-br from-orange-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"></div>
 
