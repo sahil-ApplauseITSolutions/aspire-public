@@ -1,0 +1,75 @@
+/* Mobile responsive styles for timeline cards */
+@media (max-width: 1023px) {
+  /* Hide timeline vertical line on mobile */
+  .timeline-vertical-line {
+    display: none !important;
+  }
+
+  /* Hide timeline dots on mobile */
+  .timeline-dot {
+    display: none !important;
+  }
+
+  /* Hide arrows on mobile */
+  .timeline-arrow {
+    display: none !important;
+  }
+
+  /* Timeline container spacing */
+  .timeline-items-container {
+    gap: 1rem !important;
+  }
+
+  /* Timeline item wrapper - full width on mobile */
+  .timeline-item-wrapper {
+    width: 100% !important;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* Timeline card - compact on mobile */
+  .timeline-card {
+    width: 100% !important;
+    height: auto !important;
+    padding: 0.75rem !important;
+    border-radius: 1rem !important;
+  }
+
+  /* Timeline card content - vertical layout on mobile */
+  .timeline-card-content {
+    flex-direction: column !important;
+    gap: 0.75rem !important;
+    align-items: center !important;
+  }
+
+  /* Timeline text content - centered on mobile */
+  .timeline-text-content {
+    text-align: center !important;
+    order: 1 !important;
+  }
+
+  /* Timeline year - smaller on mobile */
+  .timeline-year {
+    font-size: 1.25rem !important;
+    margin-bottom: 0.25rem !important;
+  }
+
+  /* Timeline title - smaller on mobile */
+  .timeline-title {
+    font-size: 1rem !important;
+    margin-bottom: 0.25rem !important;
+  }
+
+  /* Timeline description - smaller on mobile */
+  .timeline-description {
+    font-size: 0.75rem !important;
+  }
+
+  /* Timeline image - smaller on mobile */
+  .timeline-image-wrapper {
+    width: 5rem !important;
+    height: 5rem !important;
+    order: 2 !important;
+  }
+}

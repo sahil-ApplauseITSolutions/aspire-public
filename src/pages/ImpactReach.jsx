@@ -15,6 +15,7 @@ import journey2010Img from "../assets/images/Our Journey of Growth/2010.png";
 import journey2015Img from "../assets/images/Our Journey of Growth/2015.png";
 import journey2018Img from "../assets/images/Our Journey of Growth/2018.png";
 import journey2023Img from "../assets/images/Our Journey of Growth/2023.png";
+import "../styles/timeline-mobile.css";
 
 const ImpactReachPage = () => {
   const { isLoading, setLoading } = useLoading(true, 800);
@@ -98,31 +99,31 @@ const ImpactReachPage = () => {
           {/* Timeline */}
           <div className="relative">
             {/* Vertical Line */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-orange-400 to-orange-600 rounded-full"></div>
+            <div className="timeline-vertical-line absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-orange-400 to-orange-600 rounded-full"></div>
 
             {/* Timeline Items */}
             {loadingStates.timeline ? (
               <TimelineLoader count={5} />
             ) : (
-              <div className="space-y-16 animate-fade-in-up">
+              <div className="timeline-items-container space-y-16 animate-fade-in-up">
                 {/* 1997 - The Beginning */}
                 <div className="relative flex items-center">
                   {/* Timeline Dot */}
-                  <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-gradient-to-br from-orange-500 to-orange-700 rounded-full border-4 border-white shadow-lg z-10"></div>
+                  <div className="timeline-dot absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-gradient-to-br from-orange-500 to-orange-700 rounded-full border-4 border-white shadow-lg z-10"></div>
 
                   {/* Content - Right Side */}
-                  <div className="w-1/2 ml-auto pl-12">
-                    <div className="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border-l-4 border-l-orange-400 border border-orange-100 relative" style={{ width: '506px', height: '148px' }}>
+                  <div className="timeline-item-wrapper w-1/2 ml-auto pl-12">
+                    <div className="timeline-card group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border-l-4 border-l-orange-400 border border-orange-100 relative" style={{ width: '506px', height: '148px' }}>
                       {/* Arrow pointing to timeline */}
-                      <div className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-3 w-0 h-0 border-t-8 border-b-8 border-r-8 border-t-transparent border-b-transparent border-r-white"></div>
+                      <div className="timeline-arrow absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-3 w-0 h-0 border-t-8 border-b-8 border-r-8 border-t-transparent border-b-transparent border-r-white"></div>
 
-                      <div className="flex items-center gap-6 h-full">
-                        <div className="flex-1">
-                          <div className="text-2xl font-bold text-orange-500 mb-1">1997</div>
-                          <h3 className="text-lg font-bold text-[#3D1717] mb-2">The Beginning</h3>
-                          <p className="text-body text-gray-600 text-sm leading-relaxed">Started with JetKing Learning Vision roots.</p>
+                      <div className="timeline-card-content flex items-center gap-6 h-full">
+                        <div className="timeline-text-content flex-1">
+                          <div className="timeline-year text-2xl font-bold text-orange-500 mb-1">1997</div>
+                          <h3 className="timeline-title text-lg font-bold text-[#3D1717] mb-2">The Beginning</h3>
+                          <p className="timeline-description text-body text-gray-600 text-sm leading-relaxed">Started with JetKing Learning Vision roots.</p>
                         </div>
-                        <div className="flex-shrink-0" style={{ width: '200px', height: '200px' }}>
+                        <div className="timeline-image-wrapper flex-shrink-0" style={{ width: '200px', height: '200px' }}>
                           <img src={journey1997Img} alt="1997 - The Beginning" className="w-full h-full object-contain" />
                         </div>
                       </div>
@@ -133,22 +134,22 @@ const ImpactReachPage = () => {
                 {/* 2010 - Expansion */}
                 <div className="relative flex items-center">
                   {/* Timeline Dot */}
-                  <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-gradient-to-br from-orange-500 to-orange-700 rounded-full border-4 border-white shadow-lg z-10"></div>
+                  <div className="timeline-dot absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-gradient-to-br from-orange-500 to-orange-700 rounded-full border-4 border-white shadow-lg z-10"></div>
 
                   {/* Content - Left Side */}
-                  <div className="w-1/2 pr-12">
-                    <div className="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border-l-4 border-l-orange-400 border border-orange-100 relative" style={{ width: '506px', height: '148px' }}>
+                  <div className="timeline-item-wrapper w-1/2 pr-12">
+                    <div className="timeline-card group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border-l-4 border-l-orange-400 border border-orange-100 relative" style={{ width: '506px', height: '148px' }}>
                       {/* Arrow pointing to timeline */}
-                      <div className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-3 w-0 h-0 border-t-8 border-b-8 border-l-8 border-t-transparent border-b-transparent border-l-white"></div>
+                      <div className="timeline-arrow absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-3 w-0 h-0 border-t-8 border-b-8 border-l-8 border-t-transparent border-b-transparent border-l-white"></div>
 
-                      <div className="flex items-center gap-6 h-full">
-                        <div className="flex-shrink-0" style={{ width: '200px', height: '160px' }}>
+                      <div className="timeline-card-content flex items-center gap-6 h-full">
+                        <div className="timeline-image-wrapper flex-shrink-0" style={{ width: '200px', height: '160px' }}>
                           <img src={journey2010Img} alt="2010 - Expansion" className="w-full h-full object-contain" />
                         </div>
-                        <div className="flex-1">
-                          <div className="text-2xl font-bold text-orange-500 mb-1">2010</div>
-                          <h3 className="text-lg font-bold text-[#3D1717] mb-2">Expansion</h3>
-                          <p className="text-body text-gray-600 text-sm leading-relaxed">Expanded to multiple states and new sectors.</p>
+                        <div className="timeline-text-content flex-1">
+                          <div className="timeline-year text-2xl font-bold text-orange-500 mb-1">2010</div>
+                          <h3 className="timeline-title text-lg font-bold text-[#3D1717] mb-2">Expansion</h3>
+                          <p className="timeline-description text-body text-gray-600 text-sm leading-relaxed">Expanded to multiple states and new sectors.</p>
                         </div>
                       </div>
                     </div>
@@ -158,21 +159,21 @@ const ImpactReachPage = () => {
                 {/* 2015 - NSDC Partnership */}
                 <div className="relative flex items-center">
                   {/* Timeline Dot */}
-                  <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-gradient-to-br from-orange-500 to-orange-700 rounded-full border-4 border-white shadow-lg z-10"></div>
+                  <div className="timeline-dot absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-gradient-to-br from-orange-500 to-orange-700 rounded-full border-4 border-white shadow-lg z-10"></div>
 
                   {/* Content - Right Side */}
-                  <div className="w-1/2 ml-auto pl-12">
-                    <div className="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border-l-4 border-l-orange-400 border border-orange-100 relative" style={{ width: '506px', height: '148px' }}>
+                  <div className="timeline-item-wrapper w-1/2 ml-auto pl-12">
+                    <div className="timeline-card group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border-l-4 border-l-orange-400 border border-orange-100 relative" style={{ width: '506px', height: '148px' }}>
                       {/* Arrow pointing to timeline */}
-                      <div className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-3 w-0 h-0 border-t-8 border-b-8 border-r-8 border-t-transparent border-b-transparent border-r-white"></div>
+                      <div className="timeline-arrow absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-3 w-0 h-0 border-t-8 border-b-8 border-r-8 border-t-transparent border-b-transparent border-r-white"></div>
 
-                      <div className="flex items-center gap-6 h-full">
-                        <div className="flex-1">
-                          <div className="text-2xl font-bold text-orange-500 mb-1">2015</div>
-                          <h3 className="text-lg font-bold text-[#3D1717] mb-2">NSDC Partnership</h3>
-                          <p className="text-body text-gray-600 text-sm leading-relaxed">Secured funding and partnership with NSDC.</p>
+                      <div className="timeline-card-content flex items-center gap-6 h-full">
+                        <div className="timeline-text-content flex-1">
+                          <div className="timeline-year text-2xl font-bold text-orange-500 mb-1">2015</div>
+                          <h3 className="timeline-title text-lg font-bold text-[#3D1717] mb-2">NSDC Partnership</h3>
+                          <p className="timeline-description text-body text-gray-600 text-sm leading-relaxed">Secured funding and partnership with NSDC.</p>
                         </div>
-                        <div className="flex-shrink-0" style={{ width: '200px', height: '160px' }}>
+                        <div className="timeline-image-wrapper flex-shrink-0" style={{ width: '200px', height: '160px' }}>
                           <img src={journey2015Img} alt="2015 - NSDC Partnership" className="w-full h-full object-contain" />
                         </div>
                       </div>
@@ -183,22 +184,22 @@ const ImpactReachPage = () => {
                 {/* 2018 - New Centers */}
                 <div className="relative flex items-center">
                   {/* Timeline Dot */}
-                  <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-gradient-to-br from-orange-500 to-orange-700 rounded-full border-4 border-white shadow-lg z-10"></div>
+                  <div className="timeline-dot absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-gradient-to-br from-orange-500 to-orange-700 rounded-full border-4 border-white shadow-lg z-10"></div>
 
                   {/* Content - Left Side */}
-                  <div className="w-1/2 pr-12">
-                    <div className="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border-l-4 border-l-orange-400 border border-orange-100 relative" style={{ width: '506px', height: '148px' }}>
+                  <div className="timeline-item-wrapper w-1/2 pr-12">
+                    <div className="timeline-card group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border-l-4 border-l-orange-400 border border-orange-100 relative" style={{ width: '506px', height: '148px' }}>
                       {/* Arrow pointing to timeline */}
-                      <div className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-3 w-0 h-0 border-t-8 border-b-8 border-l-8 border-t-transparent border-b-transparent border-l-white"></div>
+                      <div className="timeline-arrow absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-3 w-0 h-0 border-t-8 border-b-8 border-l-8 border-t-transparent border-b-transparent border-l-white"></div>
 
-                      <div className="flex items-center gap-6 h-full">
-                        <div className="flex-shrink-0" style={{ width: '200px', height: '160px' }}>
+                      <div className="timeline-card-content flex items-center gap-6 h-full">
+                        <div className="timeline-image-wrapper flex-shrink-0" style={{ width: '200px', height: '160px' }}>
                           <img src={journey2018Img} alt="2018 - New Centers" className="w-full h-full object-contain" />
                         </div>
-                        <div className="flex-1">
-                          <div className="text-2xl font-bold text-orange-500 mb-1">2018</div>
-                          <h3 className="text-lg font-bold text-[#3D1717] mb-2">New Centers</h3>
-                          <p className="text-body text-gray-600 text-sm leading-relaxed">Launched 50+ new training centers across India.</p>
+                        <div className="timeline-text-content flex-1">
+                          <div className="timeline-year text-2xl font-bold text-orange-500 mb-1">2018</div>
+                          <h3 className="timeline-title text-lg font-bold text-[#3D1717] mb-2">New Centers</h3>
+                          <p className="timeline-description text-body text-gray-600 text-sm leading-relaxed">Launched 50+ new training centers across India.</p>
                         </div>
                       </div>
                     </div>
@@ -208,21 +209,21 @@ const ImpactReachPage = () => {
                 {/* 2023 - Digital Leap */}
                 <div className="relative flex items-center">
                   {/* Timeline Dot */}
-                  <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-gradient-to-br from-orange-500 to-orange-700 rounded-full border-4 border-white shadow-lg z-10"></div>
+                  <div className="timeline-dot absolute left-1/2 transform -translate-x-1/2 w-6 h-4 bg-gradient-to-br from-orange-500 to-orange-700 rounded-full border-4 border-white shadow-lg z-10"></div>
 
                   {/* Content - Right Side */}
-                  <div className="w-1/2 ml-auto pl-12">
-                    <div className="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border-l-4 border-l-orange-400 border border-orange-100 relative" style={{ width: '506px', height: '148px' }}>
+                  <div className="timeline-item-wrapper w-1/2 ml-auto pl-12">
+                    <div className="timeline-card group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border-l-4 border-l-orange-400 border border-orange-100 relative" style={{ width: '506px', height: '148px' }}>
                       {/* Arrow pointing to timeline */}
-                      <div className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-3 w-0 h-0 border-t-8 border-b-8 border-r-8 border-t-transparent border-b-transparent border-r-white"></div>
+                      <div className="timeline-arrow absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-3 w-0 h-0 border-t-8 border-b-8 border-r-8 border-t-transparent border-b-transparent border-r-white"></div>
 
-                      <div className="flex items-center gap-6 h-full">
-                        <div className="flex-1">
-                          <div className="text-2xl font-bold text-orange-500 mb-1">2023</div>
-                          <h3 className="text-lg font-bold text-[#3D1717] mb-2">Digital Leap</h3>
-                          <p className="text-body text-gray-600 text-sm leading-relaxed">Launched Virtual Internship and AI-based learning.</p>
+                      <div className="timeline-card-content flex items-center gap-6 h-full">
+                        <div className="timeline-text-content flex-1">
+                          <div className="timeline-year text-2xl font-bold text-orange-500 mb-1">2023</div>
+                          <h3 className="timeline-title text-lg font-bold text-[#3D1717] mb-2">Digital Leap</h3>
+                          <p className="timeline-description text-body text-gray-600 text-sm leading-relaxed">Launched Virtual Internship and AI-based learning.</p>
                         </div>
-                        <div className="flex-shrink-0" style={{ width: '200px', height: '160px' }}>
+                        <div className="timeline-image-wrapper flex-shrink-0" style={{ width: '200px', height: '100px' }}>
                           <img src={journey2023Img} alt="2023 - Digital Leap" className="w-full h-full object-contain" />
                         </div>
                       </div>
