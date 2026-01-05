@@ -111,7 +111,7 @@ const About = () => {
       </section>
 
       {/* CONTENT SECTIONS */}
-      <section className="bg-white mt-4">
+      <section className="bg-white mt-4 mb-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
 
           {/* ASPIRE PROFILE */}
