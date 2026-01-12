@@ -44,9 +44,8 @@ const Hero = () => {
           </span>
 
           <h1 className="text-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl text-[#3D1717] leading-tight mb-4 sm:mb-5">
-            Aspire Knowledge & <br className="hidden sm:block" /> Skills
+            Aspire Knowledge &amp; Skills
           </h1>
-
           <p className="text-body text-[#3D1717] leading-relaxed mb-6 sm:mb-7 max-w-xl mx-auto lg:mx-0 opacity-80 text-sm sm:text-base lg:text-l">
             Aspire Knowledge and Skills India Pvt. Ltd., commonly known as ASPIRE,
             boasts a rich legacy of 28 years in the realm of skill development
