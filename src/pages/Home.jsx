@@ -13,8 +13,9 @@ import ContactInfo from "../components/ContactInfo";
 import Footer from "../components/Footer";
 import PageLoader from "../components/PageLoader";
 import SectionLoader from "../components/SectionLoader";
+import EnquiryModal from "../components/EnquiryModal";
 import { useLoading, useSectionLoading } from "../hooks/useLoading";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const Home = () => {
   const { isLoading, setLoading } = useLoading(true, 1000);
@@ -22,12 +23,18 @@ const Home = () => {
     'hero', 'about', 'programs', 'impact', 'testimonials', 
     'internships', 'life', 'partners', 'contact'
   ]);
+  const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
     // Only run once when component mounts
     const pageTimer = setTimeout(() => {
       setLoading(false);
     }, 1500);
+
+    // Show modal after page loads
+    const modalTimer = setTimeout(() => {
+      setShowModal(true);
+    }, 2000);
 
     // Start section loading after page loads
     const startSectionLoading = () => {
@@ -46,6 +53,7 @@ const Home = () => {
 
     return () => {
       clearTimeout(pageTimer);
+      clearTimeout(modalTimer);
       clearTimeout(sectionTimer);
     };
   }, []); // Empty dependency array - only run once
@@ -56,6 +64,9 @@ const Home = () => {
 
   return (
     <div className="font-dm-sans">
+      {/* Enquiry Modal */}
+      <EnquiryModal isOpen={showModal} onClose={() => setShowModal(false)} />
+      
       <TopHeader />
       <Navbar />
       

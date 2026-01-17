@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import TopHeader from "../components/TopHeader";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -108,9 +109,12 @@ const Programs = () => {
                       industry-recognized certification and practical work...
                     </p>
                   </div>
-                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                  <Link 
+                    to="/programs/guaranteed-internship" 
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors"
+                  >
                     View Details →
-                  </button>
+                  </Link>
                 </div>
               </div>
 

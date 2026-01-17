@@ -5,6 +5,7 @@ import Programs from "./pages/Programs";
 import Contact from "./pages/Contact";
 import ImpactReachPage from "./pages/ImpactReach";
 import Gallery from "./pages/Gallery";
+import GuaranteedInternshipDetails from "./pages/GuaranteedInternshipDetails";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/impact-reach" element={<ImpactReachPage />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/programs/guaranteed-internship" element={<GuaranteedInternshipDetails />} />
       </Routes>
     </Router>
   );
