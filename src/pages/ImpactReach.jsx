@@ -1,6 +1,5 @@
 import React from 'react';
-import TopHeader from "../components/TopHeader";
-import Navbar from "../components/Navbar";
+import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ImpactReach from "../components/ImpactReach";
 import StatisticsSection from "../components/StatisticsSection";
@@ -50,8 +49,10 @@ const ImpactReachPage = () => {
 
   return (
     <div className="font-dm-sans">
-      <TopHeader />
-      <Navbar />
+      <Header />
+      
+      {/* Spacer for fixed header */}
+      <div className="h-[104px]"></div>
 
       {/* BANNER SECTION */}
       <section

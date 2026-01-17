@@ -1,5 +1,3 @@
-import TopHeader from "../components/TopHeader";
-import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import AboutAspire from "../components/AboutAspire";
 import Programs from "../components/Programs";
@@ -14,6 +12,7 @@ import Footer from "../components/Footer";
 import PageLoader from "../components/PageLoader";
 import SectionLoader from "../components/SectionLoader";
 import EnquiryModal from "../components/EnquiryModal";
+import Header from "../components/Header";
 import { useLoading, useSectionLoading } from "../hooks/useLoading";
 import { useEffect, useState } from "react";
 
@@ -67,8 +66,11 @@ const Home = () => {
       {/* Enquiry Modal */}
       <EnquiryModal isOpen={showModal} onClose={() => setShowModal(false)} />
       
-      <TopHeader />
-      <Navbar />
+      {/* Sticky Header with TopBar and Navbar */}
+      <Header />
+      
+      {/* Spacer for fixed header */}
+      <div className="h-[104px]"></div>
       
       {/* Hero Section */}
       {loadingStates.hero ? (

@@ -27,39 +27,113 @@ const EnquiryModal = ({ isOpen, onClose }) => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
+    
+    // Phone number formatting - only allow digits
+    if (name === 'phone') {
+      const digitsOnly = value.replace(/\D/g, '');
+      if (digitsOnly.length <= 10) {
+        setFormData(prev => ({
+          ...prev,
+          [name]: digitsOnly
+        }));
+      }
+    } else {
+      setFormData(prev => ({
+        ...prev,
+        [name]: value
+      }));
+    }
+    
     // Clear error when user starts typing
     if (errors[name]) {
       setErrors(prev => ({ ...prev, [name]: '' }));
     }
   };
 
+  const handleBlur = (e) => {
+    const { name, value } = e.target;
+    const newErrors = { ...errors };
+    
+    // Real-time validation on blur
+    if (name === 'name' && value.trim()) {
+      if (value.trim().length < 2) {
+        newErrors.name = 'Name must be at least 2 characters';
+      } else if (!/^[a-zA-Z\s]+$/.test(value)) {
+        newErrors.name = 'Name should only contain letters';
+      } else {
+        delete newErrors.name;
+      }
+    }
+    
+    if (name === 'email' && value.trim()) {
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
+        newErrors.email = 'Please enter a valid email address';
+      } else {
+        delete newErrors.email;
+      }
+    }
+    
+    if (name === 'phone' && value.trim()) {
+      const phoneDigits = value.replace(/\D/g, '');
+      if (phoneDigits.length !== 10) {
+        newErrors.phone = 'Phone number must be exactly 10 digits';
+      } else if (!/^[6-9]\d{9}$/.test(phoneDigits)) {
+        newErrors.phone = 'Please enter a valid Indian mobile number';
+      } else {
+        delete newErrors.phone;
+      }
+    }
+    
+    if (name === 'enquiry' && value.trim()) {
+      if (value.trim().length < 10) {
+        newErrors.enquiry = 'Enquiry must be at least 10 characters';
+      } else {
+        delete newErrors.enquiry;
+      }
+    }
+    
+    setErrors(newErrors);
+  };
+
   const validateForm = () => {
     const newErrors = {};
     
+    // Name validation
     if (!formData.name.trim()) {
       newErrors.name = 'Name is required';
+    } else if (formData.name.trim().length < 2) {
+      newErrors.name = 'Name must be at least 2 characters';
+    } else if (!/^[a-zA-Z\s]+$/.test(formData.name)) {
+      newErrors.name = 'Name should only contain letters';
     }
     
+    // Email validation
     if (!formData.email.trim()) {
       newErrors.email = 'Email is required';
-    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-      newErrors.email = 'Email is invalid';
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+      newErrors.email = 'Please enter a valid email address';
     }
     
+    // Phone validation
     if (!formData.phone.trim()) {
       newErrors.phone = 'Phone number is required';
-    } else if (!/^\d{10}$/.test(formData.phone.replace(/\s/g, ''))) {
-      newErrors.phone = 'Phone number must be 10 digits';
+    } else {
+      const phoneDigits = formData.phone.replace(/\D/g, '');
+      if (phoneDigits.length !== 10) {
+        newErrors.phone = 'Phone number must be exactly 10 digits';
+      } else if (!/^[6-9]\d{9}$/.test(phoneDigits)) {
+        newErrors.phone = 'Please enter a valid Indian mobile number';
+      }
     }
     
+    // Enquiry validation
     if (!formData.enquiry.trim()) {
       newErrors.enquiry = 'Enquiry is required';
+    } else if (formData.enquiry.trim().length < 10) {
+      newErrors.enquiry = 'Enquiry must be at least 10 characters';
     }
     
+    // Captcha validation
     if (!formData.captcha.trim()) {
       newErrors.captcha = 'Captcha is required';
     } else if (formData.captcha !== captchaCode) {
@@ -117,6 +191,7 @@ const EnquiryModal = ({ isOpen, onClose }) => {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
+                  onBlur={handleBlur}
                   placeholder="Enter your name"
                   className="w-full px-4 py-3 bg-gray-50 border-0 rounded-lg text-gray-700 text-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-500 transition-all"
                 />
@@ -133,6 +208,7 @@ const EnquiryModal = ({ isOpen, onClose }) => {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
+                  onBlur={handleBlur}
                   placeholder="your@email.com"
                   className="w-full px-4 py-3 bg-gray-50 border-0 rounded-lg text-gray-700 text-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-500 transition-all"
                 />
@@ -150,7 +226,9 @@ const EnquiryModal = ({ isOpen, onClose }) => {
                 name="phone"
                 value={formData.phone}
                 onChange={handleChange}
+                onBlur={handleBlur}
                 placeholder="Enter your phone number"
+                maxLength="10"
                 className="w-full px-4 py-3 bg-gray-50 border-0 rounded-lg text-gray-700 text-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-500 transition-all"
               />
               {errors.phone && <p className="text-red-500 text-xs mt-1">{errors.phone}</p>}
@@ -165,6 +243,7 @@ const EnquiryModal = ({ isOpen, onClose }) => {
                 name="enquiry"
                 value={formData.enquiry}
                 onChange={handleChange}
+                onBlur={handleBlur}
                 placeholder="Tell us about your enquiry..."
                 rows="3"
                 className="w-full px-4 py-3 bg-gray-50 border-0 rounded-lg text-gray-700 text-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-500 transition-all resize-none"

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import TopHeader from "../components/TopHeader";
-import Navbar from "../components/Navbar";
+import Header from "../components/Header";
 import Footer from "../components/Footer";
 import aspireBgImg from "../assets/images/aspire-bg-.png";
 
@@ -192,8 +191,10 @@ const Gallery = () => {
 
   return (
     <div className="font-dm-sans">
-      <TopHeader />
-      <Navbar />
+      <Header />
+      
+      {/* Spacer for fixed header */}
+      <div className="h-[104px]"></div>
 
       {/* BANNER SECTION */}
       <section

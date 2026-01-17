@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
-import TopHeader from "../components/TopHeader";
-import Navbar from "../components/Navbar";
+import Header from "../components/Header";
 import Footer from "../components/Footer";
 import PageLoader from "../components/PageLoader";
 import SectionLoader from "../components/SectionLoader";
@@ -68,8 +67,10 @@ const About = () => {
 
   return (
     <div className="font-dm-sans">
-      <TopHeader />
-      <Navbar />
+      <Header />
+      
+      {/* Spacer for fixed header */}
+      <div className="h-[104px]"></div>
 
       {/* BANNER SECTION */}
       <section

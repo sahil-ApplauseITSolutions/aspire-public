@@ -27,7 +27,7 @@ const ContactForm = () => {
     <section className="bg-[#fffaf4] pt-12 sm:pt-16 lg:pt-20 pb-6 sm:pb-8 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex justify-center">
 
-        <div className="bg-white shadow-lg overflow-hidden w-full max-w-6xl rounded-2xl sm:rounded-3xl lg:rounded-[40px] relative -top-6 sm:-top-8 lg:-top-10">
+        <div className="bg-white shadow-lg overflow-hidden w-full max-w-6xl rounded-2xl sm:rounded-3xl lg:rounded-[30px] relative -top-6 sm:-top-8 lg:-top-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 min-h-[400px] sm:min-h-[500px] lg:h-[548px]">
 
             {/* LEFT SIDE - Content & Illustration */}
