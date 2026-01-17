@@ -20,7 +20,7 @@ const Contact = () => {
           backgroundImage: `url(${aspireBgImg})`,
           height: '141px',
           maxWidth: '1440px',
-          margin: '0 auto'
+          margin: '26px auto'
         }}
       >
         {/* Content */}

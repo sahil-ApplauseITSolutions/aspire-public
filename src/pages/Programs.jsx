@@ -59,7 +59,7 @@ const Programs = () => {
           backgroundImage: `url(${aspireBgImg})`,
           height: '141px',
           maxWidth: '1440px',
-          margin: '0 auto'
+          margin: '26px auto'
         }}
       >
         {/* Content */}
@@ -71,7 +71,7 @@ const Programs = () => {
       </section>
 
       {/* INDUSTRY-ALIGNED SKILL PROGRAMS SECTION */}
-      <section className="bg-white py-16">
+      <section className="bg-white py-0">
         <div className="max-w-7xl mx-auto px-6">
           {/* Section Header */}
           <div className="text-center mb-12">
@@ -85,7 +85,7 @@ const Programs = () => {
           </div>
 
           {/* Program Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center animate-fade-in-up">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 justify-items-center animate-fade-in-up">
             {/* Guaranteed Internship */}
               <div
                 className="bg-white rounded-xl shadow-lg overflow-hidden"
