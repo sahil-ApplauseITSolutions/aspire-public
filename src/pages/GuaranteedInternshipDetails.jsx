@@ -53,7 +53,7 @@ const GuaranteedInternshipDetails = () => {
       </section>
 
       {/* PROGRAM DETAILS SECTION */}
-      <section className="bg-white py-6">
+      <section className="bg-white py-4">
         <div className="max-w-7xl mx-auto px-6">
           {/* Back to Programs Link */}
           <div className="mb-4">
@@ -113,7 +113,7 @@ const GuaranteedInternshipDetails = () => {
       </section>
 
       {/* WHAT'S INCLUDED SECTION */}
-      <section className="bg-[#FFF1E4] py-16">
+      <section className="bg-[#FFF1E4] py-8">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-2xl font-bold text-[#3D1717] mb-12 text-left-align">
             What's Included in the Program?
