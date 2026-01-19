@@ -106,7 +106,7 @@ const ImpactReachPage = () => {
             {loadingStates.timeline ? (
               <TimelineLoader count={5} />
             ) : (
-              <div className="timeline-items-container space-y-16 animate-fade-in-up">
+              <div className="timeline-items-container space-y-8 animate-fade-in-up">
                 {/* 1997 - The Beginning */}
                 <div className="relative flex items-center">
                   {/* Timeline Dot */}
