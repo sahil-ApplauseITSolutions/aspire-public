@@ -20,7 +20,7 @@ const Contact = () => {
           backgroundImage: `url(${aspireBgImg})`,
           height: '141px',
           maxWidth: '1440px',
-          margin: ' auto'
+          margin: ' 26px auto'
         }}
       >
         {/* Content */}
@@ -32,7 +32,7 @@ const Contact = () => {
       </section>
       
       {/* CONTACT PAGE CONTENT */}
-      <section className="bg-white py-12 sm:py-16 lg:py-10">
+      <section className="bg-white py-12 sm:py-16 lg:py-0">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
 
           {/* CONTACT INFORMATION COMPONENT */}

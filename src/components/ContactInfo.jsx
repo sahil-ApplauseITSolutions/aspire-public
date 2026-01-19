@@ -6,7 +6,7 @@ import { Clock } from "lucide-react";
 
 const ContactInfo = () => {
   return (
-    <section className="bg-white pt-8 pb-0">
+    <section className="bg-white pt-2 pb-0">
       <div className="max-w-7xl mx-auto px-6">
         
         {/* SECTION TITLE */}
