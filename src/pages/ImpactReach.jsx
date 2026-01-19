@@ -210,7 +210,7 @@ const ImpactReachPage = () => {
                 {/* 2023 - Digital Leap */}
                 <div className="relative flex items-center">
                   {/* Timeline Dot */}
-                  <div className="timeline-dot absolute left-1/2 transform -translate-x-1/2 w-6 h-4 bg-gradient-to-br from-orange-500 to-orange-700 rounded-full border-4 border-white shadow-lg z-10"></div>
+                  <div className="timeline-dot absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-gradient-to-br from-orange-500 to-orange-700 rounded-full border-4 border-white shadow-lg z-10"></div>
 
                   {/* Content - Right Side */}
                   <div className="timeline-item-wrapper w-1/2 ml-auto pl-8">
