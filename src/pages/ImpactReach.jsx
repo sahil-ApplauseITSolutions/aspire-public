@@ -113,7 +113,7 @@ const ImpactReachPage = () => {
                   <div className="timeline-dot absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-gradient-to-br from-orange-500 to-orange-700 rounded-full border-4 border-white shadow-lg z-10"></div>
 
                   {/* Content - Right Side */}
-                  <div className="timeline-item-wrapper w-1/2 ml-auto pl-12">
+                  <div className="timeline-item-wrapper w-1/2 ml-auto pl-8">
                     <div className="timeline-card group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border-l-4 border-l-orange-400 border border-orange-100 relative" style={{ width: '506px', height: '148px' }}>
                       {/* Arrow pointing to timeline */}
                       <div className="timeline-arrow absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-3 w-0 h-0 border-t-8 border-b-8 border-r-8 border-t-transparent border-b-transparent border-r-white"></div>
@@ -138,7 +138,7 @@ const ImpactReachPage = () => {
                   <div className="timeline-dot absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-gradient-to-br from-orange-500 to-orange-700 rounded-full border-4 border-white shadow-lg z-10"></div>
 
                   {/* Content - Left Side */}
-                  <div className="timeline-item-wrapper w-1/2 pr-12">
+                  <div className="timeline-item-wrapper w-1/2 pr-8 flex justify-end">
                     <div className="timeline-card group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border-l-4 border-l-orange-400 border border-orange-100 relative" style={{ width: '506px', height: '148px' }}>
                       {/* Arrow pointing to timeline */}
                       <div className="timeline-arrow absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-3 w-0 h-0 border-t-8 border-b-8 border-l-8 border-t-transparent border-b-transparent border-l-white"></div>
@@ -163,7 +163,7 @@ const ImpactReachPage = () => {
                   <div className="timeline-dot absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-gradient-to-br from-orange-500 to-orange-700 rounded-full border-4 border-white shadow-lg z-10"></div>
 
                   {/* Content - Right Side */}
-                  <div className="timeline-item-wrapper w-1/2 ml-auto pl-12">
+                  <div className="timeline-item-wrapper w-1/2 ml-auto pl-8">
                     <div className="timeline-card group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border-l-4 border-l-orange-400 border border-orange-100 relative" style={{ width: '506px', height: '148px' }}>
                       {/* Arrow pointing to timeline */}
                       <div className="timeline-arrow absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-3 w-0 h-0 border-t-8 border-b-8 border-r-8 border-t-transparent border-b-transparent border-r-white"></div>
@@ -188,7 +188,7 @@ const ImpactReachPage = () => {
                   <div className="timeline-dot absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-gradient-to-br from-orange-500 to-orange-700 rounded-full border-4 border-white shadow-lg z-10"></div>
 
                   {/* Content - Left Side */}
-                  <div className="timeline-item-wrapper w-1/2 pr-12">
+                  <div className="timeline-item-wrapper w-1/2 pr-8 flex justify-end">
                     <div className="timeline-card group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border-l-4 border-l-orange-400 border border-orange-100 relative" style={{ width: '506px', height: '148px' }}>
                       {/* Arrow pointing to timeline */}
                       <div className="timeline-arrow absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-3 w-0 h-0 border-t-8 border-b-8 border-l-8 border-t-transparent border-b-transparent border-l-white"></div>
@@ -213,7 +213,7 @@ const ImpactReachPage = () => {
                   <div className="timeline-dot absolute left-1/2 transform -translate-x-1/2 w-6 h-4 bg-gradient-to-br from-orange-500 to-orange-700 rounded-full border-4 border-white shadow-lg z-10"></div>
 
                   {/* Content - Right Side */}
-                  <div className="timeline-item-wrapper w-1/2 ml-auto pl-12">
+                  <div className="timeline-item-wrapper w-1/2 ml-auto pl-8">
                     <div className="timeline-card group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border-l-4 border-l-orange-400 border border-orange-100 relative" style={{ width: '506px', height: '148px' }}>
                       {/* Arrow pointing to timeline */}
                       <div className="timeline-arrow absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-3 w-0 h-0 border-t-8 border-b-8 border-r-8 border-t-transparent border-b-transparent border-r-white"></div>
