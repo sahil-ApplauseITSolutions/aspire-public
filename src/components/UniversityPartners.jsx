@@ -21,7 +21,7 @@ const UniversityPartners = () => {
         
         {/* HEADER */}
         <div className="text-center mb-12">
-          <span className="inline-block bg-white text-[#EF7F2C] text-sm px-6 py-2 rounded-full mb-4 font-medium shadow-sm">
+          <span className="inline-block bg-[#fff1e4] text-[#EF7F2C] text-sm px-6 py-2 rounded-full mb-4 font-medium shadow-sm">
             Our Partners
           </span>
           
