@@ -6,6 +6,7 @@ import Testimonials from "../components/Testimonials";
 import InternshipJourneys from "../components/InternshipJourneys";
 import LifeAtAspire from "../components/LifeAtAspire";
 import Partners from "../components/Partners";
+import AdvisoryBoard from "../components/AdvisoryBoard";
 import UniversityPartners from "../components/UniversityPartners";
 import ContactForm from "../components/ContactForm";
 import ContactInfo from "../components/ContactInfo";
@@ -21,7 +22,7 @@ const Home = () => {
   const { isLoading, setLoading } = useLoading(true, 1000);
   const { loadingStates, simulateSectionLoading } = useSectionLoading([
     'hero', 'about', 'programs', 'impact', 'testimonials', 
-    'internships', 'life', 'partners', 'universities', 'contact'
+    'internships', 'life', 'partners', 'advisors', 'universities', 'contact'
   ]);
   const [showModal, setShowModal] = useState(false);
 
@@ -46,8 +47,9 @@ const Home = () => {
       setTimeout(() => simulateSectionLoading('internships', 1200), 1000);
       setTimeout(() => simulateSectionLoading('life', 1000), 1200);
       setTimeout(() => simulateSectionLoading('partners', 800), 1400);
-      setTimeout(() => simulateSectionLoading('universities', 800), 1600);
-      setTimeout(() => simulateSectionLoading('contact', 1000), 1800);
+      setTimeout(() => simulateSectionLoading('advisors', 1000), 1600);
+      setTimeout(() => simulateSectionLoading('universities', 800), 1800);
+      setTimeout(() => simulateSectionLoading('contact', 1000), 2000);
     };
 
     const sectionTimer = setTimeout(startSectionLoading, 1600);
@@ -143,6 +145,15 @@ const Home = () => {
       ) : (
         <div className="animate-fade-in-up">
           <Partners />
+        </div>
+      )}
+
+      {/* Advisory Board Section */}
+      {loadingStates.advisors ? (
+        <SectionLoader message="Loading Advisory Board..." height="h-96" />
+      ) : (
+        <div className="animate-fade-in-up">
+          <AdvisoryBoard />
         </div>
       )}
 
