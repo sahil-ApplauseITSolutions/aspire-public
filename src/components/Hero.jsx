@@ -1,6 +1,6 @@
 import bannerImg from "../assets/images/AKANKSHANAVYAYUGACHI.jfif";
 import universityImg from "../assets/images/university.png";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, BookOpen, Mail } from "lucide-react";
 import { useState } from "react";
 
 const Hero = () => {
@@ -46,7 +46,7 @@ const Hero = () => {
           <h1 className="text-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl text-[#3D1717] leading-tight mb-4 sm:mb-5">
             Aspire Knowledge &amp; Skills
           </h1>
-          <p className="text-body text-[#3D1717] leading-relaxed mb-6 sm:mb-7 max-w-xl mx-auto lg:mx-0 opacity-80 text-sm sm:text-base lg:text-l">
+          <p className="text-body text-justify text-[#3D1717] leading-relaxed mb-6 sm:mb-7 max-w-xl mx-auto lg:mx-0 opacity-80 text-sm sm:text-base lg:text-l">
             Aspire Knowledge and Skills India Pvt. Ltd., commonly known as ASPIRE,
             boasts a rich legacy of 28 years in the realm of skill development
             training, talent management in the workforce, and providing pathways
@@ -55,13 +55,13 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
-            <button className="group bg-gradient-to-r from-[#EF7F2C] to-[#d6691f] text-white px-5 sm:px-7 py-2.5 sm:py-3 rounded-xl font-bold hover:from-[#d6691f] hover:to-[#c55a1a] transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl text-sm sm:text-base">
+            <button className="group bg-gradient-to-r from-[#EF7F2C] to-[#d6691f] text-white px-5 sm:px-7 py-2.5 sm:py-2 rounded-xl font-bold hover:from-[#d6691f] hover:to-[#c55a1a] transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl text-sm sm:text-base">
               Explore Programs 
-              <span className="inline-block ml-2 group-hover:translate-x-1 transition-transform duration-300">→</span>
+              <BookOpen className="w-5 h-5 ml-2 inline-block" />
             </button>
             <button className="group border-2 border-[#3D1717] text-[#3D1717] px-5 sm:px-7 py-2.5 sm:py-3 rounded-xl font-bold hover:bg-[#3D1717] hover:text-white transform hover:scale-105 transition-all duration-300 text-sm sm:text-base">
               Enquiry Now
-              <span className="inline-block ml-2 group-hover:translate-x-1 transition-transform duration-300">✉</span>
+              <Mail className="w-5 h-5 ml-2 inline-block" />
             </button>
           </div>
         </div>
