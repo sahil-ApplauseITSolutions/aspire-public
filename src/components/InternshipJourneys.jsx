@@ -103,11 +103,6 @@ const InternshipJourneys = () => {
                                                     className="w-full h-[180px] object-cover"
                                                 />
 
-                                                {/* TAG */}
-                                                <span className="absolute top-3 left-3 bg-[#3b2a1a] text-white text-xs px-3 py-1 rounded-full">
-                                                    {item.tag}
-                                                </span>
-
                                                 {/* PLAY BUTTON */}
                                                 <div 
                                                     className="absolute inset-0 flex items-center justify-center cursor-pointer"

@@ -68,7 +68,7 @@ const ImpactReach = () => {
         setFade(true);
       }, 500); // Wait for fade out before changing content
       
-    }, 5000); // Change every 5 seconds
+    }, 3000); // Change every 3 seconds
 
     return () => clearInterval(interval);
   }, []);
