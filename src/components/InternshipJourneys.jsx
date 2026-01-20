@@ -60,8 +60,8 @@ const InternshipJourneys = () => {
             <div className="max-w-6xl mx-auto px-6 relative">
 
                 {/* SECTION TITLE */}
-                <h3 className="text-center text-3xl lg:text-4xl font-bold text-[#3b2a1a] mb-12">
-                    Internship & Placement Journeys
+                <h3 className="text-center text-[18px] font-bold text-[#3b2a1a] mb-12">
+                    Success Stories & Internship Journeys
                 </h3>
 
                 {/* NAVIGATION CONTAINER */}
