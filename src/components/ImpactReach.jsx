@@ -1,15 +1,86 @@
+import { useState, useEffect } from "react";
 import impactBg from "../assets/images/our impact-bg.png";
 import mapImg from "../assets/images/aspire-doc/map.png";
-import studentsTrainedIcon from "../assets/images/aspire-doc/Students Trained.svg";
-import partnerCollegesIcon from "../assets/images/aspire-doc/Partner Colleges.svg";
-import corporatePartnersIcon from "../assets/images/aspire-doc/Corporate Partners.svg";
-import placementRateIcon from "../assets/images/aspire-doc/Placement Rate.svg";
+
+// Import new impact reach icons
+import yearsLegacyIcon from "../assets/images/impact reach/28 yrs legacy.svg";
+import trainedStudentsIcon from "../assets/images/impact reach/10k students trained.svg";
+import careerWorkshopsIcon from "../assets/images/impact reach/5k career.svg";
+import studentsPlacedIcon from "../assets/images/impact reach/50k  students.svg";
+import statesPresenceIcon from "../assets/images/impact reach/12 states.svg";
+import trainingCentersIcon from "../assets/images/impact reach/100k tarining.svg";
+import startupsIncubatedIcon from "../assets/images/impact reach/100+ startup.svg";
+import mouTieUpsIcon from "../assets/images/impact reach/200+ mou.svg";
+
+const allStats = [
+  {
+    icon: yearsLegacyIcon,
+    value: "28",
+    label: "Years Legacy"
+  },
+  {
+    icon: trainedStudentsIcon,
+    value: "100K+",
+    label: "Trained Students"
+  },
+  {
+    icon: careerWorkshopsIcon,
+    value: "500K+",
+    label: "Career Workshops"
+  },
+  {
+    icon: studentsPlacedIcon,
+    value: "50K+",
+    label: "Students Placed"
+  },
+  {
+    icon: statesPresenceIcon,
+    value: "12",
+    label: "States Presence in India"
+  },
+  {
+    icon: trainingCentersIcon,
+    value: "100+",
+    label: "Training Centers across India"
+  },
+  {
+    icon: startupsIncubatedIcon,
+    value: "100+",
+    label: "Startups Incubated"
+  },
+  {
+    icon: mouTieUpsIcon,
+    value: "200+",
+    label: "MOUs Tie Ups"
+  }
+];
 
 const ImpactReach = () => {
+  const [currentSet, setCurrentSet] = useState(0);
+  const [fade, setFade] = useState(true);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setFade(false);
+      
+      setTimeout(() => {
+        setCurrentSet((prev) => (prev + 1) % 2); // Toggle between 0 and 1
+        setFade(true);
+      }, 500); // Wait for fade out before changing content
+      
+    }, 5000); // Change every 5 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
+  // Get current 4 cards to display
+  const currentStats = currentSet === 0 
+    ? allStats.slice(0, 4) 
+    : allStats.slice(4, 8);
+
   return (
     <section
-      className="py-12 sm:py-16 lg:py-20 bg-cover bg-center mt-0
-       bg-no-repeat"
+      className="py-12 sm:py-16 lg:py-20 bg-cover bg-center mt-0 bg-no-repeat"
       style={{ backgroundImage: `url(${impactBg})` }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -37,44 +108,32 @@ const ImpactReach = () => {
           <div className="flex flex-col gap-0">
 
             {/* MOBILE: Single Column Layout */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 lg:hidden">
-              <StatCard
-                iconSrc={studentsTrainedIcon}
-                value="10K+"
-                label="Students Trained"
-              />
-              <StatCard
-                iconSrc={partnerCollegesIcon}
-                value="500+"
-                label="Partner Colleges"
-              />
-              <StatCard
-                iconSrc={corporatePartnersIcon}
-                value="200+"
-                label="Corporate Partners"
-              />
-              <StatCard
-                iconSrc={placementRateIcon}
-                value="95%"
-                label="Placement Rate"
-              />
+            <div className={`grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 lg:hidden transition-opacity duration-500 ${fade ? 'opacity-100' : 'opacity-0'}`}>
+              {currentStats.map((stat, index) => (
+                <StatCard
+                  key={index}
+                  iconSrc={stat.icon}
+                  value={stat.value}
+                  label={stat.label}
+                />
+              ))}
             </div>
 
             {/* DESKTOP: Staggered Layout */}
-            <div className="hidden lg:block">
+            <div className={`hidden lg:block transition-opacity duration-500 ${fade ? 'opacity-100' : 'opacity-0'}`}>
               {/* FIRST ROW */}
               <div className="flex gap-8">
                 <StatCard
-                  iconSrc={studentsTrainedIcon}
-                  value="10K+"
-                  label="Students Trained"
+                  iconSrc={currentStats[0].icon}
+                  value={currentStats[0].value}
+                  label={currentStats[0].label}
                 />
 
                 <div className="mt-12">
                   <StatCard
-                    iconSrc={partnerCollegesIcon}
-                    value="500+"
-                    label="Partner Colleges"
+                    iconSrc={currentStats[1].icon}
+                    value={currentStats[1].value}
+                    label={currentStats[1].label}
                   />
                 </div>
               </div>
@@ -82,16 +141,16 @@ const ImpactReach = () => {
               {/* SECOND ROW */}
               <div className="flex gap-8">
                 <StatCard
-                  iconSrc={corporatePartnersIcon}
-                  value="200+"
-                  label="Corporate Partners"
+                  iconSrc={currentStats[2].icon}
+                  value={currentStats[2].value}
+                  label={currentStats[2].label}
                 />
 
                 <div className="mt-12">
                   <StatCard
-                    iconSrc={placementRateIcon}
-                    value="95%"
-                    label="Placement Rate"
+                    iconSrc={currentStats[3].icon}
+                    value={currentStats[3].value}
+                    label={currentStats[3].label}
                   />
                 </div>
               </div>
