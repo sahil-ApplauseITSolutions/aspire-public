@@ -5,6 +5,7 @@ import {
     Cloud,
     ArrowRight,
 } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import programsBg from "../assets/images/our programs-bg.png";
 
 
@@ -32,6 +33,8 @@ const programs = [
 ];
 
 const Programs = () => {
+    const navigate = useNavigate();
+
     return (
         <section
             className="py-20 bg-no-repeat bg-top bg-cover"
@@ -50,7 +53,7 @@ const Programs = () => {
                         Our Programs
                     </span>
 
-                    <h2 className="text-heading text-3xl lg:text-4xl xl:text-5xl text-[#3b2a1a] mb-3">
+                    <h2 className="text-heading text-3xl lg:text-4xl xl:text-4xl text-[#3b2a1a] mb-3">
                         Programs We Offer
                     </h2>
 
@@ -62,7 +65,9 @@ const Programs = () => {
 
                 {/* VIEW ALL */}
                 <div className="flex justify-end mb-6">
-                    <button className="text-orange-500 text-sm font-semibold flex items-center gap-1 hover:underline">
+                    <button 
+                        onClick={() => navigate('/programs')}
+                        className="text-orange-500 text-sm font-semibold flex items-center gap-1 hover:underline">
                         View All <ArrowRight size={16} />
                     </button>
                 </div>
