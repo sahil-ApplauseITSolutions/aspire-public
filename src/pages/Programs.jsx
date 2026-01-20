@@ -120,37 +120,6 @@ const Programs = () => {
                 </div>
               </div>
 
-              {/* Guaranteed Placement */}
-              <div
-                className="bg-white rounded-xl shadow-lg overflow-hidden"
-                style={{ width: '412.6px', height: '298.96px' }}
-              >
-                {/* Top - Image */}
-                <div className="w-full" style={{ width: '415px', height: '128px' }}>
-                  <img
-                    src={guaranteedInternshipImg}
-                    alt="Guaranteed Placement"
-                    className="w-full h-full object-cover object-top"
-                  />
-                </div>
-                {/* Bottom - Text Content */}
-                <div className="p-4 flex flex-col justify-between" style={{ height: '170.96px' }}>
-                  <div>
-                    <h3 className="text-lg font-bold text-[#3b2a1a] mb-2">
-                      Guaranteed Placement
-                    </h3>
-                    <p className="text-gray-600 text-sm leading-relaxed mb-3">
-                      Learners gain hands-on exposure through live projects,
-                      regular evaluations, and mentorship, culminating in
-                      industry-recognized certification and practical work...
-                    </p>
-                  </div>
-                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
-                    View Details →
-                  </button>
-                </div>
-              </div>
-
               {/* UI/UX Developer */}
               <div
                 className="bg-white rounded-xl shadow-lg overflow-hidden"
