@@ -1,57 +1,57 @@
-// Import all CSR partner images
-import cgscImg from "../assets/images/csr-aspire/cgsc.png";
-import coepImg from "../assets/images/csr-aspire/coeplogo.png";
-import digitalIndiaImg from "../assets/images/csr-aspire/digitalindia_logo.png";
-import drBatuImg from "../assets/images/csr-aspire/DR_BATU_Logo.png";
-import electronicImg from "../assets/images/csr-aspire/electronic_logo.png";
-import essiImg from "../assets/images/csr-aspire/essi_logo.png";
-import iiitAllahabadImg from "../assets/images/csr-aspire/Indian_Institute_of_Information_Technology,_Allahabad_Logo.png";
-import lionImg from "../assets/images/csr-aspire/lion_logo.png";
-import mssdsImg from "../assets/images/csr-aspire/MSSDS.png";
-import napsImg from "../assets/images/csr-aspire/NAPS.png";
-import nsdcImg from "../assets/images/csr-aspire/nsdc_logo.png";
-import pmkvyImg from "../assets/images/csr-aspire/pmkvy-logo.png";
-import rasciImg from "../assets/images/csr-aspire/RASCI.png";
-import skillIndiaImg from "../assets/images/csr-aspire/skillindia_logo.png";
-import smartCityImg from "../assets/images/csr-aspire/Smart-City.png";
-import vtuImg from "../assets/images/csr-aspire/VTU_LOGO.png";
+// Import all industry partner images
+import amazonImg from "../assets/images/top industry-aspire/amazon-logo-amazon-icon-transparent-free-png.png";
+import bajajImg from "../assets/images/top industry-aspire/Bajaj-Finserv-Logo.jpg";
+import capgeminiImg from "../assets/images/top industry-aspire/Capgemini.png";
+import cars24Img from "../assets/images/top industry-aspire/CARS24_logo.png";
+import ciiImg from "../assets/images/top industry-aspire/CII.png";
+import ctmsImg from "../assets/images/top industry-aspire/ctmsconnect_logo.jfif";
+import dicciImg from "../assets/images/top industry-aspire/dicci.png";
+import geHealthcareImg from "../assets/images/top industry-aspire/GE-HLTHCR_Standard_RGB-CompPrpl-1-1.png";
+import ideaImg from "../assets/images/top industry-aspire/IDEA-logo-png-1-1024x583.png";
+import indiacsrImg from "../assets/images/top industry-aspire/indiacsr.png";
+import jupiterImg from "../assets/images/top industry-aspire/jupiter-company-1.png";
+import mcciaImg from "../assets/images/top industry-aspire/mccia.jpg";
+import mygovImg from "../assets/images/top industry-aspire/mygov_148217742545698621.jpg";
+import pmaImg from "../assets/images/top industry-aspire/pma.jfif";
+import razorpayImg from "../assets/images/top industry-aspire/razorpay_0.jpg";
+import sutherlandImg from "../assets/images/top industry-aspire/sutherland-global-services-inc-chennai-job-business-process-outsourcing-png-favpng-xPh0ZDvgVQKjKD9FsevMHtEV7.jpg";
 
 const Partners = () => {
-  // CSR Partner logos
+  // Industry Partner logos
   const partnerLogos = [
-    { name: "CGSC", logo: cgscImg },
-    { name: "COEP", logo: coepImg },
-    { name: "Digital India", logo: digitalIndiaImg },
-    { name: "Dr. BATU", logo: drBatuImg },
-    { name: "Electronic", logo: electronicImg },
-    { name: "ESSI", logo: essiImg },
-    { name: "IIIT Allahabad", logo: iiitAllahabadImg },
-    { name: "Lion", logo: lionImg },
-    { name: "MSSDS", logo: mssdsImg },
-    { name: "NAPS", logo: napsImg },
-    { name: "NSDC", logo: nsdcImg },
-    { name: "PMKVY", logo: pmkvyImg },
-    { name: "RASCI", logo: rasciImg },
-    { name: "Skill India", logo: skillIndiaImg },
-    { name: "Smart City", logo: smartCityImg },
-    { name: "VTU", logo: vtuImg },
+    { name: "Amazon", logo: amazonImg },
+    { name: "Bajaj Finserv", logo: bajajImg },
+    { name: "Capgemini", logo: capgeminiImg },
+    { name: "CARS24", logo: cars24Img },
+    { name: "CII", logo: ciiImg },
+    { name: "CTMS Connect", logo: ctmsImg },
+    { name: "DICCI", logo: dicciImg },
+    { name: "GE Healthcare", logo: geHealthcareImg },
+    { name: "IDEA", logo: ideaImg },
+    { name: "India CSR", logo: indiacsrImg },
+    { name: "Jupiter", logo: jupiterImg },
+    { name: "MCCIA", logo: mcciaImg },
+    { name: "MyGov", logo: mygovImg },
+    { name: "PMA", logo: pmaImg },
+    { name: "Razorpay", logo: razorpayImg },
+    { name: "Sutherland", logo: sutherlandImg },
     // Duplicate for seamless scrolling
-    { name: "CGSC", logo: cgscImg },
-    { name: "COEP", logo: coepImg },
-    { name: "Digital India", logo: digitalIndiaImg },
-    { name: "Dr. BATU", logo: drBatuImg },
-    { name: "Electronic", logo: electronicImg },
-    { name: "ESSI", logo: essiImg },
-    { name: "IIIT Allahabad", logo: iiitAllahabadImg },
-    { name: "Lion", logo: lionImg },
-    { name: "MSSDS", logo: mssdsImg },
-    { name: "NAPS", logo: napsImg },
-    { name: "NSDC", logo: nsdcImg },
-    { name: "PMKVY", logo: pmkvyImg },
-    { name: "RASCI", logo: rasciImg },
-    { name: "Skill India", logo: skillIndiaImg },
-    { name: "Smart City", logo: smartCityImg },
-    { name: "VTU", logo: vtuImg }
+    { name: "Amazon", logo: amazonImg },
+    { name: "Bajaj Finserv", logo: bajajImg },
+    { name: "Capgemini", logo: capgeminiImg },
+    { name: "CARS24", logo: cars24Img },
+    { name: "CII", logo: ciiImg },
+    { name: "CTMS Connect", logo: ctmsImg },
+    { name: "DICCI", logo: dicciImg },
+    { name: "GE Healthcare", logo: geHealthcareImg },
+    { name: "IDEA", logo: ideaImg },
+    { name: "India CSR", logo: indiacsrImg },
+    { name: "Jupiter", logo: jupiterImg },
+    { name: "MCCIA", logo: mcciaImg },
+    { name: "MyGov", logo: mygovImg },
+    { name: "PMA", logo: pmaImg },
+    { name: "Razorpay", logo: razorpayImg },
+    { name: "Sutherland", logo: sutherlandImg }
   ];
 
   return (
@@ -65,12 +65,11 @@ const Partners = () => {
           </span>
           
           <h2 className="text-3xl lg:text-4xl font-bold text-[#3D1717] mb-4">
-            CSR & Training Partners
+            Top Industry Partners
           </h2>
           
           <p className="text-[#3D1717] opacity-70 max-w-2xl mx-auto">
-            Trusted organizations and institutions supporting our
-            skill development mission
+            Collaborating with leading organizations to provide world-class training and placement opportunities
           </p>
         </div>
 
