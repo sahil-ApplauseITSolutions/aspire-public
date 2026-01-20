@@ -7,17 +7,17 @@ import SectionLoader from "../components/SectionLoader";
 import CardLoader from "../components/CardLoader";
 import { useLoading, useSectionLoading } from "../hooks/useLoading";
 import aspireBgImg from "../assets/images/aspire-bg-.png";
-import drNirmaljeetImg from "../assets/images/DrNirmaljeet.jpg";
-import event21Img from "../assets/images/event21.jpg";
-import n19Img from "../assets/images/n19.jpeg";
-import akankshanaImg from "../assets/images/AKANKSHANAVYAYUGACHI.jfif";
-import universityImg from "../assets/images/university.png";
-import aspire3Img from "../assets/images/aspire-3.jpg";
-import padmashree1Img from "../assets/images/padmashree1.jpeg";
-import n8Img from "../assets/images/n8.jpg";
-import pun1Img from "../assets/images/pun1.jpg";
-import mrAbhayJereImg from "../assets/images/MrAbhayJere.jfif";
-import event4Img from "../assets/images/event4.png";
+
+// Import Hero section images for programs
+import guaranteedInternshipImg from "../assets/images/Hero section-aspire/Guarenteed Internship.png";
+import eedpImg from "../assets/images/Hero section-aspire/EEDP.png";
+import uiuxDeveloperImg from "../assets/images/Hero section-aspire/UIUX Developer.png";
+import campusToCorporateImg from "../assets/images/Hero section-aspire/Campus to Corporate.png";
+import aedpImg from "../assets/images/Hero section-aspire/AEDP.png";
+import quantumComputingImg from "../assets/images/Hero section-aspire/Quantum Computing.png";
+import creditLinkedImg from "../assets/images/Hero section-aspire/Credit Linked Courses.png";
+import cloudTechnologyImg from "../assets/images/Hero section-aspire/Cloud Technology.png";
+import cyberSecurityImg from "../assets/images/Hero section-aspire/Cyber Security.png";
 
 const Programs = () => {
   const { isLoading, setLoading } = useLoading(true, 800);
@@ -94,7 +94,7 @@ const Programs = () => {
                 {/* Top - Image */}
                 <div className="w-full" style={{ width: '415px', height: '128px' }}>
                   <img
-                    src={drNirmaljeetImg}
+                    src={guaranteedInternshipImg}
                     alt="Guaranteed Internship"
                     className="w-full h-full object-cover object-top"
                   />
@@ -128,7 +128,7 @@ const Programs = () => {
                 {/* Top - Image */}
                 <div className="w-full" style={{ width: '415px', height: '128px' }}>
                   <img
-                    src={event21Img}
+                    src={guaranteedInternshipImg}
                     alt="Guaranteed Placement"
                     className="w-full h-full object-cover object-top"
                   />
@@ -159,7 +159,7 @@ const Programs = () => {
                 {/* Top - Image */}
                 <div className="w-full" style={{ width: '415px', height: '128px' }}>
                   <img
-                    src={n19Img}
+                    src={uiuxDeveloperImg}
                     alt="UI/UX Developer"
                     className="w-full h-full object-cover object-centre"
                   />
@@ -190,7 +190,7 @@ const Programs = () => {
                 {/* Top - Image */}
                 <div className="w-full" style={{ width: '415px', height: '128px' }}>
                   <img
-                    src={akankshanaImg}
+                    src={guaranteedInternshipImg}
                     alt="Virtual Internship"
                     className="w-full h-full object-cover object-centre"
                   />
@@ -221,7 +221,7 @@ const Programs = () => {
                 {/* Top - Image */}
                 <div className="w-full" style={{ width: '415px', height: '128px' }}>
                   <img
-                    src={universityImg}
+                    src={campusToCorporateImg}
                     alt="Campus to Corporate"
                     className="w-full h-full object-cover object-top"
                   />
@@ -252,7 +252,7 @@ const Programs = () => {
                 {/* Top - Image */}
                 <div className="w-full" style={{ width: '415px', height: '128px' }}>
                   <img
-                    src={aspire3Img}
+                    src={aedpImg}
                     alt="AEDP"
                     className="w-full h-full object-cover object-centre"
                   />
@@ -283,7 +283,7 @@ const Programs = () => {
                 {/* Top - Image */}
                 <div className="w-full" style={{ width: '415px', height: '128px' }}>
                   <img
-                    src={padmashree1Img}
+                    src={quantumComputingImg}
                     alt="Quantum Computing"
                     className="w-full h-full object-cover object-centre"
                   />
@@ -314,7 +314,7 @@ const Programs = () => {
                 {/* Top - Image */}
                 <div className="w-full" style={{ width: '415px', height: '128px' }}>
                   <img
-                    src={n8Img}
+                    src={creditLinkedImg}
                     alt="Credit Linked Courses"
                     className="w-full h-full object-cover object-top"
                   />
@@ -345,7 +345,7 @@ const Programs = () => {
                 {/* Top - Image */}
                 <div className="w-full" style={{ width: '415px', height: '128px' }}>
                   <img
-                    src={pun1Img}
+                    src={cloudTechnologyImg}
                     alt="Cloud Technology"
                     className="w-full h-full object-cover object-top"
                   />
@@ -376,7 +376,7 @@ const Programs = () => {
                 {/* Top - Image */}
                 <div className="w-full" style={{ width: '415px', height: '128px' }}>
                   <img
-                    src={mrAbhayJereImg}
+                    src={cyberSecurityImg}
                     alt="Cyber Security"
                     className="w-full h-full object-cover object-top"
                   />
@@ -407,7 +407,7 @@ const Programs = () => {
                 {/* Top - Image */}
                 <div className="w-full" style={{ width: '415px', height: '128px' }}>
                   <img
-                    src={event4Img}
+                    src={eedpImg}
                     alt="EEDP"
                     className="w-full h-full object-cover object-centre"
                   />
