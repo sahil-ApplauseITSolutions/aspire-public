@@ -108,25 +108,27 @@ const ImpactReach = () => {
           <div className="flex flex-col gap-0">
 
             {/* MOBILE: Single Column Layout */}
-            <div className={`grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 lg:hidden transition-opacity duration-500 ${fade ? 'opacity-100' : 'opacity-0'}`}>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 lg:hidden">
               {currentStats.map((stat, index) => (
                 <StatCard
                   key={index}
                   iconSrc={stat.icon}
                   value={stat.value}
                   label={stat.label}
+                  fade={fade}
                 />
               ))}
             </div>
 
             {/* DESKTOP: Staggered Layout */}
-            <div className={`hidden lg:block transition-opacity duration-500 ${fade ? 'opacity-100' : 'opacity-0'}`}>
+            <div className="hidden lg:block">
               {/* FIRST ROW */}
               <div className="flex gap-8">
                 <StatCard
                   iconSrc={currentStats[0].icon}
                   value={currentStats[0].value}
                   label={currentStats[0].label}
+                  fade={fade}
                 />
 
                 <div className="mt-12">
@@ -134,6 +136,7 @@ const ImpactReach = () => {
                     iconSrc={currentStats[1].icon}
                     value={currentStats[1].value}
                     label={currentStats[1].label}
+                    fade={fade}
                   />
                 </div>
               </div>
@@ -144,6 +147,7 @@ const ImpactReach = () => {
                   iconSrc={currentStats[2].icon}
                   value={currentStats[2].value}
                   label={currentStats[2].label}
+                  fade={fade}
                 />
 
                 <div className="mt-12">
@@ -151,6 +155,7 @@ const ImpactReach = () => {
                     iconSrc={currentStats[3].icon}
                     value={currentStats[3].value}
                     label={currentStats[3].label}
+                    fade={fade}
                   />
                 </div>
               </div>
@@ -175,13 +180,13 @@ const ImpactReach = () => {
   );
 };
 
-const StatCard = ({ iconSrc, value, label }) => {
+const StatCard = ({ iconSrc, value, label, fade }) => {
   return (
     <div className="group bg-white rounded-xl p-4 sm:p-6 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 w-full sm:w-[269px] h-auto sm:h-[142px] cursor-pointer border border-transparent hover:border-orange-200 relative overflow-hidden">
       {/* Gradient overlay on hover */}
       <div className="absolute inset-0 bg-gradient-to-br from-orange-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
 
-      <div className="relative z-10 flex items-start justify-between">
+      <div className={`relative z-10 flex items-start justify-between transition-opacity duration-500 ${fade ? 'opacity-100' : 'opacity-0'}`}>
         <div>
           <h3 className="text-2xl sm:text-3xl font-bold text-[#EF7F2C] mt-1 sm:mt-2 mb-1 group-hover:scale-110 transition-transform duration-300">{value}</h3>
           <p className="text-xs sm:text-sm text-[#3D1717] font-bold group-hover:text-orange-600 transition-colors duration-300">{label}</p>
