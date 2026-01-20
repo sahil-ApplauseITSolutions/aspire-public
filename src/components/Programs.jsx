@@ -37,7 +37,7 @@ const Programs = () => {
 
     return (
         <section
-            className="py-20 bg-no-repeat bg-top bg-cover"
+            className="pt-12 pb-20 bg-no-repeat bg-top bg-cover"
             style={{
                 backgroundImage: `url(${programsBg})`,
             }}

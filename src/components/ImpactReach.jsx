@@ -80,7 +80,7 @@ const ImpactReach = () => {
 
   return (
     <section
-      className="py-12 sm:py-16 lg:py-20 bg-cover bg-center mt-0 bg-no-repeat"
+      className="py-12 sm:py-16 lg:py-10 bg-cover bg-center mt-0 bg-no-repeat"
       style={{ backgroundImage: `url(${impactBg})` }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
