@@ -2,7 +2,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const Testimonials = () => {
   return (
-    <section className="bg-white py-20">
+    <section className="bg-white py-12">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* SECTION HEADER */}

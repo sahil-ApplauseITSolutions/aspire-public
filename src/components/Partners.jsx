@@ -55,7 +55,7 @@ const Partners = () => {
   ];
 
   return (
-    <section className="bg-white py-16 overflow-hidden">
+    <section className="bg-white py-12 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         
         {/* HEADER */}

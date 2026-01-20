@@ -56,7 +56,7 @@ const InternshipJourneys = () => {
     };
 
     return (
-        <section className="bg-[#fffaf4] py-20 pb-8 relative overflow-hidden">
+        <section className="bg-[#fffaf4] py-12 pb-8 relative overflow-hidden">
             <div className="max-w-6xl mx-auto px-6 relative">
 
                 {/* SECTION TITLE */}

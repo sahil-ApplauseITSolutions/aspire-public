@@ -69,7 +69,7 @@ const AdvisoryBoard = () => {
   };
 
   return (
-    <section className="bg-[#fffaf4] py-20">
+    <section className="bg-[#fffaf4] py-12">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           
