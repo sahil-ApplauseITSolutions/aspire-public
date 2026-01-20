@@ -1,57 +1,84 @@
-// Import all industry partner images
-import amazonImg from "../assets/images/top industry-aspire/amazon-logo-amazon-icon-transparent-free-png.png";
-import bajajImg from "../assets/images/top industry-aspire/Bajaj-Finserv-Logo.jpg";
-import capgeminiImg from "../assets/images/top industry-aspire/Capgemini.png";
-import cars24Img from "../assets/images/top industry-aspire/CARS24_logo.png";
-import ciiImg from "../assets/images/top industry-aspire/CII.png";
-import ctmsImg from "../assets/images/top industry-aspire/ctmsconnect_logo.jfif";
-import dicciImg from "../assets/images/top industry-aspire/dicci.png";
-import geHealthcareImg from "../assets/images/top industry-aspire/GE-HLTHCR_Standard_RGB-CompPrpl-1-1.png";
-import ideaImg from "../assets/images/top industry-aspire/IDEA-logo-png-1-1024x583.png";
-import indiacsrImg from "../assets/images/top industry-aspire/indiacsr.png";
-import jupiterImg from "../assets/images/top industry-aspire/jupiter-company-1.png";
-import mcciaImg from "../assets/images/top industry-aspire/mccia.jpg";
-import mygovImg from "../assets/images/top industry-aspire/mygov_148217742545698621.jpg";
-import pmaImg from "../assets/images/top industry-aspire/pma.jfif";
-import razorpayImg from "../assets/images/top industry-aspire/razorpay_0.jpg";
-import sutherlandImg from "../assets/images/top industry-aspire/sutherland-global-services-inc-chennai-job-business-process-outsourcing-png-favpng-xPh0ZDvgVQKjKD9FsevMHtEV7.jpg";
+// Import all industry partner images (25 total)
+import img1 from "../assets/images/top industry-aspire/1726716565932.jfif";
+import img2 from "../assets/images/top industry-aspire/31ZXBKniICL.jpg";
+import img3 from "../assets/images/top industry-aspire/a3LKX0000000Z1i2AE.jpg";
+import img4 from "../assets/images/top industry-aspire/amazon-logo-amazon-icon-transparent-free-png.png";
+import img5 from "../assets/images/top industry-aspire/Bajaj-Finserv-Logo.jpg";
+import img6 from "../assets/images/top industry-aspire/Capgemini.png";
+import img7 from "../assets/images/top industry-aspire/CARS24_logo.png";
+import img8 from "../assets/images/top industry-aspire/CII.png";
+import img9 from "../assets/images/top industry-aspire/ctmsconnect_logo.jfif";
+import img10 from "../assets/images/top industry-aspire/dicci.png";
+import img11 from "../assets/images/top industry-aspire/GE-HLTHCR_Standard_RGB-CompPrpl-1-1.png";
+import img12 from "../assets/images/top industry-aspire/IDEA-logo-png-1-1024x583.png";
+import img13 from "../assets/images/top industry-aspire/indiacsr.png";
+import img14 from "../assets/images/top industry-aspire/jupiter-company-1.png";
+import img15 from "../assets/images/top industry-aspire/maxresdefault.jpg";
+import img16 from "../assets/images/top industry-aspire/mccia.jpg";
+import img17 from "../assets/images/top industry-aspire/mygov_148217742545698621.jpg";
+import img18 from "../assets/images/top industry-aspire/Page-1.png";
+import img19 from "../assets/images/top industry-aspire/pma.jfif";
+import img20 from "../assets/images/top industry-aspire/razorpay_0.jpg";
+import img21 from "../assets/images/top industry-aspire/sutherland-global-services-inc-chennai-job-business-process-outsourcing-png-favpng-xPh0ZDvgVQKjKD9FsevMHtEV7.jpg";
+import img22 from "../assets/images/top industry-aspire/images.png";
+import img23 from "../assets/images/top industry-aspire/8e59d1_4283b37638af4f2db4dbd91ce159b4e6~mv2.jpg";
+import img24 from "../assets/images/top industry-aspire/partner-at-symbol.jpg";
+import img25 from "../assets/images/top industry-aspire/images-1.png";
 
 const Partners = () => {
-  // Industry Partner logos
+  // All 25 Industry Partner logos
   const partnerLogos = [
-    { name: "Amazon", logo: amazonImg },
-    { name: "Bajaj Finserv", logo: bajajImg },
-    { name: "Capgemini", logo: capgeminiImg },
-    { name: "CARS24", logo: cars24Img },
-    { name: "CII", logo: ciiImg },
-    { name: "CTMS Connect", logo: ctmsImg },
-    { name: "DICCI", logo: dicciImg },
-    { name: "GE Healthcare", logo: geHealthcareImg },
-    { name: "IDEA", logo: ideaImg },
-    { name: "India CSR", logo: indiacsrImg },
-    { name: "Jupiter", logo: jupiterImg },
-    { name: "MCCIA", logo: mcciaImg },
-    { name: "MyGov", logo: mygovImg },
-    { name: "PMA", logo: pmaImg },
-    { name: "Razorpay", logo: razorpayImg },
-    { name: "Sutherland", logo: sutherlandImg },
+    { name: "Partner 1", logo: img1 },
+    { name: "Partner 2", logo: img2 },
+    { name: "Partner 3", logo: img3 },
+    { name: "Amazon", logo: img4 },
+    { name: "Bajaj Finserv", logo: img5 },
+    { name: "Capgemini", logo: img6 },
+    { name: "CARS24", logo: img7 },
+    { name: "CII", logo: img8 },
+    { name: "CTMS Connect", logo: img9 },
+    { name: "DICCI", logo: img10 },
+    { name: "GE Healthcare", logo: img11 },
+    { name: "IDEA", logo: img12 },
+    { name: "India CSR", logo: img13 },
+    { name: "Jupiter", logo: img14 },
+    { name: "Partner 15", logo: img15 },
+    { name: "MCCIA", logo: img16 },
+    { name: "MyGov", logo: img17 },
+    { name: "Partner 18", logo: img18 },
+    { name: "PMA", logo: img19 },
+    { name: "Razorpay", logo: img20 },
+    { name: "Sutherland", logo: img21 },
+    { name: "Partner 22", logo: img22 },
+    { name: "Partner 23", logo: img23 },
+    { name: "Partner 24", logo: img24 },
+    { name: "Partner 25", logo: img25 },
     // Duplicate for seamless scrolling
-    { name: "Amazon", logo: amazonImg },
-    { name: "Bajaj Finserv", logo: bajajImg },
-    { name: "Capgemini", logo: capgeminiImg },
-    { name: "CARS24", logo: cars24Img },
-    { name: "CII", logo: ciiImg },
-    { name: "CTMS Connect", logo: ctmsImg },
-    { name: "DICCI", logo: dicciImg },
-    { name: "GE Healthcare", logo: geHealthcareImg },
-    { name: "IDEA", logo: ideaImg },
-    { name: "India CSR", logo: indiacsrImg },
-    { name: "Jupiter", logo: jupiterImg },
-    { name: "MCCIA", logo: mcciaImg },
-    { name: "MyGov", logo: mygovImg },
-    { name: "PMA", logo: pmaImg },
-    { name: "Razorpay", logo: razorpayImg },
-    { name: "Sutherland", logo: sutherlandImg }
+    { name: "Partner 1", logo: img1 },
+    { name: "Partner 2", logo: img2 },
+    { name: "Partner 3", logo: img3 },
+    { name: "Amazon", logo: img4 },
+    { name: "Bajaj Finserv", logo: img5 },
+    { name: "Capgemini", logo: img6 },
+    { name: "CARS24", logo: img7 },
+    { name: "CII", logo: img8 },
+    { name: "CTMS Connect", logo: img9 },
+    { name: "DICCI", logo: img10 },
+    { name: "GE Healthcare", logo: img11 },
+    { name: "IDEA", logo: img12 },
+    { name: "India CSR", logo: img13 },
+    { name: "Jupiter", logo: img14 },
+    { name: "Partner 15", logo: img15 },
+    { name: "MCCIA", logo: img16 },
+    { name: "MyGov", logo: img17 },
+    { name: "Partner 18", logo: img18 },
+    { name: "PMA", logo: img19 },
+    { name: "Razorpay", logo: img20 },
+    { name: "Sutherland", logo: img21 },
+    { name: "Partner 22", logo: img22 },
+    { name: "Partner 23", logo: img23 },
+    { name: "Partner 24", logo: img24 },
+    { name: "Partner 25", logo: img25 }
   ];
 
   return (
@@ -97,7 +124,7 @@ const Partners = () => {
         }
         
         .animate-scroll {
-          animation: scroll 10s linear infinite;
+          animation: scroll 5s linear infinite;
         }
         
         .animate-scroll:hover {
