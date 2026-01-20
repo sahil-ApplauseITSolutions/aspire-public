@@ -60,17 +60,9 @@ const Partners = () => {
         
         {/* HEADER */}
         <div className="text-center mb-12">
-          <span className="inline-block bg-[#fff1e4] text-[#EF7F2C] text-sm px-6 py-2 rounded-full mb-4">
-            Our Partners
-          </span>
-          
-          <h2 className="text-3xl lg:text-4xl font-bold text-[#3D1717] mb-4">
-            Top Industry Partners
+          <h2 className="text-3xl lg:text-3xl font-bold text-[#3D1717]">
+            Industry Associations & Collaborations
           </h2>
-          
-          <p className="text-[#3D1717] opacity-70 max-w-2xl mx-auto">
-            Collaborating with leading organizations to provide world-class training and placement opportunities
-          </p>
         </div>
 
         {/* AUTO-SCROLLING PARTNERS LOGOS */}

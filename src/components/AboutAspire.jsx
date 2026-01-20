@@ -22,37 +22,27 @@ const AboutAspire = () => {
                     {/* LEFT TEXT */}
                     <div className="text-gray-700 leading-relaxed space-y-6 text-[15px] lg:text-base">
                         <div className="group">
-                            <p className="text-body group-hover:text-gray-800 transition-colors duration-300 hover:scale-[1.02] transform transition-transform">
+                            <p className="text-body group-hover:text-gray-800 transition-colors duration-300 hover:scale-[1.02] transform transition-transform text-justify">
                                 Aspire Knowledge and Skills India Pvt. Ltd. commonly known as ASPIRE represent network of the industry and this journey of networking started with the networking company Jetking since 1997. We are a prestigious AICTE partner, NSDC funded and BOAT partner and hold affiliations across more than seven distinct sector skill councils.
                             </p>
                         </div>
 
-                        <div className="group">
-                            <p className="text-body group-hover:text-gray-800 transition-colors duration-300 hover:scale-[1.02] transform transition-transform">
-                                Our programs are designed to equip students and professionals with
-                                industry-relevant skills, ensuring they are job-ready and
-                                competitive in today&apos;s dynamic market. Through our extensive
-                                network of partner colleges and corporate tie-ups, we facilitate
-                                seamless transitions from education to employment.
-                            </p>
-                        </div>
-
-                        <div className="group">
-                            <p className="text-body group-hover:text-gray-800 transition-colors duration-300 hover:scale-[1.02] transform transition-transform">
-                                With a focus on practical training, mentorship, and placement
-                                support, Aspire Knowledge & Skills has successfully transformed
-                                thousands of lives across India. Our commitment to excellence and
-                                innovation drives us to continuously evolve our programs to meet
-                                emerging industry needs.
-                            </p>
-                        </div>
-
-                        {/* CTA Button */}
-                        <div className="pt-4">
-                            <button className="group bg-gradient-to-r from-[#EF7F2C] to-[#d6691f] text-white px-8 py-3 rounded-xl font-bold hover:from-orange-600 hover:to-orange-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
-                                Learn More About Us
-                                <span className="inline-block ml-2 group-hover:translate-x-1 transition-transform duration-300">→</span>
-                            </button>
+                        <div className="mt-2">
+                            <h3 className="font-bold text-[#3D1717] text-base mb-3">Our Core Strengths:</h3>
+                            
+                            <div className="space-y-3">
+                                <p className="text-body text-justify">
+                                    <span className="font-bold text-orange-500">Employability Enablement and Entrepreneurship Development:</span> We enable employability through our industry centric portal and industry association network.
+                                </p>
+                                
+                                <p className="text-body text-justify">
+                                    <span className="font-bold text-orange-500">NEP Alignment:</span> We implement mentorship-based self-learning models aligned with the National Education Policy.
+                                </p>
+                                
+                                <p className="text-body text-justify">
+                                    <span className="font-bold text-orange-500">Demand-Driven Skill Development:</span> We seamlessly integrate industry relevant credit sanctioned courses into formal education using strategic alliance of our 250+ companies, ensuring students are job-ready.
+                                </p>
+                            </div>
                         </div>
                     </div>
 

@@ -1,35 +1,66 @@
 import { ChevronLeft, ChevronRight, Play } from "lucide-react";
+import { useState } from "react";
 
-import heroImg from "../assets/hero.jpg";
+// Import videos
+import ashishVideo from "../assets/videos/Ashish Kavishkar Intern.mp4";
+import asmitaVideo from "../assets/videos/Asmita Intern.mp4";
+import balajiVideo from "../assets/videos/Balaji Karpe Intern.mp4";
+import siddharthVideo from "../assets/videos/Siddharth Intern.mp4";
+import yashVideo from "../assets/videos/Yash Sahasrabudhe Intern.mp4";
 
 const journeys = [
     {
         tag: "Journey",
-        title: "From Training to Tech Giant",
-        time: "3:45",
-        image: heroImg,
+        title: "Ashish Kavishkar - Internship Journey",
+        video: ashishVideo,
     },
     {
         tag: "Success",
-        title: "Corporate Placement Success",
-        time: "4:20",
-        image: heroImg,
+        title: "Asmita - Internship Success",
+        video: asmitaVideo,
     },
     {
-        tag: "Training",
-        title: "Skill Development Story",
-        time: "5:10",
-        image: heroImg,
+        tag: "Journey",
+        title: "Balaji Karpe - Internship Experience",
+        video: balajiVideo,
+    },
+    {
+        tag: "Success",
+        title: "Siddharth - Internship Journey",
+        video: siddharthVideo,
+    },
+    {
+        tag: "Journey",
+        title: "Yash Sahasrabudhe - Internship Story",
+        video: yashVideo,
     },
 ];
 
 const InternshipJourneys = () => {
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const [playingVideo, setPlayingVideo] = useState(null);
+
+    const itemsPerView = 3;
+    const maxIndex = Math.max(0, journeys.length - itemsPerView);
+
+    const nextSlide = () => {
+        setCurrentIndex((prev) => Math.min(prev + 1, maxIndex));
+    };
+
+    const prevSlide = () => {
+        setCurrentIndex((prev) => Math.max(prev - 1, 0));
+    };
+
+    const handlePlayVideo = (index) => {
+        setPlayingVideo(index);
+    };
+
     return (
         <section className="bg-[#fffaf4] py-20 pb-8 relative overflow-hidden">
             <div className="max-w-6xl mx-auto px-6 relative">
 
                 {/* SECTION TITLE */}
-                <h3 className="text-center text-[#3b2a1a] font-medium mb-12">
+                <h3 className="text-center text-3xl lg:text-4xl font-bold text-[#3b2a1a] mb-12">
                     Internship & Placement Journeys
                 </h3>
 
@@ -37,55 +68,75 @@ const InternshipJourneys = () => {
                 <div className="relative flex items-center">
 
                     {/* LEFT ARROW */}
-                    <button className="absolute left-[-80px] top-1/2 -translate-y-1/2 bg-[#EF7F2C] text-white w-10 h-10 rounded-full shadow-lg hover:bg-[#d6691f] transition-all z-10 flex items-center justify-center">
+                    <button 
+                        onClick={prevSlide}
+                        disabled={currentIndex === 0}
+                        className="absolute left-[-80px] top-1/2 -translate-y-1/2 bg-[#EF7F2C] text-white w-10 h-10 rounded-full shadow-lg hover:bg-[#d6691f] transition-all z-10 flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed">
                         <ChevronLeft size={18} />
                     </button>
 
                     {/* CARDS CONTAINER */}
-                    <div className="flex gap-6 justify-center w-full">
-                        {journeys.map((item, index) => (
-                            <div
-                                key={index}
-                                className="bg-white rounded-[16px] shadow-md overflow-hidden w-[346px] h-[242px] flex-shrink-0"
-                            >
-                                {/* IMAGE */}
-                                <div className="relative">
-                                    <img
-                                        src={item.image}
-                                        alt={item.title}
-                                        className="w-full h-[180px] object-cover"
-                                    />
+                    <div className="overflow-hidden w-full">
+                        <div 
+                            className="flex gap-6 transition-transform duration-500 ease-in-out"
+                            style={{ transform: `translateX(-${currentIndex * (346 + 24)}px)` }}
+                        >
+                            {journeys.map((item, index) => (
+                                <div
+                                    key={index}
+                                    className="bg-white rounded-[16px] shadow-md overflow-hidden w-[346px] h-[242px] flex-shrink-0"
+                                >
+                                    {/* VIDEO */}
+                                    <div className="relative">
+                                        {playingVideo === index ? (
+                                            <video
+                                                src={item.video}
+                                                controls
+                                                autoPlay
+                                                className="w-full h-[180px] object-cover"
+                                                onEnded={() => setPlayingVideo(null)}
+                                            />
+                                        ) : (
+                                            <>
+                                                <video
+                                                    src={item.video}
+                                                    className="w-full h-[180px] object-cover"
+                                                />
 
-                                    {/* TAG */}
-                                    <span className="absolute top-3 left-3 bg-[#3b2a1a] text-white text-xs px-3 py-1 rounded-full">
-                                        {item.tag}
-                                    </span>
+                                                {/* TAG */}
+                                                <span className="absolute top-3 left-3 bg-[#3b2a1a] text-white text-xs px-3 py-1 rounded-full">
+                                                    {item.tag}
+                                                </span>
 
-                                    {/* PLAY BUTTON */}
-                                    <div className="absolute inset-0 flex items-center justify-center">
-                                        <div className="bg-white w-12 h-12 rounded-full flex items-center justify-center shadow">
-                                            <Play className="text-[#EF7F2C] ml-1" size={16} />
-                                        </div>
+                                                {/* PLAY BUTTON */}
+                                                <div 
+                                                    className="absolute inset-0 flex items-center justify-center cursor-pointer"
+                                                    onClick={() => handlePlayVideo(index)}
+                                                >
+                                                    <div className="bg-white w-12 h-12 rounded-full flex items-center justify-center shadow hover:scale-110 transition-transform">
+                                                        <Play className="text-[#EF7F2C] ml-1" size={16} fill="#EF7F2C" />
+                                                    </div>
+                                                </div>
+                                            </>
+                                        )}
                                     </div>
 
-                                    {/* TIME */}
-                                    <span className="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-2 py-1 rounded">
-                                        {item.time}
-                                    </span>
+                                    {/* TITLE */}
+                                    <div className="p-4">
+                                        <h4 className="font-medium text-[#3b2a1a] text-sm">
+                                            {item.title}
+                                        </h4>
+                                    </div>
                                 </div>
-
-                                {/* TITLE */}
-                                <div className="p-4">
-                                    <h4 className="font-medium text-[#3b2a1a] text-sm">
-                                        {item.title}
-                                    </h4>
-                                </div>
-                            </div>
-                        ))}
+                            ))}
+                        </div>
                     </div>
 
                     {/* RIGHT ARROW */}
-                    <button className="absolute right-[-80px] top-1/2 -translate-y-1/2 bg-[#EF7F2C] text-white w-10 h-10 rounded-full shadow-lg hover:bg-[#d6691f] transition-all z-10 flex items-center justify-center">
+                    <button 
+                        onClick={nextSlide}
+                        disabled={currentIndex === maxIndex}
+                        className="absolute right-[-80px] top-1/2 -translate-y-1/2 bg-[#EF7F2C] text-white w-10 h-10 rounded-full shadow-lg hover:bg-[#d6691f] transition-all z-10 flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed">
                         <ChevronRight size={18} />
                     </button>
 
