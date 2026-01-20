@@ -118,13 +118,13 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
             <button 
               onClick={() => navigate('/programs')}
-              className="group bg-gradient-to-r from-[#EF7F2C] to-[#d6691f] text-white px-5 sm:px-7 py-2.5 sm:py-2 rounded-xl font-bold hover:from-[#d6691f] hover:to-[#c55a1a] transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl text-sm sm:text-base">
+              className="group bg-gradient-to-r from-[#EF7F2C] to-[#d6691f] text-white px-5 sm:px-7 py-2 sm:py-2.5 rounded-xl font-bold hover:from-[#d6691f] hover:to-[#c55a1a] transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl text-sm sm:text-base">
               Explore Programs 
               <BookOpen className="w-5 h-5 ml-2 inline-block" />
             </button>
             <button 
               onClick={() => setIsEnquiryModalOpen(true)}
-              className="group border-2 border-[#3D1717] text-[#3D1717] px-5 sm:px-7 py-2.5 sm:py-3 rounded-xl font-bold hover:bg-[#3D1717] hover:text-white transform hover:scale-105 transition-all duration-300 text-sm sm:text-base">
+              className="group border border-[#3D1717] text-[#3D1717] px-5 sm:px-7 py-2 sm:py-2.5 rounded-xl font-bold hover:bg-[#3D1717] hover:text-white transform hover:scale-105 transition-all duration-300 text-sm sm:text-base">
               Enquiry Now
               <Mail className="w-5 h-5 ml-2 inline-block" />
             </button>
