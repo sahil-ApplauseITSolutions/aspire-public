@@ -73,7 +73,7 @@ const Testimonials = () => {
           <div className="relative bg-[#fffaf4] rounded-2xl p-8 shadow-md">
 
             {/* QUOTE */}
-            <p className="text-gray-700 leading-relaxed mb-6">
+            <p className="text-gray-700 leading-relaxed mb-6 text-justify">
               {testimonials[currentIndex].quote}
             </p>
 
@@ -118,7 +118,7 @@ const Testimonials = () => {
             </div>
 
             {/* MESSAGE */}
-            <p className="text-gray-700 text-center leading-relaxed mb-6">
+            <p className="text-gray-700 text-center leading-relaxed mb-6 text-justify">
               {mentors[currentIndex].message}
             </p>
 
