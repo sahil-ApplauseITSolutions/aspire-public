@@ -2,7 +2,6 @@ import contactMailIcon from "../assets/images/aspire-doc/contact -mail.svg";
 import contactCallIcon from "../assets/images/aspire-doc/contact-call.svg";
 import contactAddressIcon from "../assets/images/aspire-doc/contact-address.svg";
 import contactWebsiteIcon from "../assets/images/aspire-doc/contact-website.svg";
-import { Clock } from "lucide-react";
 
 const ContactInfo = () => {
   return (
@@ -10,72 +9,66 @@ const ContactInfo = () => {
       <div className="max-w-7xl mx-auto px-6">
         
         {/* SECTION TITLE */}
-        <h2 className="text-2xl font-bold text-[#3D1717] mb-12">
+        <h2 className="text-2xl font-bold text-[#3D1717] mb-6">
           Contact Information
         </h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           
-          {/* LEFT SIDE - Contact Details in 2x2 Grid */}
-          <div className="grid grid-cols-2 gap-6">
+          {/* LEFT SIDE - Contact Details in 2 columns */}
+          <div className="grid grid-cols-2 gap-x-12 gap-y-6">
             
-            {/* EMAIL */}
-            <div className="flex items-start gap-3">
-              <div className="w-10 h-10 bg-[#fff1e4] rounded-full flex items-center justify-center flex-shrink-0">
-                <img src={contactMailIcon} alt="Email" className="w-4 h-4" />
+            {/* LEFT COLUMN */}
+            <div className="space-y-6">
+              {/* EMAIL */}
+              <div className="flex items-start gap-3">
+                <div className="w-10 h-10 bg-[#fff1e4] rounded-full flex items-center justify-center flex-shrink-0">
+                  <img src={contactMailIcon} alt="Email" className="w-4 h-4" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-[#3D1717] mb-1 text-sm">Email</h3>
+                  <p className="text-[#3D1717] opacity-70 text-sm">info@aspireks.com</p>
+                </div>
               </div>
-              <div>
-                <h3 className="font-semibold text-[#3D1717] mb-1 text-sm">Email</h3>
-                <p className="text-[#3D1717] opacity-70 text-sm">info@aspireks.com</p>
+
+              {/* ADDRESS */}
+              <div className="flex items-start gap-3">
+                <div className="w-10 h-10 bg-[#fff1e4] rounded-full flex items-center justify-center flex-shrink-0">
+                  <img src={contactAddressIcon} alt="Address" className="w-4 h-4" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-[#3D1717] mb-1 text-sm">Address</h3>
+                  <div className="text-[#3D1717] opacity-70 text-sm leading-relaxed">
+                    <p>Aspire Knowledge & Skills India Pvt. Ltd.</p>
+                    <p>1204, J.M Road, Kamla Arcade, 3rd Floor, Office No. 301-305, Opp. Bal</p>
+                    <p>Gandharva Rang Mandir, Deccan,</p>
+                    <p>Pune - 411 004, Maharashtra, India</p>
+                  </div>
+                </div>
               </div>
             </div>
 
-            {/* PHONE */}
-            <div className="flex items-start gap-3">
-              <div className="w-10 h-10 bg-[#fff1e4] rounded-full flex items-center justify-center flex-shrink-0">
-                <img src={contactCallIcon} alt="Phone" className="w-4 h-4" />
+            {/* RIGHT COLUMN */}
+            <div className="space-y-6">
+              {/* PHONE */}
+              <div className="flex items-start gap-3">
+                <div className="w-10 h-10 bg-[#fff1e4] rounded-full flex items-center justify-center flex-shrink-0">
+                  <img src={contactCallIcon} alt="Phone" className="w-4 h-4" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-[#3D1717] mb-1 text-sm">Phone</h3>
+                  <p className="text-[#3D1717] opacity-70 text-sm">020-25530291</p>
+                </div>
               </div>
-              <div>
-                <h3 className="font-semibold text-[#3D1717] mb-1 text-sm">Phone</h3>
-                <p className="text-[#3D1717] opacity-70 text-sm">020-25530291</p>
-              </div>
-            </div>
 
-            {/* WORKING HOURS */}
-            <div className="flex items-start gap-3">
-              <div className="w-10 h-10 bg-[#fff1e4] rounded-full flex items-center justify-center flex-shrink-0">
-                <Clock size={16} className="text-[#EF7F2C]" />
-              </div>
-              <div>
-                <h3 className="font-semibold text-[#3D1717] mb-1 text-sm">Working Hours</h3>
-                <p className="text-[#3D1717] opacity-70 text-sm">Monday - Friday: 9:00 AM - 6:00 PM</p>
-                <p className="text-[#3D1717] opacity-70 text-sm">Saturday: 9:00 AM - 2:00 PM</p>
-              </div>
-            </div>
-
-            {/* WEBSITE */}
-            <div className="flex items-start gap-3">
-              <div className="w-10 h-10 bg-[#fff1e4] rounded-full flex items-center justify-center flex-shrink-0">
-                <img src={contactWebsiteIcon} alt="Website" className="w-4 h-4" />
-              </div>
-              <div>
-                <h3 className="font-semibold text-[#3D1717] mb-1 text-sm">Website</h3>
-                <p className="text-[#3D1717] opacity-70 text-sm">www.aspireks.com</p>
-              </div>
-            </div>
-
-            {/* ADDRESS - Spans both columns */}
-            <div className="col-span-2 flex items-start gap-3">
-              <div className="w-10 h-10 bg-[#fff1e4] rounded-full flex items-center justify-center flex-shrink-0">
-                <img src={contactAddressIcon} alt="Address" className="w-4 h-4" />
-              </div>
-              <div>
-                <h3 className="font-semibold text-[#3D1717] mb-1 text-sm">Address</h3>
-                <div className="text-[#3D1717] opacity-70 text-sm leading-relaxed">
-                  <p>Aspire Knowledge & Skills India Pvt. Ltd.</p>
-                  <p>1204, J.M Road, Kamla Arcade, 3rd Floor, Office No. 301-305, Opp. Bal</p>
-                  <p>Gandharva Rang Mandir, Deccan,</p>
-                  <p>Pune - 411 004, Maharashtra, India</p>
+              {/* WEBSITE */}
+              <div className="flex items-start gap-3">
+                <div className="w-10 h-10 bg-[#fff1e4] rounded-full flex items-center justify-center flex-shrink-0">
+                  <img src={contactWebsiteIcon} alt="Website" className="w-4 h-4" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-[#3D1717] mb-1 text-sm">Website</h3>
+                  <p className="text-[#3D1717] opacity-70 text-sm">www.aspireks.com</p>
                 </div>
               </div>
             </div>
@@ -88,7 +81,7 @@ const ContactInfo = () => {
               className="bg-gray-200 rounded-lg overflow-hidden"
               style={{
                 width: '568px',
-                height: '298px'
+                height: '260px'
               }}
             >
               {/* MAP PLACEHOLDER - Replace with actual Google Maps embed */}
