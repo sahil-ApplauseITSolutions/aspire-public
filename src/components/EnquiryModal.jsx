@@ -166,24 +166,24 @@ const EnquiryModal = ({ isOpen, onClose }) => {
 
   return (
     <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black bg-opacity-60 backdrop-blur-sm">
-      <div className="relative w-full max-w-xl bg-white rounded-2xl shadow-2xl animate-fade-in-up">
+      <div className="relative w-full max-w-sm sm:max-w-md mx-4 bg-white rounded-2xl shadow-2xl animate-fade-in-up">
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 text-gray-500 hover:text-gray-800 transition-colors z-10"
+          className="absolute top-3 right-3 text-gray-500 hover:text-gray-800 transition-colors z-10"
           aria-label="Close modal"
         >
-          <X size={24} strokeWidth={2.5} />
+          <X size={20} strokeWidth={2.5} />
         </button>
 
         {/* Modal Content */}
-        <div className="p-6 md:p-8">
-          <form onSubmit={handleSubmit} className="space-y-4">
+        <div className="p-3 sm:p-4 md:p-6">
+          <form onSubmit={handleSubmit} className="space-y-3">
             {/* Name and Email Row */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3">
               {/* Name Field */}
               <div>
-                <label className="block text-gray-700 font-medium mb-2 text-sm">
+                <label className="block text-gray-700 font-medium mb-1 text-xs sm:text-sm">
                   Your Name <span className="text-red-500">*</span>
                 </label>
                 <input
@@ -193,14 +193,14 @@ const EnquiryModal = ({ isOpen, onClose }) => {
                   onChange={handleChange}
                   onBlur={handleBlur}
                   placeholder="Enter your name"
-                  className="w-full px-4 py-3 bg-gray-50 border-0 rounded-lg text-gray-700 text-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-500 transition-all"
+                  className="w-full px-2 py-2 sm:px-3 sm:py-2.5 bg-gray-50 border-0 rounded-lg text-gray-700 text-xs sm:text-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-500 transition-all"
                 />
                 {errors.name && <p className="text-red-500 text-xs mt-1">{errors.name}</p>}
               </div>
 
               {/* Email Field */}
               <div>
-                <label className="block text-gray-700 font-medium mb-2 text-sm">
+                <label className="block text-gray-700 font-medium mb-1 text-xs sm:text-sm">
                   Email Address <span className="text-red-500">*</span>
                 </label>
                 <input
@@ -210,7 +210,7 @@ const EnquiryModal = ({ isOpen, onClose }) => {
                   onChange={handleChange}
                   onBlur={handleBlur}
                   placeholder="your@email.com"
-                  className="w-full px-4 py-3 bg-gray-50 border-0 rounded-lg text-gray-700 text-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-500 transition-all"
+                  className="w-full px-2 py-2 sm:px-3 sm:py-2.5 bg-gray-50 border-0 rounded-lg text-gray-700 text-xs sm:text-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-500 transition-all"
                 />
                 {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email}</p>}
               </div>
