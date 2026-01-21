@@ -123,7 +123,7 @@ const Partners = () => {
         }
         
         .animate-scroll {
-          animation: scroll 20s linear infinite;
+          animation: scroll 30s linear infinite;
         }
         
         .animate-scroll:hover {
