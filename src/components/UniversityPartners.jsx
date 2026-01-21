@@ -1,9 +1,9 @@
 // Import all university partner images
-import university1Img from "../assets/images/Top university partners/0ceb41d809ce2ebd6de2987461bd3f484c9bb08d6b4c59b533dc88fe12ee592b1_1711981271_20453561_logo.jpg";
-import university2Img from "../assets/images/Top university partners/AfOa2txJ_400x400.png";
+import university1Img from "../assets/images/Top university partners/university-logo-1.png";
+import university2Img from "../assets/images/Top university partners/university-logo-2.png";
 import iiitAllahabadImg from "../assets/images/Top university partners/IIIT-Allahabad.png";
-import iitBhuImg from "../assets/images/Top university partners/IIT-BHU_Logo.svg.png";
-import vtuImg from "../assets/images/Top university partners/VTUresults2017.png";
+import iitBhuImg from "../assets/images/Top university partners/IIT-BHU.png";
+import vtuImg from "../assets/images/Top university partners/VTU.png";
 
 const UniversityPartners = () => {
   // University Partner logos

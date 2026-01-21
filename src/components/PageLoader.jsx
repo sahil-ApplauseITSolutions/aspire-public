@@ -17,7 +17,7 @@ const PageLoader = () => {
         </div>
         
         <p className="text-gray-600 text-sm mb-6 font-medium">
-          Empowering Youth Through Knowledge
+         Creating Pathways to Employability
         </p>
         
         {/* Loading status */}

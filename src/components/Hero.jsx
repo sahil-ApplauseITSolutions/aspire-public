@@ -105,7 +105,7 @@ const Hero = () => {
         {/* LEFT CONTENT */}
         <div className="text-center lg:text-left">
           <span className="inline-flex items-center gap-2 bg-[#fff1e4] text-[#EF7F2C] text-xs sm:text-sm px-3 sm:px-4 py-2 rounded-full mb-4 sm:mb-5 font-small">
-            ● Empowering Youth Through Knowledge
+            ● Creating Pathways to Employability
           </span>
 
           <h1 className="text-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl text-[#3D1717] leading-tight mb-4 sm:mb-5">
