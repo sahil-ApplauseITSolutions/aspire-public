@@ -1,15 +1,18 @@
-import aspire1Img from "../assets/images/aspire-1.jpg";
-import aspire2Img from "../assets/images/aspire-2.jpg";
-import aspire3Img from "../assets/images/aspire-3.jpg";
-import drNirmaljeetImg from "../assets/images/DrNirmaljeet.jpg";
-import dsc0010Img from "../assets/images/DSC_0010M.png";
-import event2Img from "../assets/images/event2 (1).png";
+import { useNavigate } from 'react-router-dom';
+// Import 6 images from gallery categories
+import ac1 from "../assets/images/Aspire selected photos/Academic Collaboration/Chairman AICTE, Dr. T G Sitharam.jpeg";
+import aw1 from "../assets/images/Aspire selected photos/Awards/!. Skill India Icon Award by Governor of Maharashtra Shree Bhagat Singh Koshyari .jpeg";
+import atc2 from "../assets/images/Aspire selected photos/Aspire Training Center/Celebrating 25 Years .jpg";
+import ew13 from "../assets/images/Aspire selected photos/Events & Workshops/padmashree Dr.Milind Kamble , Chairman & Founder DICCI  .jpeg";
+import ind17 from "../assets/images/Aspire selected photos/Industry/Shri. Prashanth Prakash Accel Parnter.jpeg";
+import td8 from "../assets/images/Aspire selected photos/Towering dignitaries/Governor of Maharashtra Shree Bhagat Singh Koshyari .jpg";
 
 const LifeAtAspire = () => {
-  // Using actual gallery images from Aspire events and activities
+  const navigate = useNavigate();
+  
+  // Using 6 images from gallery categories
   const galleryImages = [
-    aspire1Img, aspire2Img, aspire3Img,
-    drNirmaljeetImg, dsc0010Img, event2Img
+    ac1, aw1, atc2, ew13, ind17, td8
   ];
 
   return (
@@ -60,7 +63,10 @@ const LifeAtAspire = () => {
 
         {/* VIEW GALLERY BUTTON */}
         <div className="text-center">
-          <button className="bg-[#EF7F2C] text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg font-medium hover:bg-[#d6691f] transition-colors inline-flex items-center gap-2 text-sm sm:text-base">
+          <button 
+            onClick={() => navigate('/gallery')}
+            className="bg-[#EF7F2C] text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg font-medium hover:bg-[#d6691f] transition-colors inline-flex items-center gap-2 text-sm sm:text-base"
+          >
             View Gallery
             <svg width="14" height="14" className="sm:w-4 sm:h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
