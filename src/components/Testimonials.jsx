@@ -94,10 +94,10 @@ const Testimonials = () => {
               </div>
             </div>
 
-            {/* LEFT ARROW */}
+            {/* LEFT ARROW - DESKTOP ONLY */}
             <button 
               onClick={prevSlide}
-              className="absolute -left-6 top-1/2 -translate-y-1/2 bg-[#EF7F2C] text-white p-2 rounded-full shadow hover:bg-orange-600 transition-colors"
+              className="hidden lg:flex absolute -left-6 top-1/2 -translate-y-1/2 bg-[#EF7F2C] text-white p-2 rounded-full shadow hover:bg-orange-600 transition-colors"
             >
               <ChevronLeft size={20} />
             </button>
@@ -135,15 +135,31 @@ const Testimonials = () => {
               </p>
             </div>
 
-            {/* RIGHT ARROW */}
+            {/* RIGHT ARROW - DESKTOP ONLY */}
             <button 
               onClick={nextSlide}
-              className="absolute -right-6 top-1/2 -translate-y-1/2 bg-[#EF7F2C] text-white p-2 rounded-full shadow hover:bg-orange-600 transition-colors"
+              className="hidden lg:flex absolute -right-6 top-1/2 -translate-y-1/2 bg-[#EF7F2C] text-white p-2 rounded-full shadow hover:bg-orange-600 transition-colors"
             >
               <ChevronRight size={20} />
             </button>
           </div>
 
+        </div>
+
+        {/* BOTTOM NAVIGATION BUTTONS - MOBILE ONLY */}
+        <div className="lg:hidden flex justify-center items-center gap-4 mt-8">
+          <button 
+            onClick={prevSlide}
+            className="bg-[#EF7F2C] text-white px-6 py-3 rounded-full shadow-lg hover:bg-[#d6691f] transition-all flex items-center justify-center"
+          >
+            <ChevronLeft size={20} />
+          </button>
+          <button 
+            onClick={nextSlide}
+            className="bg-[#EF7F2C] text-white px-6 py-3 rounded-full shadow-lg hover:bg-[#d6691f] transition-all flex items-center justify-center"
+          >
+            <ChevronRight size={20} />
+          </button>
         </div>
       </div>
     </section>
