@@ -22,7 +22,7 @@ const programs = [
     },
     {
         title: "UI/UX Developer",
-        desc: "This program is designed to build a strong foundation in modern UI/UX development.",
+        desc: "This program UI/UX Developer is designed to build a strong foundation in modern UI/UX development.",
         icon: <Palette size={20} />,
     },
     {
