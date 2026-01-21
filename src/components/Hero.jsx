@@ -167,6 +167,16 @@ const Hero = () => {
                     </button>
                   </div>
 
+                  {/* INFO HINT - Mobile only */}
+                  <div className={`absolute top-3 right-3 z-10 transition-opacity duration-500 ${activeSlide === index ? 'opacity-0' : 'opacity-100'}`}>
+                    <div className="bg-white/90 backdrop-blur-sm px-2 py-1 rounded-full shadow-md flex items-center gap-1 animate-pulse">
+                      <svg className="w-3 h-3 text-[#EF7F2C]" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                      </svg>
+                      <span className="text-[10px] font-medium text-[#3D1717]">See details</span>
+                    </div>
+                  </div>
+
                   {/* TOUCH OVERLAY */}
                   <div className={`absolute inset-0 bg-gradient-to-br from-white/95 to-orange-50/95 rounded-2xl p-4 
                                   transition-all duration-500 transform backdrop-blur-sm
@@ -201,6 +211,16 @@ const Hero = () => {
               <button className="flex items-center gap-1 sm:gap-2 bg-white px-2 sm:px-4 py-1.5 sm:py-2 rounded-xl shadow-lg text-xs sm:text-sm font-semibold border border-orange-200">
                 {currentSlideData.badge.split(' ')[0]} <span className="hidden sm:inline">{currentSlideData.badge.split(' ').slice(1).join(' ')}</span>
               </button>
+            </div>
+
+            {/* INFO HINT - Desktop only */}
+            <div className="absolute top-3 right-3 z-10 group-hover:opacity-0 transition-opacity duration-500 pointer-events-none">
+              <div className="bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-full shadow-md flex items-center gap-1.5 animate-pulse">
+                <svg className="w-4 h-4 text-[#EF7F2C]" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                </svg>
+                <span className="text-xs font-medium text-[#3D1717]">See details</span>
+              </div>
             </div>
 
             {/* OVERLAY - Shows on hover (desktop) and touch (mobile) */}
