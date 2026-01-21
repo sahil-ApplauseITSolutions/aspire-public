@@ -1,162 +1,31 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import aspireBgImg from "../assets/images/aspire-bg-.png";
+import { galleryData } from "../data/galleryData";
 
 const Gallery = () => {
-  const [activeTab, setActiveTab] = useState('All');
+  const [activeTab, setActiveTab] = useState('Academic Collaboration');
   const [selectedImage, setSelectedImage] = useState(null);
+  const tabsContainerRef = useRef(null);
 
-  const tabs = ['All', 'Events', 'Workshops', 'Infrastructure', 'Awards', 'CSR'];
-
-  // Gallery data using public folder images (no imports needed)
-  const galleryData = {
-    All: [
-      {
-        id: 1,
-        category: 'Awards',
-        alt: 'Shri Prashanth Prakash - Accel Partner',
-        src: '/ShriPrashanthPrakashAccelParnter.jpeg'
-      },
-      {
-        id: 2,
-        category: 'Workshops',
-        alt: 'Training Session',
-        src: '/n19.jpeg'
-      },
-      {
-        id: 3,
-        category: 'Events',
-        alt: 'Event Ceremony',
-        src: '/event12.jpg'
-      },
-      {
-        id: 4,
-        category: 'Events',
-        alt: 'Award Function',
-        src: '/event18.jpg'
-      },
-      {
-        id: 5,
-        category: 'Infrastructure',
-        alt: 'Training Center',
-        src: '/aspire-1.jpg'
-      },
-      {
-        id: 6,
-        category: 'Infrastructure',
-        alt: 'Computer Lab',
-        src: '/aspire-2.jpg'
-      },
-      {
-        id: 7,
-        category: 'Infrastructure',
-        alt: 'Classroom Setup',
-        src: '/aspire-3.jpg'
-      },
-      {
-        id: 8,
-        category: 'Workshops',
-        alt: 'Technical Workshop',
-        src: '/n14.jpg'
-      },
-      {
-        id: 9,
-        category: 'Workshops',
-        alt: 'Skill Development',
-        src: '/n16.jpeg'
-      },
-      {
-        id: 10,
-        category: 'Workshops',
-        alt: 'Web Development Training',
-        src: '/WD1.jpg'
-      },
-      {
-        id: 11,
-        category: 'Awards',
-        alt: 'Padmashree Award Ceremony',
-        src: '/padmashree1.jpeg'
-      }
-    ],
-    Events: [
-      {
-        id: 3,
-        category: 'Events',
-        alt: 'Event Ceremony',
-        src: '/event12.jpg'
-      },
-      {
-        id: 4,
-        category: 'Events',
-        alt: 'Award Function',
-        src: '/event18.jpg'
-      }
-    ],
-    Workshops: [
-      {
-        id: 2,
-        category: 'Workshops',
-        alt: 'Training Session',
-        src: '/n19.jpeg'
-      },
-      {
-        id: 8,
-        category: 'Workshops',
-        alt: 'Technical Workshop',
-        src: '/n14.jpg'
-      },
-      {
-        id: 9,
-        category: 'Workshops',
-        alt: 'Skill Development',
-        src: '/n16.jpeg'
-      },
-      {
-        id: 10,
-        category: 'Workshops',
-        alt: 'Web Development Training',
-        src: '/WD1.jpg'
-      }
-    ],
-    Infrastructure: [
-      {
-        id: 5,
-        category: 'Infrastructure',
-        alt: 'Training Center',
-        src: '/aspire-1.jpg'
-      },
-      {
-        id: 6,
-        category: 'Infrastructure',
-        alt: 'Computer Lab',
-        src: '/aspire-2.jpg'
-      },
-      {
-        id: 7,
-        category: 'Infrastructure',
-        alt: 'Classroom Setup',
-        src: '/aspire-3.jpg'
-      }
-    ],
-    Awards: [
-      {
-        id: 1,
-        category: 'Awards',
-        alt: 'Shri Prashanth Prakash - Accel Partner',
-        src: '/ShriPrashanthPrakashAccelParnter.jpeg'
-      },
-      {
-        id: 11,
-        category: 'Awards',
-        alt: 'Padmashree Award Ceremony',
-        src: '/padmashree1.jpeg'
-      }
-    ],
-    CSR: []
-  };
+  // All categories
+  const categories = Object.keys(galleryData);
 
   const currentImages = galleryData[activeTab] || [];
+
+  // Scroll functions for category tabs
+  const scrollLeft = () => {
+    if (tabsContainerRef.current) {
+      tabsContainerRef.current.scrollBy({ left: -200, behavior: 'smooth' });
+    }
+  };
+
+  const scrollRight = () => {
+    if (tabsContainerRef.current) {
+      tabsContainerRef.current.scrollBy({ left: 200, behavior: 'smooth' });
+    }
+  };
 
   // Navigation functions for modal
   const goToNextImage = () => {
@@ -216,33 +85,49 @@ const Gallery = () => {
       {/* GALLERY CONTENT SECTION */}
       <section className="bg-white py-16 w-full">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          {/* Section Header
-          <div className="text-center mb-12">
-            <span className="inline-block bg-orange-50 text-orange-500 text-sm px-6 py-2 rounded-full mb-4 font-medium shadow-sm">
-              Our Moments
-            </span>
-            <h2 className="text-heading text-3xl lg:text-4xl xl:text-5xl text-[#3D1717] mb-4">
-              Capturing Success Stories
-            </h2>
-            <p className="text-body text-gray-600 max-w-2xl mx-auto text-base lg:text-lg">
-              Explore the moments that define our journey - from training sessions to graduation ceremonies
-            </p>
-          </div> */}
+          
+          {/* Gallery Tabs with Scroll Buttons */}
+          <div className="relative mb-12">
+            {/* Left Scroll Button */}
+            <button
+              onClick={scrollLeft}
+              className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow-lg rounded-full p-2 hover:bg-gray-50 transition-colors"
+            >
+              <svg className="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
 
-          {/* Gallery Tabs */}
-          <div className="flex flex-wrap justify-center gap-2 mb-12">
-            {tabs.map((tab) => (
-              <button
-                key={tab}
-                onClick={() => setActiveTab(tab)}
-                className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 ${activeTab === tab
-                    ? 'bg-orange-500 text-white shadow-lg'
-                    : 'bg-gray-100 text-gray-600 hover:bg-orange-100 hover:text-orange-600'
+            {/* Tabs Container */}
+            <div 
+              ref={tabsContainerRef}
+              className="flex gap-2 overflow-x-auto scrollbar-hide px-12"
+              style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+            >
+              {categories.map((category) => (
+                <button
+                  key={category}
+                  onClick={() => setActiveTab(category)}
+                  className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 whitespace-nowrap flex-shrink-0 ${
+                    activeTab === category
+                      ? 'bg-orange-500 text-white shadow-lg'
+                      : 'bg-gray-100 text-gray-600 hover:bg-orange-100 hover:text-orange-600'
                   }`}
-              >
-                {tab}
-              </button>
-            ))}
+                >
+                  {category}
+                </button>
+              ))}
+            </div>
+
+            {/* Right Scroll Button */}
+            <button
+              onClick={scrollRight}
+              className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow-lg rounded-full p-2 hover:bg-gray-50 transition-colors"
+            >
+              <svg className="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
           </div>
 
           {/* Gallery Grid */}
@@ -254,11 +139,10 @@ const Gallery = () => {
                 style={{
                   width: '301.32px',
                   height: '185.16px',
-                  backgroundColor: '#f3f4f6' // Light gray background to see container
+                  backgroundColor: '#f3f4f6'
                 }}
                 onClick={() => setSelectedImage(image)}
               >
-                {/* Force Image Display with Inline Styles */}
                 <img
                   src={image.src}
                   alt={image.alt}
@@ -272,22 +156,15 @@ const Gallery = () => {
                     left: '0',
                     zIndex: '1'
                   }}
-                  onLoad={() => {
-                    // Image loaded successfully
-                  }}
-                  onError={() => {
-                    console.error('Image failed to load:', image.alt);
-                  }}
                 />
 
-                {/* Hover Overlay with Zoom Icon */}
-                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300 flex items-center justify-center">
+                {/* Hover Overlay */}
+                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300 flex items-center justify-center z-10">
                   <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <button
                       onClick={() => setSelectedImage(image)}
                       className="bg-white text-orange-600 px-4 py-2 rounded-full font-medium hover:bg-orange-50 transition-colors text-sm flex items-center gap-2"
                     >
-                      {/* Zoom Icon */}
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
                       </svg>
@@ -297,9 +174,8 @@ const Gallery = () => {
                 </div>
 
                 {/* Image Info */}
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
-                  <h3 className="text-white font-medium text-sm">{image.alt}</h3>
-                  <p className="text-white/80 text-xs">{image.category}</p>
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4 z-10">
+                  <h3 className="text-white font-medium text-sm line-clamp-2">{image.alt}</h3>
                 </div>
               </div>
             ))}
@@ -316,15 +192,6 @@ const Gallery = () => {
               <p className="text-gray-500">No images found in this category</p>
             </div>
           )}
-
-          {/* Load More Button */}
-          {currentImages.length > 0 && (
-            <div className="text-center mt-12">
-              <button className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-8 py-3 rounded-full font-medium hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-lg hover:shadow-xl">
-                Load More Images
-              </button>
-            </div>
-          )}
         </div>
       </section>
 
@@ -335,7 +202,7 @@ const Gallery = () => {
           onClick={() => setSelectedImage(null)}
         >
           <div className="relative max-w-4xl max-h-[90vh] mx-4">
-            {/* Close Button - Better Position */}
+            {/* Close Button */}
             <button
               onClick={() => setSelectedImage(null)}
               className="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors bg-black/60 rounded-full p-3 hover:bg-black/80 z-10"
@@ -353,7 +220,7 @@ const Gallery = () => {
               onClick={(e) => e.stopPropagation()}
             />
 
-            {/* Image Info with Counter */}
+            {/* Image Info */}
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6 rounded-b-lg">
               <div className="flex justify-between items-end">
                 <div>
@@ -404,6 +271,13 @@ const Gallery = () => {
       )}
 
       <Footer />
+      
+      {/* Hide scrollbar CSS */}
+      <style>{`
+        .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+        }
+      `}</style>
     </div>
   );
 };
