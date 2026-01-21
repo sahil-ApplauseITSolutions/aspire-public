@@ -34,14 +34,16 @@ const ContactInfo = () => {
               {/* ADDRESS */}
               <div className="flex items-start gap-3">
                 <div className="w-10 h-10 bg-[#fff1e4] rounded-full flex items-center justify-center flex-shrink-0">
-                  <img src={contactAddressIcon} alt="Address" className="w-4 h-4" />
+                  <svg className="w-5 h-5 text-[#EF7F2C]" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                  </svg>
                 </div>
                 <div>
                   <h3 className="font-semibold text-[#3D1717] mb-1 text-sm">Address</h3>
                   <div className="text-[#3D1717] opacity-70 text-sm leading-relaxed">
-                    <p>Aspire Knowledge & Skills India Pvt. Ltd.</p>
-                    <p>1204, J.M Road, Kamla Arcade, 3rd Floor, Office No. 301-305, Opp. Bal</p>
-                    <p>Gandharva Rang Mandir, Deccan,</p>
+                    <p>Aspire Knowledge & Skills India Pvt. Ltd . 1204,</p>
+                    <p> Office No. 301-305, 3rd Floor,</p>
+                    <p>Opp. Bal Gandharva Rang Mandir,J.M Road, Kamla Arcade, Deccan,</p>
                     <p>Pune - 411 004, Maharashtra, India</p>
                   </div>
                 </div>
