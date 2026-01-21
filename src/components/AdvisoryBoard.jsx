@@ -92,14 +92,14 @@ const AdvisoryBoard = () => {
               <button
                 onClick={prevSlide}
                 disabled={currentIndex === 0}
-                className="bg-white border-2 border-gray-300 text-gray-600 w-12 h-12 rounded-full shadow-md hover:border-[#EF7F2C] hover:text-[#EF7F2C] transition-all disabled:opacity-30 disabled:cursor-not-allowed flex items-center justify-center"
+                className="bg-white border-2 border-[#EF7F2C] text-[#EF7F2C] w-12 h-12 rounded-full shadow-md hover:bg-[#EF7F2C] hover:text-white transition-all disabled:opacity-30 disabled:cursor-not-allowed disabled:border-gray-300 disabled:text-gray-400 flex items-center justify-center"
               >
                 <ChevronLeft size={20} />
               </button>
               <button
                 onClick={nextSlide}
                 disabled={currentIndex === maxIndex}
-                className="bg-white border-2 border-gray-300 text-gray-600 w-12 h-12 rounded-full shadow-md hover:border-[#EF7F2C] hover:text-[#EF7F2C] transition-all disabled:opacity-30 disabled:cursor-not-allowed flex items-center justify-center"
+                className="bg-white border-2 border-[#EF7F2C] text-[#EF7F2C] w-12 h-12 rounded-full shadow-md hover:bg-[#EF7F2C] hover:text-white transition-all disabled:opacity-30 disabled:cursor-not-allowed disabled:border-gray-300 disabled:text-gray-400 flex items-center justify-center"
               >
                 <ChevronRight size={20} />
               </button>
