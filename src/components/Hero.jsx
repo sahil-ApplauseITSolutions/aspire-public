@@ -20,6 +20,7 @@ import EnquiryModal from "./EnquiryModal";
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isEnquiryModalOpen, setIsEnquiryModalOpen] = useState(false);
+  const [activeSlide, setActiveSlide] = useState(null); // For mobile touch overlay
   const navigate = useNavigate();
 
   const slides = [
@@ -142,28 +143,71 @@ const Hero = () => {
             <ChevronLeft size={18} className="xl:w-6 xl:h-6 text-[#EF7F2C]" />
           </button>
 
-          {/* IMAGE WRAPPER */}
-          <div className="relative group w-full max-w-md sm:max-w-lg lg:max-w-[510px]">
-            <div className="w-full h-48 sm:h-56 md:h-64 lg:h-72 xl:h-80 max-w-[480px] rounded-2xl shadow-xl overflow-hidden mx-auto group-hover:shadow-2xl transition-all duration-500">
+          {/* SCROLLABLE CONTAINER - Mobile only */}
+          <div className="lg:hidden overflow-x-auto snap-x snap-mandatory scroll-smooth w-full overflow-hidden" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+            <div className="flex gap-4">
+              {slides.map((slide, index) => (
+                <div 
+                  key={index} 
+                  className="relative snap-center flex-shrink-0 w-full cursor-pointer"
+                  onClick={() => setActiveSlide(activeSlide === index ? null : index)}
+                >
+                  <div className="w-full h-48 sm:h-56 md:h-64 rounded-2xl shadow-xl overflow-hidden mx-auto transition-all duration-500">
+                    <img
+                      src={slide.image}
+                      alt={`${slide.title} Banner`}
+                      className="w-full h-full object-cover transition-transform duration-700"
+                    />
+                  </div>
+
+                  {/* BADGE */}
+                  <div className={`absolute bottom-3 sm:bottom-4 right-3 sm:right-4 z-10 transition-opacity duration-500 ${activeSlide === index ? 'opacity-0' : 'opacity-100'}`}>
+                    <button className="flex items-center gap-1 sm:gap-2 bg-white px-2 sm:px-4 py-1.5 sm:py-2 rounded-xl shadow-lg text-xs sm:text-sm font-semibold border border-orange-200 pointer-events-none">
+                      {slide.badge.split(' ')[0]} <span className="hidden sm:inline">{slide.badge.split(' ').slice(1).join(' ')}</span>
+                    </button>
+                  </div>
+
+                  {/* TOUCH OVERLAY */}
+                  <div className={`absolute inset-0 bg-gradient-to-br from-white/95 to-orange-50/95 rounded-2xl p-4 
+                                  transition-all duration-500 transform backdrop-blur-sm
+                                  ${activeSlide === index ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'}`}>
+                    <span className="inline-block bg-gradient-to-r from-orange-100 to-orange-50 text-[#EF7F2C] text-xs px-3 py-1 rounded-full mb-2 font-semibold">
+                      {slide.title}
+                    </span>
+                    <p className="text-xs text-[#3D1717] mb-3 leading-relaxed opacity-80 line-clamp-6">
+                      {slide.description}
+                    </p>
+                    <button className="bg-gradient-to-r from-[#EF7F2C] to-[#d6691f] text-white px-3 py-1.5 rounded-xl text-xs font-semibold shadow-lg">
+                      {slide.buttonText} →
+                    </button>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* DESKTOP SINGLE IMAGE */}
+          <div className="hidden lg:block relative group w-full max-w-md sm:max-w-lg lg:max-w-[510px]">
+            <div className="w-full h-48 sm:h-56 md:h-64 lg:h-72 xl:h-80 max-w-[480px] rounded-2xl shadow-xl overflow-hidden mx-auto group-hover:shadow-2xl transition-all duration-500 active:shadow-2xl">
               <img
                 src={currentSlideData.image}
                 alt={`Aspire Banner ${currentSlide + 1}`}
-                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 active:scale-110"
               />
             </div>
 
-            {/* DEFAULT BADGE (VISIBLE BY DEFAULT, HIDDEN ON HOVER) */}
-            <div className="absolute bottom-3 sm:bottom-4 right-3 sm:right-4 z-10 group-hover:opacity-0 transition-opacity duration-500">
-              <button className="flex items-center gap-1 sm:gap-2 bg-white px-2 sm:px-4 py-1.5 sm:py-2 rounded-xl shadow-lg text-xs sm:text-sm font-semibold hover:shadow-xl hover:scale-105 transition-all duration-300 border border-orange-200">
+            {/* DEFAULT BADGE (VISIBLE BY DEFAULT, HIDDEN ON HOVER/TOUCH) */}
+            <div className="absolute bottom-3 sm:bottom-4 right-3 sm:right-4 z-10 group-hover:opacity-0 group-active:opacity-0 transition-opacity duration-500 pointer-events-none">
+              <button className="flex items-center gap-1 sm:gap-2 bg-white px-2 sm:px-4 py-1.5 sm:py-2 rounded-xl shadow-lg text-xs sm:text-sm font-semibold border border-orange-200">
                 {currentSlideData.badge.split(' ')[0]} <span className="hidden sm:inline">{currentSlideData.badge.split(' ').slice(1).join(' ')}</span>
               </button>
             </div>
 
-            {/* HOVER OVERLAY - Hidden on mobile, visible on hover for desktop */}
-            <div className="hidden lg:block absolute inset-0 bg-gradient-to-br from-white/95 to-orange-50/95 rounded-2xl p-4 xl:p-6 
-                            opacity-0 group-hover:opacity-100 
-                            transition-all duration-500 transform scale-95 group-hover:scale-100
-                            pointer-events-none group-hover:pointer-events-auto backdrop-blur-sm">
+            {/* OVERLAY - Shows on hover (desktop) and touch (mobile) */}
+            <div className="absolute inset-0 bg-gradient-to-br from-white/95 to-orange-50/95 rounded-2xl p-4 xl:p-6 
+                            opacity-0 group-hover:opacity-100 group-active:opacity-100
+                            transition-all duration-500 transform scale-95 group-hover:scale-100 group-active:scale-100
+                            pointer-events-none group-hover:pointer-events-auto group-active:pointer-events-auto backdrop-blur-sm">
 
               <span className="inline-block bg-gradient-to-r from-orange-100 to-orange-50 text-[#EF7F2C] text-xs px-3 py-1 rounded-full mb-3 font-semibold">
                 {currentSlideData.title}
