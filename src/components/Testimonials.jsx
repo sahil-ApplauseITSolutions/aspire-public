@@ -67,10 +67,10 @@ const Testimonials = () => {
         </div>
 
         {/* CONTENT GRID */}
-        <div className="grid grid-cols-1 lg:grid-cols-10 gap-10 items-center relative">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center relative">
 
           {/* LEFT TESTIMONIAL CARD */}
-          <div className="relative bg-[#fffaf4] rounded-2xl p-8 shadow-md lg:col-span-7">
+          <div className="relative bg-[#fffaf4] rounded-2xl p-8 shadow-md">
 
             {/* QUOTE */}
             <p className="text-gray-700 leading-relaxed mb-6">
@@ -104,7 +104,7 @@ const Testimonials = () => {
           </div>
 
           {/* RIGHT MENTOR CARD */}
-          <div className="relative bg-white rounded-2xl p-8 shadow-md border-l-4 border-[#3b2a1a] lg:col-span-3">
+          <div className="relative bg-white rounded-2xl p-8 shadow-md border-l-4 border-[#3b2a1a]">
 
             <h4 className="text-lg font-semibold text-[#3b2a1a] mb-6">
               Mentor's Message
