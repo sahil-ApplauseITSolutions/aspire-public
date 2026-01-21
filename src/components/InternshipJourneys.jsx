@@ -76,15 +76,15 @@ const InternshipJourneys = () => {
                     </button>
 
                     {/* CARDS CONTAINER */}
-                    <div className="overflow-hidden w-full">
+                    <div className="overflow-x-auto overflow-y-hidden w-full">
                         <div 
-                            className="flex gap-6 transition-transform duration-500 ease-in-out"
-                            style={{ transform: `translateX(-${currentIndex * (346 + 24)}px)` }}
+                            className="flex gap-2 sm:gap-4 lg:gap-6 transition-transform duration-500 ease-in-out"
+                            style={{ transform: `translateX(-${currentIndex * (280 + 8)}px)` }}
                         >
                             {journeys.map((item, index) => (
                                 <div
                                     key={index}
-                                    className="bg-white rounded-[16px] shadow-md overflow-hidden w-[346px] h-[242px] flex-shrink-0"
+                                    className="bg-white rounded-[16px] shadow-md overflow-hidden w-[280px] sm:w-[320px] lg:w-[346px] h-[200px] sm:h-[220px] lg:h-[242px] flex-shrink-0"
                                 >
                                     {/* VIDEO */}
                                     <div className="relative">
