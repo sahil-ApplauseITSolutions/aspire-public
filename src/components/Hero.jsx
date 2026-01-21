@@ -152,8 +152,8 @@ const Hero = () => {
               />
             </div>
 
-            {/* DEFAULT BADGE (VISIBLE ALWAYS) */}
-            <div className="absolute bottom-3 sm:bottom-4 right-3 sm:right-4 z-10">
+            {/* DEFAULT BADGE (VISIBLE BY DEFAULT, HIDDEN ON HOVER) */}
+            <div className="absolute bottom-3 sm:bottom-4 right-3 sm:right-4 z-10 group-hover:opacity-0 transition-opacity duration-500">
               <button className="flex items-center gap-1 sm:gap-2 bg-white px-2 sm:px-4 py-1.5 sm:py-2 rounded-xl shadow-lg text-xs sm:text-sm font-semibold hover:shadow-xl hover:scale-105 transition-all duration-300 border border-orange-200">
                 {currentSlideData.badge.split(' ')[0]} <span className="hidden sm:inline">{currentSlideData.badge.split(' ').slice(1).join(' ')}</span>
               </button>
