@@ -2,7 +2,6 @@ import React from 'react';
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ImpactReach from "../components/ImpactReach";
-import StatisticsSection from "../components/StatisticsSection";
 import PageLoader from "../components/PageLoader";
 import SectionLoader from "../components/SectionLoader";
 import TimelineLoader from "../components/TimelineLoader";
@@ -19,7 +18,7 @@ import "../styles/timeline-mobile.css";
 const ImpactReachPage = () => {
   const { isLoading, setLoading } = useLoading(true, 800);
   const { loadingStates, simulateSectionLoading } = useSectionLoading([
-    'impact', 'timeline', 'statistics'
+    'impact', 'timeline'
   ]);
 
   useEffect(() => {
@@ -32,7 +31,6 @@ const ImpactReachPage = () => {
     const startSectionLoading = () => {
       simulateSectionLoading('impact', 1000);
       setTimeout(() => simulateSectionLoading('timeline', 1500), 200);
-      setTimeout(() => simulateSectionLoading('statistics', 1200), 400);
     };
 
     const sectionTimer = setTimeout(startSectionLoading, 1400);
@@ -236,15 +234,6 @@ const ImpactReachPage = () => {
           </div>
         </div>
       </section>
-
-      {/* STATISTICS SECTION */}
-      {loadingStates.statistics ? (
-        <SectionLoader message="Loading Statistics..." height="h-64" />
-      ) : (
-        <div className="animate-fade-in-up">
-          <StatisticsSection />
-        </div>
-      )}
 
       <Footer />
     </div>
