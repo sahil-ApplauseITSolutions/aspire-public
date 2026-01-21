@@ -51,26 +51,18 @@ const UniversityPartners = () => {
           </p>
         </div>
 
-        {/* UNIVERSITY LOGOS WITH SCROLL BUTTONS */}
+        {/* UNIVERSITY LOGOS - NATURAL SCROLLING ONLY */}
         <div className="relative">
-          {/* LEFT SCROLL BUTTON - Mobile only */}
-          <button
-            onClick={scrollLeft}
-            className="lg:hidden absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white border-2 border-[#EF7F2C] text-[#EF7F2C] w-10 h-10 rounded-full shadow-md hover:bg-[#EF7F2C] hover:text-white transition-all flex items-center justify-center"
-          >
-            <ChevronLeft size={20} />
-          </button>
-
           <div 
             ref={scrollContainerRef}
             className="overflow-x-auto lg:overflow-visible pb-4 lg:pb-0 scroll-smooth"
             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
           >
-            <div className="flex justify-center items-center gap-6 lg:gap-8 max-w-6xl mx-auto px-12 lg:px-0">
+            <div className="flex justify-start lg:justify-center items-center gap-2 sm:gap-4 lg:gap-8 max-w-none mx-auto px-0">
               {universityLogos.map((partner, index) => (
                 <div 
                   key={index}
-                  className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm w-[160px] h-[160px] lg:w-[180px] lg:h-[180px] hover:shadow-md transition-shadow flex-shrink-0"
+                  className="flex items-center justify-center p-2 sm:p-3 lg:p-4 bg-white border border-gray-200 rounded-xl shadow-sm w-[120px] h-[120px] sm:w-[120px] sm:h-[120px] lg:w-[180px] lg:h-[180px] hover:shadow-md transition-shadow flex-shrink-0"
                 >
                   <img
                     src={partner.logo}
@@ -81,22 +73,13 @@ const UniversityPartners = () => {
               ))}
             </div>
           </div>
-
-          {/* RIGHT SCROLL BUTTON - Mobile only */}
-          <button
-            onClick={scrollRight}
-            className="lg:hidden absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white border-2 border-[#EF7F2C] text-[#EF7F2C] w-10 h-10 rounded-full shadow-md hover:bg-[#EF7F2C] hover:text-white transition-all flex items-center justify-center"
-          >
-            <ChevronRight size={20} />
-          </button>
-
-          {/* Hide scrollbar */}
-          <style>{`
-            div::-webkit-scrollbar {
-              display: none;
-            }
-          `}</style>
         </div>
+        {/* Hide scrollbar */}
+        <style>{`
+          div::-webkit-scrollbar {
+            display: none;
+          }
+        `}</style>
 
       </div>
     </section>
