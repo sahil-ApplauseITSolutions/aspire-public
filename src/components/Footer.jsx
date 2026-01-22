@@ -79,17 +79,25 @@ const Footer = () => {
         <div>
           <h4 className="font-semibold mb-4">Our Programs</h4>
           <ul className="space-y-3 text-sm text-gray-300">
-            <li className="hover:text-orange-500 cursor-pointer">
-              Guaranteed Internship
+            <li>
+              <Link to="/programs/guaranteed-internship" className="hover:text-orange-500 cursor-pointer transition-colors">
+                Guaranteed Internship
+              </Link>
             </li>
-            <li className="hover:text-orange-500 cursor-pointer">
-              Guaranteed Placement
+            <li>
+              <Link to="/programs/campus-to-corporate" className="hover:text-orange-500 cursor-pointer transition-colors">
+                Campus to Corporate
+              </Link>
             </li>
-            <li className="hover:text-orange-500 cursor-pointer">
-              Cloud Technology
+            <li>
+              <Link to="/programs/cloud-technology" className="hover:text-orange-500 cursor-pointer transition-colors">
+                Cloud Technology
+              </Link>
             </li>
-            <li className="hover:text-orange-500 cursor-pointer">
-              UI/UX Development
+            <li>
+              <Link to="/programs/uiux-developer" className="hover:text-orange-500 cursor-pointer transition-colors">
+                UI/UX Development
+              </Link>
             </li>
           </ul>
         </div>
