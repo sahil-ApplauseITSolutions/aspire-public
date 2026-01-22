@@ -140,14 +140,15 @@ const Programs = () => {
                       UI/UX Developer
                     </h3>
                     <p className="text-gray-600 text-sm leading-relaxed mb-3">
-                      Learners gain hands-on exposure through live projects,
-                      regular evaluations, and mentorship, culminating in
-                      industry-recognized certification and practical work...
+                      This program UI/UX Developer is designed to build a strong foundation in modern UI/UX development with comprehensive training...
                     </p>
                   </div>
-                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                  <Link 
+                    to="/programs/uiux-developer" 
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors"
+                  >
                     View Details →
-                  </button>
+                  </Link>
                 </div>
               </div>
 

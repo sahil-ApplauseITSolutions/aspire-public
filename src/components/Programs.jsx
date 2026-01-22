@@ -26,7 +26,7 @@ const programs = [
         title: "UI/UX Developer",
         desc: "This program UI/UX Developer is designed to build a strong foundation in modern UI/UX development.",
         icon: <Palette size={20} />,
-        link: null,
+        link: "/programs/uiux-developer",
     },
     {
         title: "Cloud Technology",
