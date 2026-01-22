@@ -14,21 +14,25 @@ const programs = [
         title: "Guaranteed Internship",
         desc: "Learners gain hands-on exposure through live projects, regular evaluations, and mentorship.",
         icon: <GraduationCap size={20} />,
+        link: "/programs/guaranteed-internship",
     },
     {
         title: "Campus to Corporate",
-        desc: "All in One AI-powered, RIASEC-based solution for accurate and successful drive placements.",
+        desc: "All-in-One AI-powered, RIASEC-based solution for accurate and drive successful placements.",
         icon: <Briefcase size={20} />,
+        link: null,
     },
     {
         title: "UI/UX Developer",
         desc: "This program UI/UX Developer is designed to build a strong foundation in modern UI/UX development.",
         icon: <Palette size={20} />,
+        link: null,
     },
     {
         title: "Cloud Technology",
         desc: "A corporate-ready cloud curriculum combining application development, infrastructure and business.",
         icon: <Cloud size={20} />,
+        link: null,
     },
 ];
 
@@ -78,6 +82,7 @@ const Programs = () => {
                         <div
                             key={index}
                             className="group bg-white rounded-2xl p-7 shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer border border-transparent hover:border-orange-200 relative overflow-hidden"
+                            onClick={() => item.link && navigate(item.link)}
                         >
                             {/* Gradient overlay on hover */}
                             <div className="absolute inset-0 bg-gradient-to-br from-orange-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"></div>
@@ -95,7 +100,15 @@ const Programs = () => {
                                     {item.desc}
                                 </p>
 
-                                <button className="text-orange-500 text-sm font-bold flex items-center gap-2 group-hover:gap-3 transition-all duration-300 hover:text-orange-600">
+                                <button 
+                                    className="text-orange-500 text-sm font-bold flex items-center gap-2 group-hover:gap-3 transition-all duration-300 hover:text-orange-600"
+                                    onClick={(e) => {
+                                        if (item.link) {
+                                            e.stopPropagation();
+                                            navigate(item.link);
+                                        }
+                                    }}
+                                >
                                     Know More 
                                     <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform duration-300" />
                                 </button>
