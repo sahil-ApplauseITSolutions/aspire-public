@@ -18,9 +18,9 @@ const programs = [
     },
     {
         title: "Campus to Corporate",
-        desc: "All-in-One AI-powered, RIASEC-based solution for accurate and drive successful placements.",
+        desc: "All-in-One AI powered solution designed to drive successful placements which leverages advanced technology and is built upon the well established RIASEC Model.",
         icon: <Briefcase size={20} />,
-        link: null,
+        link: "/programs/campus-to-corporate",
     },
     {
         title: "UI/UX Developer",

@@ -202,14 +202,15 @@ const Programs = () => {
                       Campus to Corporate
                     </h3>
                     <p className="text-gray-600 text-sm leading-relaxed mb-3">
-                      ASPIRE focus on strategic consulting, Training Need
-                      Analysis, Learning Design, e-learning, Training Delivery,
-                      Customized Content Development Competency...
+                      All-in-One AI powered solution designed to drive successful placements which leverages advanced technology and is built upon the well established RIASEC...
                     </p>
                   </div>
-                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                  <Link 
+                    to="/programs/campus-to-corporate" 
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors"
+                  >
                     View Details →
-                  </button>
+                  </Link>
                 </div>
               </div>
 
