@@ -676,56 +676,48 @@ const About = () => {
         </section>
       )}
 
-      {/* WHO WE ARE TODAY SECTION - FULL WIDTH */}
+      {/* PROVEN IMPACT & REACH SECTION - FULL WIDTH */}
       {activeTab === "profile" && (
         <section className="bg-[#f5f5f5] w-full py-12">
           <div className="max-w-[1440px] mx-auto px-8 sm:px-12 lg:px-16">
             <div className="grid grid-cols-1 lg:grid-cols-[1fr_497px] gap-8 lg:gap-12 items-start">
               {/* Left Content */}
-              <div className="space-y-6">
-                <h2 className="text-2xl font-bold text-[#3D1717] mb-6">
-                  Who We Are Today
+              <div className="space-y-3">
+                <h2 className="text-2xl font-bold text-[#3D1717] mb-4">
+                  Proven Impact & Reach
                 </h2>
 
                 <p className="text-gray-800 text-justify font-dm-sans font-normal" style={{ fontSize: '16px', lineHeight: '1.4' }}>
-                  Aspire Knowledge & Skills is a premier skill development organization with over 27 years of legacy in
-                  transforming lives through education. Born from the pioneering spirit of Jetking, we have evolved into a
-                  comprehensive ecosystem that addresses the critical gap between education and employment in India.
+                  More than 150+ academic MOUs with institutions like IIT BHU, IIIT, BATU, VTU, COEP, SNDT and many more.
                 </p>
 
                 <p className="text-gray-800 text-justify font-dm-sans font-normal" style={{ fontSize: '16px', lineHeight: '1.4' }}>
-                  Our organization stands at the intersection of formal education, vocational training, and
-                  entrepreneurship development. We work closely with educational institutions, government bodies, and
-                  corporate partners to create pathways for youth to achieve economic independence and contribute
-                  meaningfully to India's growth story.
+                  • Conducted technical skills and career pathway workshops for 500,000+ students
                 </p>
 
                 <p className="text-gray-800 text-justify font-dm-sans font-normal" style={{ fontSize: '16px', lineHeight: '1.4' }}>
-                  With affiliations from AICTE, NSDC funding, and recognition from BOAT and multiple Sector Skill
-                  Councils, we maintain the highest standards of quality in our training programs. Our model centers,
-                  franchise network, and partnerships with over 500 colleges enable us to reach students across India,
-                  making quality skill education accessible to all.
+                  • Empowered over 100,000+ students through vocational and advanced skills training
                 </p>
 
-                {/* Statistics */}
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-8">
-                  <div>
-                    <div className="text-3xl font-bold text-[#EF7F2C]">10K+</div>
-                    <div className="text-sm text-gray-600 font-dm-sans">Students Trained</div>
-                  </div>
-                  <div>
-                    <div className="text-3xl font-bold text-[#EF7F2C]">200+</div>
-                    <div className="text-sm text-gray-600 font-dm-sans">Corporate Partners</div>
-                  </div>
-                  <div>
-                    <div className="text-3xl font-bold text-[#EF7F2C]">500+</div>
-                    <div className="text-sm text-gray-600 font-dm-sans">Partner Colleges</div>
-                  </div>
-                  <div>
-                    <div className="text-3xl font-bold text-[#EF7F2C]">95%</div>
-                    <div className="text-sm text-gray-600 font-dm-sans">Placement Rate</div>
-                  </div>
-                </div>
+                <p className="text-gray-800 text-justify font-dm-sans font-normal" style={{ fontSize: '16px', lineHeight: '1.4' }}>
+                  • Facilitated 50,000+ placements by connecting industry with academia
+                </p>
+
+                <p className="text-gray-800 text-justify font-dm-sans font-normal" style={{ fontSize: '16px', lineHeight: '1.4' }}>
+                  • Currently providing futuristic training to 10,000+ students across 100+ colleges spread across Maharashtra, Karnataka and Orissa
+                </p>
+
+                <p className="text-gray-800 text-justify font-dm-sans font-normal" style={{ fontSize: '16px', lineHeight: '1.4' }}>
+                  • Establishment of Electronics Science Skill Lab for 10000+ students to provide hands on training in Electronic Equipment Maintenance Skills
+                </p>
+
+                <p className="text-gray-800 font-dm-sans font-bold mt-4" style={{ fontSize: '16px', lineHeight: '1.4' }}>
+                  Our Pedagogy:
+                </p>
+
+                <p className="text-gray-800 text-justify font-dm-sans font-normal" style={{ fontSize: '16px', lineHeight: '1.4' }}>
+                  We are a "New-Age GPS" for every student, helping them navigate their unique paths to success. Our commitment is to provide unwavering support throughout their academic and career journeys until their dreams are realized.
+                </p>
               </div>
 
               {/* Right Image */}
