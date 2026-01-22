@@ -32,7 +32,7 @@ const programs = [
         title: "Cloud Technology",
         desc: "A corporate-ready cloud curriculum combining application development, infrastructure and business.",
         icon: <Cloud size={20} />,
-        link: null,
+        link: "/programs/cloud-technology",
     },
 ];
 

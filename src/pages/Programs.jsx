@@ -328,14 +328,15 @@ const Programs = () => {
                       Cloud Technology
                     </h3>
                     <p className="text-gray-600 text-sm leading-relaxed mb-3">
-                      ASPIRE focus on strategic consulting, Training Need
-                      Analysis, Learning Design, e-learning, Training Delivery,
-                      Customized Content Development Competency...
+                      A corporate-ready cloud curriculum combining application development, infrastructure and business awareness for multiple career paths...
                     </p>
                   </div>
-                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                  <Link 
+                    to="/programs/cloud-technology" 
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors"
+                  >
                     View Details →
-                  </button>
+                  </Link>
                 </div>
               </div>
 

@@ -8,6 +8,7 @@ import Gallery from "./pages/Gallery";
 import GuaranteedInternshipDetails from "./pages/GuaranteedInternshipDetails";
 import CampusToCorporateDetails from "./pages/CampusToCorporateDetails";
 import UIUXDeveloperDetails from "./pages/UIUXDeveloperDetails";
+import CloudTechnologyDetails from "./pages/CloudTechnologyDetails";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/programs/guaranteed-internship" element={<GuaranteedInternshipDetails />} />
         <Route path="/programs/campus-to-corporate" element={<CampusToCorporateDetails />} />
         <Route path="/programs/uiux-developer" element={<UIUXDeveloperDetails />} />
+        <Route path="/programs/cloud-technology" element={<CloudTechnologyDetails />} />
       </Routes>
     </Router>
   );
