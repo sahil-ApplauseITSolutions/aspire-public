@@ -134,22 +134,20 @@ const About = () => {
                     <p className="text-gray-800 font-dm-sans font-normal" style={{ fontSize: '16px', lineHeight: '1.4' }}>3. Seamlessly integrating demand driven skills into formal education</p>
                   </div>
 
-                  <p className="text-gray-800 text-justify font-dm-sans font-normal" style={{ fontSize: '16px', lineHeight: '1.4' }}>
-                    Aspire Knowledge and Skills India Pvt. Ltd., commonly known as ASPIRE, boasts a rich
-                    legacy of 28 years in the realm of skill development training, talent management in the
-                    workforce, and providing pathways to employment.
+                  <p className="text-gray-800 font-dm-sans font-bold" style={{ fontSize: '16px', lineHeight: '1.4' }}>
+                    Our Core Strengths:
                   </p>
 
                   <p className="text-gray-800 text-justify font-dm-sans font-normal" style={{ fontSize: '16px', lineHeight: '1.4' }}>
-                    Our core pursuits include advancing employability, fostering entrepreneurial spirit, and
-                    promoting sustainable practices.
+                    • Employability Enablement and Entrepreneurship Development: We enable employability through our industry centric portal and industry association network.
                   </p>
 
                   <p className="text-gray-800 text-justify font-dm-sans font-normal" style={{ fontSize: '16px', lineHeight: '1.4' }}>
-                    Our collaborative efforts with the Pune Management Association (PMA), the Mahratta
-                    Chamber of Commerce Industries & Agriculture (MCCIA), and India CSR underscore our
-                    commitment to excellence. Further amplifying our influence, we operate an Incubation
-                    Centre that aligns with the Smart City initiative.
+                    • NEP Alignment: We implement mentorship-based self-learning models aligned with the National Education Policy.
+                  </p>
+
+                  <p className="text-gray-800 text-justify font-dm-sans font-normal" style={{ fontSize: '16px', lineHeight: '1.4' }}>
+                    • Demand-Driven Skill Development: We seamlessly integrate industry relevant credit sanctioned courses into formal education using strategic alliance of our 250+ companies, ensuring students are job-ready.
                   </p>
                 </div>
 
