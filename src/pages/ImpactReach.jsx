@@ -172,7 +172,7 @@ const ImpactReachPage = () => {
                           <h3 className="timeline-title text-lg font-bold text-[#3D1717] mb-2">NSDC Partnership</h3>
                           <p className="timeline-description text-body text-gray-600 text-sm leading-relaxed">Secured funding and partnership with NSDC.</p>
                         </div>
-                        <div className="timeline-image-wrapper flex-shrink-0" style={{ width: '200px', height: '160px' }}>
+                        <div className="timeline-image-wrapper flex-shrink-0" style={{ width: '200px', height: '200px' }}>
                           <img src={journey2015Img} alt="2015 - NSDC Partnership" className="w-full h-full object-contain" />
                         </div>
                       </div>
@@ -192,7 +192,7 @@ const ImpactReachPage = () => {
                       <div className="timeline-arrow absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-3 w-0 h-0 border-t-8 border-b-8 border-l-8 border-t-transparent border-b-transparent border-l-white"></div>
 
                       <div className="timeline-card-content flex items-center gap-6 h-full">
-                        <div className="timeline-image-wrapper flex-shrink-0" style={{ width: '200px', height: '160px' }}>
+                        <div className="timeline-image-wrapper flex-shrink-0" style={{ width: '200px', height: '200px' }}>
                           <img src={journey2018Img} alt="2018 - New Centers" className="w-full h-full object-contain" />
                         </div>
                         <div className="timeline-text-content flex-1">
@@ -222,7 +222,7 @@ const ImpactReachPage = () => {
                           <h3 className="timeline-title text-lg font-bold text-[#3D1717] mb-2">Digital Leap</h3>
                           <p className="timeline-description text-body text-gray-600 text-sm leading-relaxed">Launched Virtual Internship and AI-based learning.</p>
                         </div>
-                        <div className="timeline-image-wrapper flex-shrink-0" style={{ width: '200px', height: '100px' }}>
+                        <div className="timeline-image-wrapper flex-shrink-0" style={{ width: '200px', height: '200px' }}>
                           <img src={journey2023Img} alt="2023 - Digital Leap" className="w-full h-full object-contain" />
                         </div>
                       </div>
