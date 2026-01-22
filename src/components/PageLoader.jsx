@@ -20,10 +20,10 @@ const PageLoader = () => {
          Creating Pathways to Employability
         </p>
         
-        {/* Loading status */}
+        {/* Loading status
         <p className="text-gray-500 text-sm font-medium animate-pulse">
           Loading amazing experience...
-        </p>
+        </p> */}
       </div>
       
       {/* Progress bar */}
