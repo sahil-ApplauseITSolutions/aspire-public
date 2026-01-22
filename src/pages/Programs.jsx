@@ -130,7 +130,7 @@ const Programs = () => {
                   <img
                     src={uiuxDeveloperImg}
                     alt="UI/UX Developer"
-                    className="w-full h-full object-cover object-centre"
+                    className="w-full h-full object-cover object-top"
                   />
                 </div>
                 {/* Bottom - Text Content */}
@@ -162,7 +162,7 @@ const Programs = () => {
                   <img
                     src={guaranteedInternshipImg}
                     alt="Virtual Internship"
-                    className="w-full h-full object-cover object-centre"
+                    className="w-full h-full object-cover object-top"
                   />
                 </div>
                 {/* Bottom - Text Content */}
@@ -225,7 +225,7 @@ const Programs = () => {
                   <img
                     src={aedpImg}
                     alt="AEDP"
-                    className="w-full h-full object-cover object-centre"
+                    className="w-full h-full object-cover object-top"
                   />
                 </div>
                 {/* Bottom - Text Content */}
@@ -256,7 +256,7 @@ const Programs = () => {
                   <img
                     src={quantumComputingImg}
                     alt="Quantum Computing"
-                    className="w-full h-full object-cover object-centre"
+                    className="w-full h-full object-cover object-top"
                   />
                 </div>
                 {/* Bottom - Text Content */}
@@ -381,7 +381,7 @@ const Programs = () => {
                   <img
                     src={eedpImg}
                     alt="EEDP"
-                    className="w-full h-full object-cover object-centre"
+                    className="w-full h-full object-cover object-top"
                   />
                 </div>
                 {/* Bottom - Text Content */}
