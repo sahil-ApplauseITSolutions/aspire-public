@@ -196,7 +196,7 @@ const GuaranteedInternshipDetails = () => {
       </section>
 
       {/* CERTIFICATE SECTION */}
-      <section className="bg-gradient-to-r from-[#3D1717] to-[#5a2a2a] py-16 w-full">
+      <section className="bg-gradient-to-r from-[#3D1717] to-[#5a2a2a] py-8 w-full">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             
@@ -222,7 +222,7 @@ const GuaranteedInternshipDetails = () => {
               </p>
 
               {/* Features */}
-              <div className="space-y-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {/* Performance Based */}
                 <div className="flex items-start gap-3">
                   <div className="flex-shrink-0 w-10 h-10 bg-orange-500/20 rounded-lg flex items-center justify-center mt-1">
@@ -254,12 +254,13 @@ const GuaranteedInternshipDetails = () => {
             {/* Right - Certificate Preview */}
             <div className="flex justify-center lg:justify-end">
               <div className="relative">
-                {/* Certificate Card */}
-                <div className="bg-white rounded-2xl shadow-2xl p-8 transform hover:scale-105 transition-transform duration-300" style={{ width: '400px' }}>
+                {/* Certificate Image */}
+                <div className="transform hover:scale-105 transition-transform duration-300">
                   <img
                     src={certificateImg}
                     alt="Certificate of Internship"
-                    className="w-full h-auto"
+                    style={{ width: '350px', height: '400px' }}
+                    className="object-contain"
                   />
                 </div>
 
