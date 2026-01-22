@@ -172,7 +172,7 @@ const CampusToCorporateDetails = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             {/* Left - RIASEC Model */}
             <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <h3 className="text-xl font-bold text-[#3D1717] mb-6">RIASEC Model Foundation</h3>
+              <h3 className="text-xl font-bold text-[#3D1717] mb-4">RIASEC Model Foundation</h3>
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 bg-[#EF7F2C] rounded-full"></div>
