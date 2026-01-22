@@ -180,9 +180,11 @@ const CloudTechnologyDetails = () => {
                 </div>
               </div>
             </div>
+          </div>
 
-            {/* Career Path 5 */}
-            <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow md:col-span-2">
+          {/* Career Path 5 - Centered at bottom */}
+          <div className="flex justify-center mt-6">
+            <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow w-full md:w-[calc(50%-0.75rem)]">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0">
                   <svg className="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
