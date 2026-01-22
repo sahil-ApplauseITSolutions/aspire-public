@@ -195,85 +195,6 @@ const GuaranteedInternshipDetails = () => {
         </div>
       </section>
 
-      {/* CERTIFICATE SECTION */}
-      <section className="bg-gradient-to-r from-[#3D1717] to-[#5a2a2a] py-8 w-full">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            
-            {/* Left Content */}
-            <div className="text-white">
-              {/* Badge */}
-              <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
-                <svg className="w-5 h-5 text-orange-400" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-                <span className="text-sm font-medium">Official Recognition</span>
-              </div>
-
-              {/* Title */}
-              <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-                Earn Your <span className="text-orange-400">Certificate of Internship</span>
-              </h2>
-
-              {/* Description */}
-              <p className="text-white/80 text-base leading-relaxed mb-8">
-                Upon successful completion, you will receive a verifiable certificate from Aspire Knowledge & Skills. 
-                This isn't just paper - it's proof of your ability to deliver in a corporate environment.
-              </p>
-
-              {/* Features */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {/* Performance Based */}
-                <div className="flex items-start gap-3">
-                  <div className="flex-shrink-0 w-10 h-10 bg-orange-500/20 rounded-lg flex items-center justify-center mt-1">
-                    <svg className="w-5 h-5 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-lg mb-1">Performance Based</h3>
-                    <p className="text-white/70 text-sm">Evaluated on real project outcomes</p>
-                  </div>
-                </div>
-
-                {/* Industry Standard */}
-                <div className="flex items-start gap-3">
-                  <div className="flex-shrink-0 w-10 h-10 bg-orange-500/20 rounded-lg flex items-center justify-center mt-1">
-                    <svg className="w-5 h-5 text-orange-400" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-lg mb-1">Industry Standard</h3>
-                    <p className="text-white/70 text-sm">Recognized by top employers</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Right - Certificate Preview */}
-            <div className="flex justify-center lg:justify-end">
-              <div className="relative">
-                {/* Certificate Image */}
-                <div className="transform hover:scale-105 transition-transform duration-300">
-                  <img
-                    src={certificateImg}
-                    alt="Certificate of Internship"
-                    style={{ width: '350px', height: '400px' }}
-                    className="object-contain"
-                  />
-                </div>
-
-                {/* Decorative Elements */}
-                <div className="absolute -top-4 -right-4 w-20 h-20 bg-orange-400/20 rounded-full blur-2xl"></div>
-                <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-orange-500/10 rounded-full blur-3xl"></div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
       {/* LEARNER JOURNEY TIMELINE SECTION */}
       <section className="bg-[#f8f6f3] py-8 w-full">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -429,6 +350,85 @@ const GuaranteedInternshipDetails = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CERTIFICATE SECTION */}
+      <section className="bg-gradient-to-r from-[#3D1717] to-[#5a2a2a] py-16 w-full">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            
+            {/* Left Content */}
+            <div className="text-white">
+              {/* Badge */}
+              <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
+                <svg className="w-5 h-5 text-orange-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <span className="text-sm font-medium">Official Recognition</span>
+              </div>
+
+              {/* Title */}
+              <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+                Earn Your <span className="text-orange-400">Certificate of Internship</span>
+              </h2>
+
+              {/* Description */}
+              <p className="text-white/80 text-base leading-relaxed mb-8">
+                Upon successful completion, you will receive a verifiable certificate from Aspire Knowledge & Skills. 
+                This isn't just paper - it's proof of your ability to deliver in a corporate environment.
+              </p>
+
+              {/* Features */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {/* Performance Based */}
+                <div className="flex items-start gap-3">
+                  <div className="flex-shrink-0 w-10 h-10 bg-orange-500/20 rounded-lg flex items-center justify-center mt-1">
+                    <svg className="w-5 h-5 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-lg mb-1">Performance Based</h3>
+                    <p className="text-white/70 text-sm">Evaluated on real project outcomes</p>
+                  </div>
+                </div>
+
+                {/* Industry Standard */}
+                <div className="flex items-start gap-3">
+                  <div className="flex-shrink-0 w-10 h-10 bg-orange-500/20 rounded-lg flex items-center justify-center mt-1">
+                    <svg className="w-5 h-5 text-orange-400" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-lg mb-1">Industry Standard</h3>
+                    <p className="text-white/70 text-sm">Recognized by top employers</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Right - Certificate Preview */}
+            <div className="flex justify-center lg:justify-end">
+              <div className="relative">
+                {/* Certificate Image */}
+                <div className="transform hover:scale-105 transition-transform duration-300">
+                  <img
+                    src={certificateImg}
+                    alt="Certificate of Internship"
+                    style={{ width: '317.75px', height: '386.27px' }}
+                    className="object-contain"
+                  />
+                </div>
+
+                {/* Decorative Elements */}
+                <div className="absolute -top-4 -right-4 w-20 h-20 bg-orange-400/20 rounded-full blur-2xl"></div>
+                <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-orange-500/10 rounded-full blur-3xl"></div>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
