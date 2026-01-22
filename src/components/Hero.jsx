@@ -109,8 +109,8 @@ const Hero = () => {
             ● Creating Pathways to Employability
           </span>
 
-          <h1 className="text-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl text-[#3D1717] leading-tight mb-4 sm:mb-5">
-            Aspire Knowledge &amp; Skills
+          <h1 className="text-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-3xl text-[#3D1717] leading-tight mb-4 sm:mb-5">
+            Aspire Knowledge &amp; Skills India Pvt. Ltd
           </h1>
           <p className="text-body text-justify text-[#3D1717] leading-relaxed mb-6 sm:mb-7 max-w-xl mx-auto lg:mx-0 opacity-80 text-sm sm:text-base lg:text-l">
            Aspire Knowledge and Skills India Pvt. Ltd. commonly known as ASPIRE represent network of the industry and this journey of networking started with the networking company Jetking since 1997. We are a prestigious AICTE partner, NSDC funded and BOAT partner and hold affiliations across more than seven distinct sector skill councils.

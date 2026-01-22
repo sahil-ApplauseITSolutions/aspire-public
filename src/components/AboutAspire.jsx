@@ -11,8 +11,8 @@ const AboutAspire = () => {
                         About Aspire
                     </span>
 
-                    <h2 className="text-heading text-3xl lg:text-4xl xl:text-4xl text-[#3b2a1a]">
-                        About Aspire Knowledge & Skills
+                    <h2 className="text-heading text-3xl lg:text-4xl xl:text-3xl text-[#3b2a1a]">
+                        About Aspire Knowledge & Skills India Pvt. Ltd
                     </h2>
                 </div>
 
