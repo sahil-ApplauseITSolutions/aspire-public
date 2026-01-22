@@ -16,8 +16,8 @@ const programs = [
         icon: <GraduationCap size={20} />,
     },
     {
-        title: "Guaranteed Placement",
-        desc: "Our placement-focused ecosystem is designed to transform learners into job-ready professionals.",
+        title: "Campus to Corporate",
+        desc: "All in One AI-powered, RIASEC-based solution for accurate and successful drive placements.",
         icon: <Briefcase size={20} />,
     },
     {
