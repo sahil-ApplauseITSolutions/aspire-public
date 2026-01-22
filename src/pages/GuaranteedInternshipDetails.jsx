@@ -355,7 +355,7 @@ const GuaranteedInternshipDetails = () => {
       </section>
 
       {/* CERTIFICATE SECTION */}
-      <section className="bg-gradient-to-r from-[#3D1717] to-[#5a2a2a] py-16 w-full">
+      <section className="bg-gradient-to-r from-[#3D1717] to-[#5a2a2a] py-8 w-full">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             
