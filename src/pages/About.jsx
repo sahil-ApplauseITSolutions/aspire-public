@@ -139,15 +139,15 @@ const About = () => {
                   </p>
 
                   <p className="text-gray-800 text-justify font-dm-sans font-normal" style={{ fontSize: '16px', lineHeight: '1.4' }}>
-                    • Employability Enablement and Entrepreneurship Development: We enable employability through our industry centric portal and industry association network.
+                    • <span className="font-bold text-[#EF7F2C]">Employability Enablement and Entrepreneurship Development:</span> We enable employability through our industry centric portal and industry association network.
                   </p>
 
                   <p className="text-gray-800 text-justify font-dm-sans font-normal" style={{ fontSize: '16px', lineHeight: '1.4' }}>
-                    • NEP Alignment: We implement mentorship-based self-learning models aligned with the National Education Policy.
+                    • <span className="font-bold text-[#EF7F2C]">NEP Alignment:</span> We implement mentorship-based self-learning models aligned with the National Education Policy.
                   </p>
 
                   <p className="text-gray-800 text-justify font-dm-sans font-normal" style={{ fontSize: '16px', lineHeight: '1.4' }}>
-                    • Demand-Driven Skill Development: We seamlessly integrate industry relevant credit sanctioned courses into formal education using strategic alliance of our 250+ companies, ensuring students are job-ready.
+                    • <span className="font-bold text-[#EF7F2C]">Demand-Driven Skill Development:</span> We seamlessly integrate industry relevant credit sanctioned courses into formal education using strategic alliance of our 250+ companies, ensuring students are job-ready.
                   </p>
                 </div>
 
