@@ -32,12 +32,12 @@ const ContactForm = () => {
 
             {/* LEFT SIDE - Content & Illustration */}
             <div className="p-6 sm:p-8 lg:p-12 flex flex-col justify-center order-2 lg:order-1">
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#3D1717] mb-3 sm:mb-4 text-center lg:text-left">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#3D1717] mb-3 sm:mb-4 text-center lg:text-centre">
                 Have a Query?<br />
                 We're Here to Help.
               </h2>
 
-              <p className="text-[#3D1717] opacity-70 mb-6 sm:mb-8 leading-relaxed text-sm sm:text-base lg:text-lg text-center lg:text-left">
+              <p className="text-[#3D1717] opacity-70 mb-6 sm:mb-8 leading-relaxed text-sm sm:text-base lg:text-lg text-center lg:text-centre">
                 Our support team is ready to answer your questions about programs,
                 admissions, and partnerships.
               </p>
