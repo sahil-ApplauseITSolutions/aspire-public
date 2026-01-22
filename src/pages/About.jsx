@@ -682,8 +682,8 @@ const About = () => {
           <div className="max-w-[1440px] mx-auto px-8 sm:px-12 lg:px-16">
             <div className="grid grid-cols-1 lg:grid-cols-[1fr_497px] gap-8 lg:gap-12 items-start">
               {/* Left Content */}
-              <div className="space-y-3">
-                <h2 className="text-2xl font-bold text-[#3D1717] mb-4">
+              <div className="space-y-2">
+                <h2 className="text-2xl font-bold text-[#3D1717] mb-3">
                   Proven Impact & Reach
                 </h2>
 
@@ -711,7 +711,7 @@ const About = () => {
                   • Establishment of Electronics Science Skill Lab for 10000+ students to provide hands on training in Electronic Equipment Maintenance Skills
                 </p>
 
-                <p className="text-gray-800 font-dm-sans font-bold mt-4" style={{ fontSize: '16px', lineHeight: '1.4' }}>
+                <p className="text-gray-800 font-dm-sans font-bold mt-3" style={{ fontSize: '16px', lineHeight: '1.4' }}>
                   Our Pedagogy:
                 </p>
 
