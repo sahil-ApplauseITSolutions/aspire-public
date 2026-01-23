@@ -138,7 +138,7 @@ const GuaranteedInternshipDetails = () => {
                 <img
                   src={virtualInternship}
                   alt="Virtual Internship"
-                  className="w-32 h-32 object-contain"
+                  className="w-36 h-36 object-contain"
                 />
               </div>
               <h3 className="font-bold text-gray-800 text-center">Virtual Internship</h3>
@@ -154,7 +154,7 @@ const GuaranteedInternshipDetails = () => {
                 <img
                   src={instantOfferLetters}
                   alt="Instant Offer Letters"
-                  className="w-32 h-32 object-contain"
+                  className="w-36 h-36 object-contain"
                 />
               </div>
               <h3 className="font-bold text-gray-800 text-center">Instant Offer Letters</h3>
@@ -170,7 +170,7 @@ const GuaranteedInternshipDetails = () => {
                 <img
                   src={liveTaskEvaluations}
                   alt="Live Task & Evaluations"
-                  className="w-32 h-32 object-contain"
+                  className="w-36 h-36 object-contain"
                 />
               </div>
               <h3 className="font-bold text-gray-800 text-center">Live Task & Evaluations</h3>
@@ -186,7 +186,7 @@ const GuaranteedInternshipDetails = () => {
                 <img
                   src={officialCompanyCertificate}
                   alt="Official Company Certificate"
-                  className="w-32 h-32 object-contain"
+                  className="w-36 h-36 object-contain"
                 />
               </div>
               <h3 className="font-bold text-gray-800 text-center">Official Company Certificate</h3>
