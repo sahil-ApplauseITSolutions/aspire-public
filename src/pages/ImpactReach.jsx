@@ -87,7 +87,7 @@ const ImpactReachPage = () => {
             <span className="inline-block bg-white text-orange-500 text-sm px-6 py-2 rounded-full mb-4 font-medium shadow-sm">
               Our Story
             </span>
-            <h2 className="text-heading text-3xl lg:text-4xl xl:text-5xl text-[#3D1717] mb-4">
+            <h2 className="text-heading text-3xl lg:text-4xl xl:text-4xl text-[#3D1717] mb-4">
               Our Journey of Growth
             </h2>
             <p className="text-body text-gray-600 max-w-2xl mx-auto text-base lg:text-lg">
