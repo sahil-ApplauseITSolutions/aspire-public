@@ -96,7 +96,7 @@ const Footer = () => {
             </li>
             <li>
               <Link to="/programs/uiux-developer" className="hover:text-orange-500 cursor-pointer transition-colors">
-                UI/UX Development
+                UI/UX Developer
               </Link>
             </li>
           </ul>
