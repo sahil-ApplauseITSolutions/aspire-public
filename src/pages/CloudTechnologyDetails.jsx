@@ -62,10 +62,10 @@ const CloudTechnologyDetails = () => {
           </div>
 
           {/* Program Content */}
-          <div className="flex flex-col lg:flex-row gap-2 items-start max-w-7xl">
+          <div className="flex flex-col lg:flex-row gap-6 lg:gap-2 items-start max-w-7xl">
             {/* Left - Image */}
-            <div className="flex-shrink-0">
-              <div className="rounded-xl overflow-hidden shadow-xl" style={{ width: '669px', height: '291px' }}>
+            <div className="flex-shrink-0 w-full lg:w-auto">
+              <div className="rounded-xl overflow-hidden shadow-xl w-full max-w-full lg:max-w-none" style={{ maxWidth: '669px', height: '291px' }}>
                 <img
                   src={cloudTechnologyImg}
                   alt="Cloud Technology"
@@ -75,7 +75,7 @@ const CloudTechnologyDetails = () => {
             </div>
 
             {/* Right - Content */}
-            <div className="flex-1 lg:ml-8">
+            <div className="flex-1 lg:ml-8 w-full">
               <h1 className="text-2xl font-bold text-[#EF7F2C] mb-3">
                 Cloud Technology
               </h1>
