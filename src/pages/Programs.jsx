@@ -152,41 +152,10 @@ const Programs = () => {
                 </div>
               </div>
 
-              {/* Virtual Internship */}
-              <div
-                className="bg-white rounded-xl shadow-lg overflow-hidden"
-                style={{ width: '412.6px', height: '298.96px' }}
-              >
-                {/* Top - Image */}
-                <div className="w-full" style={{ width: '415px', height: '128px' }}>
-                  <img
-                    src={guaranteedInternshipImg}
-                    alt="Virtual Internship"
-                    className="w-full h-full object-cover object-top"
-                  />
-                </div>
-                {/* Bottom - Text Content */}
-                <div className="p-4 flex flex-col justify-between" style={{ height: '170.96px' }}>
-                  <div>
-                    <h3 className="text-lg font-bold text-[#3b2a1a] mb-2">
-                      Virtual Internship
-                    </h3>
-                    <p className="text-gray-600 text-sm leading-relaxed mb-3">
-                      ASPIRE focus on strategic consulting, Training Need
-                      Analysis, Learning Design, e-learning, Training Delivery,
-                      Customized Content Development Competency...
-                    </p>
-                  </div>
-                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
-                    View Details →
-                  </button>
-                </div>
-              </div>
-
               {/* Campus to Corporate */}
               <div
                 className="bg-white rounded-xl shadow-lg overflow-hidden"
-                style={{ width: '412.6px', height: '298.96px' }}
+                style={{ maxWidth: '412.6px', height: '298.96px' }}
               >
                 {/* Top - Image */}
                 <div className="w-full" style={{ width: '415px', height: '128px' }}>
