@@ -29,63 +29,72 @@ const Hero = () => {
       badge: "EEDP",
       title: "EEDP",
       description: "The Employability Enhancement Development Programme (EEDP) equips participants with industry-relevant skills, professional competencies, and workplace readiness, enabling them to secure meaningful employment. It enhances confidence, practical knowledge, and adaptability...",
-      buttonText: "Know More"
+      buttonText: "Know More",
+      link: "/programs" // No specific detail page yet
     },
     {
       image: cyberSecurityImg,
       badge: "Cyber Security",
       title: "Cyber Security",
       description: "Cybersecurity courses equip students with the skills to protect digital systems, networks, and data from threats and attacks. They enhance employability in IT security roles and prepare learners to implement robust security measures, ensuring organizational and personal digital safety.",
-      buttonText: "Know More"
+      buttonText: "Know More",
+      link: "/programs" // No specific detail page yet
     },
     {
       image: cloudTechnologyImg,
       badge: "Cloud Technology",
       title: "Cloud Technology",
       description: "Cloud technology courses equip students with practical skills in cloud computing, including deployment, management, and security of cloud platforms. They enhance employability by preparing learners for roles in IT, DevOps, and cloud architecture, and support career growth in a rapidly evolving digital landscape.",
-      buttonText: "Know More"
+      buttonText: "Know More",
+      link: "/programs/cloud-technology"
     },
     {
       image: creditLinkedImg,
       badge: "Credit Linked Courses",
       title: "Credit Linked Courses",
       description: "Credit-linked courses equip students with industry-relevant skills and validated competencies, enhancing employability and job readiness. They also contribute to academic progression, supporting further education and career growth.",
-      buttonText: "Know More"
+      buttonText: "Know More",
+      link: "/programs" // No specific detail page yet
     },
     {
       image: quantumComputingImg,
       badge: "Quantum Computing",
       title: "Quantum Computing",
       description: "Quantum computing allows students to understand and work with next-generation technology that solves complex problems much faster than traditional computers. It opens opportunities in areas like AI, cryptography, simulations, and scientific research, preparing them for future-ready careers.",
-      buttonText: "Know More"
+      buttonText: "Know More",
+      link: "/programs" // No specific detail page yet
     },
     {
       image: aedpImg,
       badge: "AEDP",
       title: "AEDP",
       description: "The AEDP is an innovative academic initiative developed in partnership with academia, industry, and sector skill councils (SSC). This program commensurate with the New Education Policy (NEP) and UGC guidelines, which offers students not only an opportunity for academic learning but also guaranteed apprenticeships...",
-      buttonText: "Know More"
+      buttonText: "Know More",
+      link: "/programs" // No specific detail page yet
     },
     {
       image: guaranteedInternshipImg,
       badge: "Guaranteed Internship",
       title: "Guaranteed Internship",
       description: "Guaranteed internship programs provide students with hands-on industry experience, bridging the gap between academic learning and professional work. They enhance employability by offering real-world exposure, skill development, and networking opportunities, ensuring career readiness.",
-      buttonText: "Know More"
+      buttonText: "Know More",
+      link: "/programs/guaranteed-internship"
     },
     {
       image: uiuxDeveloperImg,
       badge: "UI/UX Developer",
       title: "UI/UX Developer",
       description: "UI/UX developer courses equip students with design thinking, user research, prototyping, and interface development skills. They enhance employability by preparing learners for roles in digital product design, improving user experiences, and supporting career growth in tech and creative industries.",
-      buttonText: "Know More"
+      buttonText: "Know More",
+      link: "/programs/uiux-developer"
     },
     {
       image: campusToCorporateImg,
       badge: "Campus to Corporate",
       title: "Campus to Corporate",
       description: "Mock Interviews, Advanced AI Resume Builder, Unlimited AI Practice Sessions, Full Career Skill Gap Dashboard, Detailed Analytics for TPOs, Placement Matching for colleges and extensive job opportunities, Soft Skill by Wadhwani Foundation, Skill Assessment Test, Aptitude Test, Psychometric Test, Platform for Application of Jobs",
-      buttonText: "Know More"
+      buttonText: "Know More",
+      link: "/programs/campus-to-corporate"
     }
   ];
 
@@ -187,7 +196,9 @@ const Hero = () => {
                     <p className="text-xs text-[#3D1717] mb-3 leading-relaxed opacity-80 line-clamp-6">
                       {slide.description}
                     </p>
-                    <button className="bg-gradient-to-r from-[#EF7F2C] to-[#d6691f] text-white px-3 py-1.5 rounded-xl text-xs font-semibold shadow-lg">
+                    <button 
+                      onClick={() => navigate(slide.link)}
+                      className="bg-gradient-to-r from-[#EF7F2C] to-[#d6691f] text-white px-3 py-1.5 rounded-xl text-xs font-semibold shadow-lg hover:from-[#d6691f] hover:to-[#c55a1a] transform hover:scale-105 transition-all duration-300">
                       {slide.buttonText} →
                     </button>
                   </div>
@@ -237,7 +248,9 @@ const Hero = () => {
                 {currentSlideData.description}
               </p>
 
-              <button className="group bg-gradient-to-r from-[#EF7F2C] to-[#d6691f] text-white px-4 xl:px-5 py-2 rounded-xl text-sm font-semibold hover:from-[#d6691f] hover:to-[#c55a1a] transform hover:scale-105 transition-all duration-300 shadow-lg">
+              <button 
+                onClick={() => navigate(currentSlideData.link)}
+                className="group bg-gradient-to-r from-[#EF7F2C] to-[#d6691f] text-white px-4 xl:px-5 py-2 rounded-xl text-sm font-semibold hover:from-[#d6691f] hover:to-[#c55a1a] transform hover:scale-105 transition-all duration-300 shadow-lg">
                 {currentSlideData.buttonText}
                 <span className="inline-block ml-2 group-hover:translate-x-1 transition-transform duration-300">→</span>
               </button>
