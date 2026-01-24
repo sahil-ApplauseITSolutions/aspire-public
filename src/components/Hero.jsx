@@ -24,6 +24,40 @@ const Hero = () => {
   const navigate = useNavigate();
 
   const slides = [
+    // Programs with detail pages first
+    {
+      image: guaranteedInternshipImg,
+      badge: "Guaranteed Internship",
+      title: "Guaranteed Internship",
+      description: "Guaranteed internship programs provide students with hands-on industry experience, bridging the gap between academic learning and professional work. They enhance employability by offering real-world exposure, skill development, and networking opportunities, ensuring career readiness.",
+      buttonText: "Know More",
+      link: "/programs/guaranteed-internship"
+    },
+    {
+      image: campusToCorporateImg,
+      badge: "Campus to Corporate",
+      title: "Campus to Corporate",
+      description: "Mock Interviews, Advanced AI Resume Builder, Unlimited AI Practice Sessions, Full Career Skill Gap Dashboard, Detailed Analytics for TPOs, Placement Matching for colleges and extensive job opportunities, Soft Skill by Wadhwani Foundation, Skill Assessment Test, Aptitude Test, Psychometric Test, Platform for Application of Jobs",
+      buttonText: "Know More",
+      link: "/programs/campus-to-corporate"
+    },
+    {
+      image: uiuxDeveloperImg,
+      badge: "UI/UX Developer",
+      title: "UI/UX Developer",
+      description: "UI/UX developer courses equip students with design thinking, user research, prototyping, and interface development skills. They enhance employability by preparing learners for roles in digital product design, improving user experiences, and supporting career growth in tech and creative industries.",
+      buttonText: "Know More",
+      link: "/programs/uiux-developer"
+    },
+    {
+      image: cloudTechnologyImg,
+      badge: "Cloud Technology",
+      title: "Cloud Technology",
+      description: "Cloud technology courses equip students with practical skills in cloud computing, including deployment, management, and security of cloud platforms. They enhance employability by preparing learners for roles in IT, DevOps, and cloud architecture, and support career growth in a rapidly evolving digital landscape.",
+      buttonText: "Know More",
+      link: "/programs/cloud-technology"
+    },
+    // Other programs after
     {
       image: eedpImg,
       badge: "EEDP",
@@ -39,14 +73,6 @@ const Hero = () => {
       description: "Cybersecurity courses equip students with the skills to protect digital systems, networks, and data from threats and attacks. They enhance employability in IT security roles and prepare learners to implement robust security measures, ensuring organizational and personal digital safety.",
       buttonText: "Know More",
       link: "/programs" // No specific detail page yet
-    },
-    {
-      image: cloudTechnologyImg,
-      badge: "Cloud Technology",
-      title: "Cloud Technology",
-      description: "Cloud technology courses equip students with practical skills in cloud computing, including deployment, management, and security of cloud platforms. They enhance employability by preparing learners for roles in IT, DevOps, and cloud architecture, and support career growth in a rapidly evolving digital landscape.",
-      buttonText: "Know More",
-      link: "/programs/cloud-technology"
     },
     {
       image: creditLinkedImg,
@@ -71,30 +97,6 @@ const Hero = () => {
       description: "The AEDP is an innovative academic initiative developed in partnership with academia, industry, and sector skill councils (SSC). This program commensurate with the New Education Policy (NEP) and UGC guidelines, which offers students not only an opportunity for academic learning but also guaranteed apprenticeships...",
       buttonText: "Know More",
       link: "/programs" // No specific detail page yet
-    },
-    {
-      image: guaranteedInternshipImg,
-      badge: "Guaranteed Internship",
-      title: "Guaranteed Internship",
-      description: "Guaranteed internship programs provide students with hands-on industry experience, bridging the gap between academic learning and professional work. They enhance employability by offering real-world exposure, skill development, and networking opportunities, ensuring career readiness.",
-      buttonText: "Know More",
-      link: "/programs/guaranteed-internship"
-    },
-    {
-      image: uiuxDeveloperImg,
-      badge: "UI/UX Developer",
-      title: "UI/UX Developer",
-      description: "UI/UX developer courses equip students with design thinking, user research, prototyping, and interface development skills. They enhance employability by preparing learners for roles in digital product design, improving user experiences, and supporting career growth in tech and creative industries.",
-      buttonText: "Know More",
-      link: "/programs/uiux-developer"
-    },
-    {
-      image: campusToCorporateImg,
-      badge: "Campus to Corporate",
-      title: "Campus to Corporate",
-      description: "Mock Interviews, Advanced AI Resume Builder, Unlimited AI Practice Sessions, Full Career Skill Gap Dashboard, Detailed Analytics for TPOs, Placement Matching for colleges and extensive job opportunities, Soft Skill by Wadhwani Foundation, Skill Assessment Test, Aptitude Test, Psychometric Test, Platform for Application of Jobs",
-      buttonText: "Know More",
-      link: "/programs/campus-to-corporate"
     }
   ];
 
