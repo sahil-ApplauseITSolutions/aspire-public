@@ -120,8 +120,9 @@ const Footer = () => {
             <div className="flex items-start gap-3">
               <img src={addressIcon} alt="Address" className="w-4 h-4 mt-1" />
               <span>
-                Pune – 411 004 <br />
-                Maharashtra, India
+                Office No. 301–305, Kamla Arcade, 1204, J.M. Road,<br />
+                Opp. Bal Gandharva Rang Mandir, Deccan,<br />
+                Pune – 411004, Maharashtra, India
               </span>
             </div>
           </div>

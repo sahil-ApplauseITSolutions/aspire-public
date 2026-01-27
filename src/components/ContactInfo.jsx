@@ -41,10 +41,9 @@ const ContactInfo = () => {
                 <div>
                   <h3 className="font-semibold text-[#3D1717] mb-1 text-sm">Address</h3>
                   <div className="text-[#3D1717] opacity-70 text-sm leading-relaxed">
-                    <p>Aspire Knowledge & Skills India Pvt. Ltd . 1204,</p>
-                    <p> Office No. 301-305, 3rd Floor,</p>
-                    <p>Opp. Bal Gandharva Rang Mandir,J.M Road, Kamla Arcade, Deccan,</p>
-                    <p>Pune - 411 004, Maharashtra, India</p>
+                    <p>Office No. 301–305, Kamla Arcade, 1204, J.M. Road,</p>
+                    <p>Opp. Bal Gandharva Rang Mandir, Deccan,</p>
+                    <p>Pune – 411004, Maharashtra, India</p>
                   </div>
                 </div>
               </div>
