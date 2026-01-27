@@ -20,13 +20,13 @@ const About = () => {
   const [activeTab, setActiveTab] = useState("profile");
   const { isLoading, setLoading } = useLoading(true, 800);
   const { loadingStates, simulateSectionLoading } = useSectionLoading([
-    'profile', 'vision', 'triangle', 'founder'
+    'profile', 'vision', 'founder'
   ]);
 
   // Set active tab based on URL parameter
   useEffect(() => {
     const tabParam = searchParams.get('tab');
-    if (tabParam && ['profile', 'vision', 'triangle', 'founder'].includes(tabParam)) {
+    if (tabParam && ['profile', 'vision', 'founder'].includes(tabParam)) {
       setActiveTab(tabParam);
     }
   }, [searchParams]);
@@ -55,7 +55,6 @@ const About = () => {
   const tabs = [
     { id: "profile", label: "ASPIRE Profile", active: true },
     { id: "vision", label: "Vision & Mission", active: false },
-    { id: "triangle", label: "Aspire Triangle", active: false },
     { id: "founder", label: "Founder's Message", active: false }
   ];
 
@@ -252,16 +251,9 @@ const About = () => {
                   </p>
                 </div>
               </div>
-            </div>
-          )}
 
-          {/* ASPIRE TRIANGLE */}
-          {activeTab === "triangle" && (
-            <div className="w-full text-center">
-
-
-              {/* Triangle Image - Full Width Edge to Edge */}
-              <div className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] mb-8">
+              {/* Aspire Triangle - Full Width Edge to Edge */}
+              <div className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] mt-12 mb-8">
                 <img
                   src={aspireTriangleImg}
                   alt="Aspire Triangle"
@@ -269,12 +261,10 @@ const About = () => {
                   style={{ objectFit: 'cover' }}
                 />
               </div>
-
-              <div className="max-w-7xl mx-auto px-4 sm:px-6">
-
-              </div>
             </div>
           )}
+
+
 
         </div>
       </section>

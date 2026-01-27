@@ -15,7 +15,6 @@ const Navbar = () => {
   const aboutTabs = [
     { id: "profile", label: "ASPIRE Profile" },
     { id: "vision", label: "Vision & Mission" },
-    { id: "triangle", label: "Aspire Triangle" },
     { id: "founder", label: "Founder's Message" }
   ];
 
