@@ -80,7 +80,7 @@ const ImpactReachPage = () => {
       )}
 
       {/* OUR JOURNEY OF GROWTH TIMELINE SECTION */}
-      <section className="bg-[#f8f6f3] py-16 w-full">
+      <section className="bg-[#f8f6f3] py-10 w-full">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           {/* Section Header */}
           <div className="text-center mb-16">
