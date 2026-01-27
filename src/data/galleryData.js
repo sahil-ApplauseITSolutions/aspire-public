@@ -367,7 +367,7 @@ export const galleryData = {
     { id: 14, src: jis14, alt: 'Staff Meeting Photo' },
     { id: 15, src: jis15, alt: 'Team Jetking J.M. Road' }
   ],
-  'Motivational Book': [
+  'Books': [
     { id: 1, src: mb1, alt: 'Motivational Book release UTKARSHAGATHA' }
   ],
   'News Paper Articles': [
