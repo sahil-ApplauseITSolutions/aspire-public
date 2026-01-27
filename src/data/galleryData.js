@@ -155,7 +155,7 @@ import ind15 from "../assets/images/Aspire selected photos/Industry/Shri. Mangal
 import ind16 from "../assets/images/Aspire selected photos/Industry/Shri. N K Mahapatra Former CEO of Electronics Sector Skill .jpeg";
 import ind17 from "../assets/images/Aspire selected photos/Industry/Shri. Prashanth Prakash Accel Parnter.jpeg";
 import ind18 from "../assets/images/Aspire selected photos/Industry/Vice President – Pune Management Association.jpg";
-// Jetking Infra Setup
+// Jetking Infra Setup (merged into Aspire Training Center)
 import jis1 from "../assets/images/Aspire selected photos/Jetking Infra Setup/IMG_0031.JPG";
 import jis2 from "../assets/images/Aspire selected photos/Jetking Infra Setup/IMG_0037.JPG";
 import jis3 from "../assets/images/Aspire selected photos/Jetking Infra Setup/IMG_0038.JPG";
@@ -217,7 +217,22 @@ export const galleryData = {
     { id: 10, src: atc10, alt: 'Reception Area' },
     { id: 11, src: atc11, alt: 'Solar lab & classroom' },
     { id: 12, src: atc12, alt: 'Team Aspire Knowledge And Skills India' },
-    { id: 13, src: atc13, alt: 'Telcom Lab' }
+    { id: 13, src: atc13, alt: 'Telcom Lab' },
+    { id: 14, src: jis1, alt: 'Infrastructure Setup' },
+    { id: 15, src: jis2, alt: 'Infrastructure Setup' },
+    { id: 16, src: jis3, alt: 'Infrastructure Setup' },
+    { id: 17, src: jis4, alt: 'Infrastructure Setup' },
+    { id: 18, src: jis5, alt: 'Infrastructure Setup' },
+    { id: 19, src: jis6, alt: 'Infrastructure Setup' },
+    { id: 20, src: jis7, alt: 'Infrastructure Setup' },
+    { id: 21, src: jis8, alt: 'Jetking JMROAD Training Lab' },
+    { id: 22, src: jis9, alt: 'Jetking JMROAD Training Lab' },
+    { id: 23, src: jis10, alt: 'Jetking JMROAD Training Lab' },
+    { id: 24, src: jis11, alt: 'JMROAD Center Equipment' },
+    { id: 25, src: jis12, alt: 'JMROAD Center Infra Photo' },
+    { id: 26, src: jis13, alt: 'JMROAD' },
+    { id: 27, src: jis14, alt: 'Staff Meeting Photo' },
+    { id: 28, src: jis15, alt: 'Team Jetking J.M. Road' }
   ],
   'Awards': [
     { id: 1, src: aw1, alt: 'Skill India Icon Award by Governor' },
@@ -350,23 +365,7 @@ export const galleryData = {
     { id: 17, src: ind17, alt: 'Shri. Prashanth Prakash Accel Partner' },
     { id: 18, src: ind18, alt: 'Vice President Pune Management Association' }
   ],
-  'Jetking Infra Setup': [
-    { id: 1, src: jis1, alt: 'Infrastructure Setup' },
-    { id: 2, src: jis2, alt: 'Infrastructure Setup' },
-    { id: 3, src: jis3, alt: 'Infrastructure Setup' },
-    { id: 4, src: jis4, alt: 'Infrastructure Setup' },
-    { id: 5, src: jis5, alt: 'Infrastructure Setup' },
-    { id: 6, src: jis6, alt: 'Infrastructure Setup' },
-    { id: 7, src: jis7, alt: 'Infrastructure Setup' },
-    { id: 8, src: jis8, alt: 'Jetking JMROAD Training Lab' },
-    { id: 9, src: jis9, alt: 'Jetking JMROAD Training Lab' },
-    { id: 10, src: jis10, alt: 'Jetking JMROAD Training Lab' },
-    { id: 11, src: jis11, alt: 'JMROAD Center Equipment' },
-    { id: 12, src: jis12, alt: 'JMROAD Center Infra Photo' },
-    { id: 13, src: jis13, alt: 'JMROAD' },
-    { id: 14, src: jis14, alt: 'Staff Meeting Photo' },
-    { id: 15, src: jis15, alt: 'Team Jetking J.M. Road' }
-  ],
+
   'Books': [
     { id: 1, src: mb1, alt: 'Motivational Book release UTKARSHAGATHA' }
   ],
