@@ -172,7 +172,7 @@ import jis13 from "../assets/images/Aspire selected photos/Jetking Infra Setup/J
 import jis14 from "../assets/images/Aspire selected photos/Jetking Infra Setup/Staff Meeting Photo.JPG";
 import jis15 from "../assets/images/Aspire selected photos/Jetking Infra Setup/Team Jetking J.M. Road.jpg";
 
-// Motivational Book
+// Books
 import mb1 from "../assets/images/Aspire selected photos/Motivational-Book-UTKARSHAGATHA.JPG";
 
 // News Paper Articles
