@@ -57,7 +57,7 @@ const Testimonials = () => {
           </span>
 
           <h2 className="text-3xl lg:text-4xl font-bold text-[#3b2a1a] mb-3">
-            Voices of Achievement
+            Voices of Learners
           </h2>
 
           <p className="text-gray-600 max-w-2xl mx-auto">
