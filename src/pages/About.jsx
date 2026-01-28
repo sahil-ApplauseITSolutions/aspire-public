@@ -156,7 +156,7 @@ const About = () => {
                   </p>
 
                   <p className="text-gray-800 text-justify font-dm-sans font-normal" style={{ fontSize: '16px', lineHeight: '1.4' }}>
-                    • <span className="font-bold text-[#EF7F2C]">Demand-Driven Skill Development:</span> We seamlessly integrate industry relevant credit sanctioned courses into formal education using strategic alliance of our 250+ companies, ensuring students are job-ready.
+                    • <span className="font-bold text-[#EF7F2C]">Demand-Driven Skill Development:</span> We seamlessly integrate industry relevant credit sanctioned courses into formal education using strategic alliance of our 200+ industry partners, ensuring students are job-ready.
                   </p>
                 </div>
 
@@ -306,8 +306,8 @@ const About = () => {
                   </div>
                   <h3 className="text-3xl font-bold text-[#EF7F2C] mb-4">Dr.Sanjay Gandhi</h3>
                   <p className="text-gray-700 leading-relaxed text-base">
-                    A visionary leader dedicated to transforming the skill development ecosystem in India. With over 25 years of
-                    experience, Dr. Gandhi has empowered more than 1,00,000+ youth through technical training, mentoring, and
+                    A visionary leader dedicated to transforming the skill development ecosystem in India. With 28 years of
+                    experience, Dr. Gandhi has empowered more than 100K+ youth through technical training, mentoring, and
                     entrepreneurship development. His mission is to bridge the gap between academic learning and real-world
                     industry requirements.
                   </p>
@@ -321,7 +321,7 @@ const About = () => {
                       <Briefcase className="w-5 h-5 text-[#EF7F2C] group-hover:scale-110 transition-transform duration-300" />
                     </div>
                     <div>
-                      <div className="font-bold text-gray-900 group-hover:text-[#EF7F2C] transition-colors duration-300">28+ Years</div>
+                      <div className="font-bold text-gray-900 group-hover:text-[#EF7F2C] transition-colors duration-300">28 Years</div>
                       <div className="text-sm text-gray-600 group-hover:text-gray-700 transition-colors duration-300">Professional Experience</div>
                     </div>
                   </div>
@@ -332,8 +332,8 @@ const About = () => {
                       <GraduationCap className="w-5 h-5 text-[#EF7F2C] group-hover:scale-110 transition-transform duration-300" />
                     </div>
                     <div>
-                      <div className="font-bold text-gray-900 group-hover:text-[#EF7F2C] transition-colors duration-300">1,00,000+ Students</div>
-                      <div className="text-sm text-gray-600 group-hover:text-gray-700 transition-colors duration-300">Trained & Placed</div>
+                      <div className="font-bold text-gray-900 group-hover:text-[#EF7F2C] transition-colors duration-300">100K+ Students</div>
+                      <div className="text-sm text-gray-600 group-hover:text-gray-700 transition-colors duration-300">Trained</div>
                     </div>
                   </div>
 
@@ -343,7 +343,7 @@ const About = () => {
                       <Users className="w-5 h-5 text-[#EF7F2C] group-hover:scale-110 transition-transform duration-300" />
                     </div>
                     <div>
-                      <div className="font-bold text-gray-900 group-hover:text-[#EF7F2C] transition-colors duration-300">5000+ Workshops</div>
+                      <div className="font-bold text-gray-900 group-hover:text-[#EF7F2C] transition-colors duration-300">500K+ Workshops</div>
                       <div className="text-sm text-gray-600 group-hover:text-gray-700 transition-colors duration-300">Delivered Globally</div>
                     </div>
                   </div>
@@ -377,7 +377,7 @@ const About = () => {
                       <Award className="w-5 h-5 text-[#EF7F2C] group-hover:scale-110 transition-transform duration-300" />
                     </div>
                     <div>
-                      <div className="font-bold text-gray-900 group-hover:text-[#EF7F2C] transition-colors duration-300">100+ MOUs</div>
+                      <div className="font-bold text-gray-900 group-hover:text-[#EF7F2C] transition-colors duration-300">200+ Industry Partnerships</div>
                       <div className="text-sm text-gray-600 group-hover:text-gray-700 transition-colors duration-300">With Universities & Industries</div>
                     </div>
                   </div>
@@ -688,27 +688,27 @@ const About = () => {
                 </h2>
 
                 <p className="text-gray-800 text-justify font-dm-sans font-normal" style={{ fontSize: '16px', lineHeight: '1.4' }}>
-                  More than 150+ academic MOUs with institutions like IIT BHU, IIIT, BATU, VTU, COEP, SNDT and many more.
+                  More than 200+ industry partnerships with institutions like IIT BHU, IIIT, BATU, VTU, COEP, SNDT and many more.
                 </p>
 
                 <p className="text-gray-800 text-justify font-dm-sans font-normal" style={{ fontSize: '16px', lineHeight: '1.4' }}>
-                  • Conducted technical skills and career pathway workshops for 500,000+ students
+                  • Conducted technical skills and career pathway workshops for 500K+ students
                 </p>
 
                 <p className="text-gray-800 text-justify font-dm-sans font-normal" style={{ fontSize: '16px', lineHeight: '1.4' }}>
-                  • Empowered over 100,000+ students through vocational and advanced skills training
+                  • Empowered over 100K+ students through vocational and advanced skills training
                 </p>
 
                 <p className="text-gray-800 text-justify font-dm-sans font-normal" style={{ fontSize: '16px', lineHeight: '1.4' }}>
-                  • Facilitated 50,000+ placements by connecting industry with academia
+                  • Facilitated 50K+ placements by connecting industry with academia
                 </p>
 
                 <p className="text-gray-800 text-justify font-dm-sans font-normal" style={{ fontSize: '16px', lineHeight: '1.4' }}>
-                  • Currently providing futuristic training to 10,000+ students across 100+ colleges spread across Maharashtra, Karnataka and Orissa
+                  • Currently providing futuristic training to 10K+ students across 100+ colleges spread across Maharashtra, Karnataka and Orissa
                 </p>
 
                 <p className="text-gray-800 text-justify font-dm-sans font-normal" style={{ fontSize: '16px', lineHeight: '1.4' }}>
-                  • Establishment of Electronics Science Skill Lab for 10000+ students to provide hands on training in Electronic Equipment Maintenance Skills
+                  • Establishment of Electronics Science Skill Lab for 10K+ students to provide hands on training in Electronic Equipment Maintenance Skills
                 </p>
 
                 <p className="text-gray-800 font-dm-sans font-bold mt-3" style={{ fontSize: '16px', lineHeight: '1.4' }}>
@@ -765,7 +765,7 @@ const About = () => {
                   </div>
                   <div>
                     <p className="text-gray-600 text-sm font-medium mb-1">Collaborations</p>
-                    <h3 className="text-gray-900 font-bold text-lg">100+ MOUs Signed</h3>
+                    <h3 className="text-gray-900 font-bold text-lg">200+ Industry Partnerships</h3>
                   </div>
                 </div>
               </div>

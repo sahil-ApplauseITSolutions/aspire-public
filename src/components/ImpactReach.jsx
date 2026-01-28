@@ -21,7 +21,7 @@ const allStats = [
   {
     icon: trainedStudentsIcon,
     value: "100K+",
-    label: "Trained Students"
+    label: "Students Trained"
   },
   {
     icon: careerWorkshopsIcon,
@@ -51,7 +51,7 @@ const allStats = [
   {
     icon: mouTieUpsIcon,
     value: "200+",
-    label: "MOUs Tie Ups"
+    label: "Industry Partnerships"
   }
 ];
 
@@ -96,7 +96,7 @@ const ImpactReach = () => {
           </h2>
 
           <p className="max-w-2xl mx-auto text-white/80 text-sm sm:text-base lg:text-lg px-4">
-            Empowering 10,000+ students through 100+ colleges,
+            Empowering 10K+ students through 100+ colleges,
             corporate partnerships, and PAN-India initiatives.
           </p>
         </div>
