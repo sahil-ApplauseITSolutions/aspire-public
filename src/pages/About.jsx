@@ -24,6 +24,12 @@ import pravinMohiteImg from "../assets/images/advisory board/Mr. Pravin Mohite.p
 import shiviKaliaImg from "../assets/images/advisory board/Ms. Shivi Kalia.png";
 import sushmaBhayaniImg from "../assets/images/advisory board/Ms. Sushma Bhayani.png";
 
+// Import academic advisory board images
+import mukulSutaoneImg from "../assets/images/Academic Advisory Board/Mukul Sutaone.png";
+import karbhariKaleImg from "../assets/images/Academic Advisory Board/Karbhari Vishwanath Kale.png";
+import sunilBhirudImg from "../assets/images/Academic Advisory Board/Sunil Bhirud.png";
+import shailendraShuklaImg from "../assets/images/Academic Advisory Board/Shailendra Shukla.png";
+
 const About = () => {
   const [searchParams] = useSearchParams();
   const [activeTab, setActiveTab] = useState("profile");
@@ -965,16 +971,126 @@ const About = () => {
 
             </div>
 
+            {/* Academic Advisory Board Section */}
+            <div className="mt-20">
+              <div className="text-center mb-12">
+                <span className="inline-block bg-[#fff1e4] text-[#EF7F2C] text-sm px-6 py-2 rounded-full mb-4 font-medium shadow-sm">
+                  Academic Excellence
+                </span>
+                <h2 className="text-3xl lg:text-4xl font-bold text-[#3D1717] mb-6">
+                  Academic Advisory Board
+                </h2>
+                <p className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
+                  Renowned academicians and educational leaders who ensure our curriculum remains academically rigorous, 
+                  research-oriented, and aligned with the highest educational standards.
+                </p>
+              </div>
+
+              {/* Academic Advisors Grid */}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                {/* Dr. Mukul Sutaone */}
+                <div className="group">
+                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200">
+                    <div className="relative overflow-hidden">
+                      <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-8 flex items-center justify-center">
+                        <img
+                          src={mukulSutaoneImg}
+                          alt="Dr. Mukul Sutaone"
+                          className="w-full h-full object-cover rounded-2xl shadow-md group-hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                    </div>
+                    <div className="p-6 text-center">
+                      <h3 className="text-lg font-bold text-[#3D1717] mb-2">
+                        Dr. Mukul Sutaone
+                      </h3>
+                      <p className="text-sm text-gray-600 mb-1">Director</p>
+                      <p className="text-sm text-orange-600 font-medium">Indian Institute of Information Technology, Allahabad</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Colonel Professor Karbhari Vishwanath Kale */}
+                <div className="group">
+                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200">
+                    <div className="relative overflow-hidden">
+                      <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-8 flex items-center justify-center">
+                        <img
+                          src={karbhariKaleImg}
+                          alt="Colonel Professor Karbhari Vishwanath Kale"
+                          className="w-full h-full object-cover rounded-2xl shadow-md group-hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                    </div>
+                    <div className="p-6 text-center">
+                      <h3 className="text-lg font-bold text-[#3D1717] mb-2">
+                        Col. Prof. Karbhari Vishwanath Kale
+                      </h3>
+                      <p className="text-sm text-gray-600 mb-1">Vice-Chancellor</p>
+                      <p className="text-sm text-orange-600 font-medium">Dr. Babasaheb Ambedkar Technological University (DBATU)</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Prof. Sunil Bhirud */}
+                <div className="group">
+                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200">
+                    <div className="relative overflow-hidden">
+                      <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-8 flex items-center justify-center">
+                        <img
+                          src={sunilBhirudImg}
+                          alt="Prof. Sunil Bhirud"
+                          className="w-full h-full object-cover rounded-2xl shadow-md group-hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                    </div>
+                    <div className="p-6 text-center">
+                      <h3 className="text-lg font-bold text-[#3D1717] mb-2">
+                        Prof. Sunil Bhirud
+                      </h3>
+                      <p className="text-sm text-gray-600 mb-1">Vice Chancellor - COEP</p>
+                      <p className="text-sm text-orange-600 font-medium">Technological University (COEP Tech)</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Dr. Shailendra K. Shukla */}
+                <div className="group">
+                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200">
+                    <div className="relative overflow-hidden">
+                      <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-8 flex items-center justify-center">
+                        <img
+                          src={shailendraShuklaImg}
+                          alt="Dr. Shailendra K. Shukla"
+                          className="w-full h-full object-cover rounded-2xl shadow-md group-hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                    </div>
+                    <div className="p-6 text-center">
+                      <h3 className="text-lg font-bold text-[#3D1717] mb-2">
+                        Dr. Shailendra K. Shukla
+                      </h3>
+                      <p className="text-sm text-gray-600 mb-1">Professor</p>
+                      <p className="text-sm text-orange-600 font-medium">Indian Institute of Technology BHU, Varanasi</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
             {/* Bottom Section */}
             <div className="mt-16 text-center">
               <div className="bg-gradient-to-r from-orange-50 to-orange-100 rounded-2xl p-8 border border-orange-200">
                 <h3 className="text-2xl font-bold text-[#3D1717] mb-4">
-                  Strategic Guidance for Excellence
+                  Dual Advisory Excellence
                 </h3>
                 <p className="text-gray-700 max-w-4xl mx-auto leading-relaxed">
-                  Our advisory board brings together decades of industry experience, strategic insights, 
-                  and deep understanding of market dynamics. Their guidance ensures that our programs 
-                  remain cutting-edge, relevant, and aligned with the evolving needs of the technology sector.
+                  Our comprehensive advisory structure combines industry expertise with academic excellence. 
+                  The Industry Advisory Board ensures market relevance and practical application, while the 
+                  Academic Advisory Board maintains educational rigor and research-based learning approaches, 
+                  creating a perfect balance for holistic skill development.
                 </p>
               </div>
             </div>
