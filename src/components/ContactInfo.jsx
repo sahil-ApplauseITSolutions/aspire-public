@@ -85,16 +85,16 @@ const ContactInfo = () => {
                 height: '260px'
               }}
             >
-              {/* MAP PLACEHOLDER - Replace with actual Google Maps embed */}
+              {/* Google Maps Embed */}
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.0267!2d73.8567437!3d18.5204303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c0764b2b7b7b%3A0x1234567890abcdef!2sDeccan%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11802.56665286041!2d73.848681!3d18.523183!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c07bfa44c59b%3A0xb9cc2d05c1e99fcb!2sAspire%20Knowledge%20%26%20Skills%20India%20Pvt%20Ltd!5e1!3m2!1sen!2sus!4v1769579482227!5m2!1sen!2sus"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Aspire Knowledge & Skills Location"
+                title="Aspire Knowledge & Skills India Pvt Ltd Location"
               ></iframe>
             </div>
           </div>
