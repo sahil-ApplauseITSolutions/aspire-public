@@ -311,7 +311,7 @@ const About = () => {
                       <Briefcase className="w-5 h-5 text-[#EF7F2C] group-hover:scale-110 transition-transform duration-300" />
                     </div>
                     <div>
-                      <div className="font-bold text-gray-900 group-hover:text-[#EF7F2C] transition-colors duration-300">25+ Years</div>
+                      <div className="font-bold text-gray-900 group-hover:text-[#EF7F2C] transition-colors duration-300">28+ Years</div>
                       <div className="text-sm text-gray-600 group-hover:text-gray-700 transition-colors duration-300">Professional Experience</div>
                     </div>
                   </div>

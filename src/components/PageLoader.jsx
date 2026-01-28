@@ -16,10 +16,6 @@ const PageLoader = () => {
           <div className="w-16 h-1 bg-gradient-to-r from-[#EF7F2C] to-orange-500 rounded-full mx-auto"></div>
         </div>
         
-        <p className="text-gray-600 text-sm mb-6 font-medium">
-         Creating Pathways to Employability
-        </p>
-        
         {/* Loading status
         <p className="text-gray-500 text-sm font-medium animate-pulse">
           Loading amazing experience...
