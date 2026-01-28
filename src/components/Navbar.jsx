@@ -15,7 +15,8 @@ const Navbar = () => {
   const aboutTabs = [
     { id: "profile", label: "ASPIRE Profile" },
     { id: "vision", label: "Vision & Mission" },
-    { id: "founder", label: "Founder's Message" }
+    { id: "founder", label: "Founder's Message" },
+    { id: "advisors", label: "Advisors" }
   ];
 
   const handleAboutTabClick = (tabId) => {

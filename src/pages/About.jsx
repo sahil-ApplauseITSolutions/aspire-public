@@ -15,18 +15,27 @@ import samidhaImg from "../assets/images/samidha.png";
 import aspire2Img from "../assets/images/aspire-2.jpg";
 import { Briefcase, GraduationCap, Users, BookOpen, User, Award, Quote } from "lucide-react";
 
+// Import advisory board images
+import colInderImg from "../assets/images/advisory board/Col. Inder S Gahlaut.png";
+import ltGenKochharImg from "../assets/images/advisory board/Lt. Gen. Dr SP Kochhar.jpg";
+import mohanRajuImg from "../assets/images/advisory board/Mr. Mohan Raju.png";
+import pradeepJaswaniImg from "../assets/images/advisory board/Mr. Pradeep Jaswani.jfif";
+import pravinMohiteImg from "../assets/images/advisory board/Mr. Pravin Mohite.png";
+import shiviKaliaImg from "../assets/images/advisory board/Ms. Shivi Kalia.png";
+import sushmaBhayaniImg from "../assets/images/advisory board/Ms. Sushma Bhayani.png";
+
 const About = () => {
   const [searchParams] = useSearchParams();
   const [activeTab, setActiveTab] = useState("profile");
   const { isLoading, setLoading } = useLoading(true, 800);
   const { loadingStates, simulateSectionLoading } = useSectionLoading([
-    'profile', 'vision', 'founder'
+    'profile', 'vision', 'founder', 'advisors'
   ]);
 
   // Set active tab based on URL parameter
   useEffect(() => {
     const tabParam = searchParams.get('tab');
-    if (tabParam && ['profile', 'vision', 'founder'].includes(tabParam)) {
+    if (tabParam && ['profile', 'vision', 'founder', 'advisors'].includes(tabParam)) {
       setActiveTab(tabParam);
     }
   }, [searchParams]);
@@ -55,7 +64,8 @@ const About = () => {
   const tabs = [
     { id: "profile", label: "ASPIRE Profile", active: true },
     { id: "vision", label: "Vision & Mission", active: false },
-    { id: "founder", label: "Founder's Message", active: false }
+    { id: "founder", label: "Founder's Message", active: false },
+    { id: "advisors", label: "Advisors", active: false }
   ];
 
   // Get current tab label
@@ -305,7 +315,7 @@ const About = () => {
 
                 {/* Statistics Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                  {/* 25+ Years - Briefcase Icon */}
+                  {/* 28+ Years - Briefcase Icon */}
                   <div className="group flex items-center space-x-3 p-4 rounded-xl hover:bg-white hover:shadow-lg transition-all duration-300 cursor-pointer">
                     <div className="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-orange-200 group-hover:scale-110 transition-all duration-300">
                       <Briefcase className="w-5 h-5 text-[#EF7F2C] group-hover:scale-110 transition-transform duration-300" />
@@ -776,6 +786,202 @@ const About = () => {
               </div>
 
             </div>
+          </div>
+        </section>
+      )}
+
+      {/* ADVISORS SECTION - DIFFERENT UI */}
+      {activeTab === "advisors" && (
+        <section className="bg-white py-16 w-full">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6">
+            
+            {/* Section Header */}
+            <div className="text-center mb-16">
+              <span className="inline-block bg-[#fff1e4] text-[#EF7F2C] text-sm px-6 py-2 rounded-full mb-4 font-medium shadow-sm">
+                Our Leadership
+              </span>
+              <h2 className="text-4xl lg:text-5xl font-bold text-[#3D1717] mb-6">
+                Advisory Board
+              </h2>
+              <p className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
+                Distinguished industry leaders and experts who guide our strategic vision and ensure 
+                our programs remain aligned with evolving market demands and technological advancements.
+              </p>
+            </div>
+
+            {/* Advisors Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+              
+              {/* Col. Inder S Gahlaut */}
+              <div className="group">
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200">
+                  <div className="relative overflow-hidden">
+                    <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-8 flex items-center justify-center">
+                      <img
+                        src={colInderImg}
+                        alt="Col. Inder S Gahlaut"
+                        className="w-full h-full object-cover rounded-2xl shadow-md group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                  </div>
+                  <div className="p-6 text-center">
+                    <h3 className="text-lg font-bold text-[#3D1717] mb-2">
+                      Col. Inder S Gahlaut
+                    </h3>
+                    <p className="text-sm text-gray-600 mb-1">Skill Development PwC</p>
+                    <p className="text-sm text-orange-600 font-medium">CEO CGSE Specialist</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Ms. Shivi Kalia */}
+              <div className="group">
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200">
+                  <div className="relative overflow-hidden">
+                    <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-8 flex items-center justify-center">
+                      <img
+                        src={shiviKaliaImg}
+                        alt="Ms. Shivi Kalia"
+                        className="w-full h-full object-cover rounded-2xl shadow-md group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                  </div>
+                  <div className="p-6 text-center">
+                    <h3 className="text-lg font-bold text-[#3D1717] mb-2">
+                      Ms. Shivi Kalia
+                    </h3>
+                    <p className="text-sm text-gray-600 mb-1">Former Head BHR, Tech</p>
+                    <p className="text-sm text-orange-600 font-medium">Mahindra</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Mr. Pravin Mohite */}
+              <div className="group">
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200">
+                  <div className="relative overflow-hidden">
+                    <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-8 flex items-center justify-center">
+                      <img
+                        src={pravinMohiteImg}
+                        alt="Mr. Pravin Mohite"
+                        className="w-full h-full object-cover rounded-2xl shadow-md group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                  </div>
+                  <div className="p-6 text-center">
+                    <h3 className="text-lg font-bold text-[#3D1717] mb-2">
+                      Mr. Pravin Mohite
+                    </h3>
+                    <p className="text-sm text-gray-600 mb-1">CEO Olive Data Centre Pvt.</p>
+                    <p className="text-sm text-orange-600 font-medium">Based in California</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Mr. Mohan Raju */}
+              <div className="group">
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200">
+                  <div className="relative overflow-hidden">
+                    <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-8 flex items-center justify-center">
+                      <img
+                        src={mohanRajuImg}
+                        alt="Mr. Mohan Raju"
+                        className="w-full h-full object-cover rounded-2xl shadow-md group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                  </div>
+                  <div className="p-6 text-center">
+                    <h3 className="text-lg font-bold text-[#3D1717] mb-2">
+                      Mr. Mohan Raju
+                    </h3>
+                    <p className="text-sm text-gray-600 mb-1">VP & Vertical Head IoT</p>
+                    <p className="text-sm text-orange-600 font-medium">Reliance Jio</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Lt. Gen. Dr SP Kochhar */}
+              <div className="group">
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200">
+                  <div className="relative overflow-hidden">
+                    <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-8 flex items-center justify-center">
+                      <img
+                        src={ltGenKochharImg}
+                        alt="Lt. Gen. Dr SP Kochhar"
+                        className="w-full h-full object-cover rounded-2xl shadow-md group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                  </div>
+                  <div className="p-6 text-center">
+                    <h3 className="text-lg font-bold text-[#3D1717] mb-2">
+                      Lt. Gen. Dr SP Kochhar
+                    </h3>
+                    <p className="text-sm text-gray-600 mb-1">Director General COAI</p>
+                    <p className="text-sm text-orange-600 font-medium">Cellular Operators Association</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Ms. Sushma Bhayani */}
+              <div className="group">
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200">
+                  <div className="relative overflow-hidden">
+                    <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-8 flex items-center justify-center">
+                      <img
+                        src={sushmaBhayaniImg}
+                        alt="Ms. Sushma Bhayani"
+                        className="w-full h-full object-cover rounded-2xl shadow-md group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                  </div>
+                  <div className="p-6 text-center">
+                    <h3 className="text-lg font-bold text-[#3D1717] mb-2">
+                      Ms. Sushma Bhayani
+                    </h3>
+                    <p className="text-sm text-gray-600 mb-1">Former Senior Solution</p>
+                    <p className="text-sm text-orange-600 font-medium">Manager, IBM</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Mr. Pradeep Jaswani */}
+              <div className="group">
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200">
+                  <div className="relative overflow-hidden">
+                    <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-8 flex items-center justify-center">
+                      <img
+                        src={pradeepJaswaniImg}
+                        alt="Mr. Pradeep Jaswani"
+                        className="w-full h-full object-cover rounded-2xl shadow-md group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                  </div>
+                  <div className="p-6 text-center">
+                    <h3 className="text-lg font-bold text-[#3D1717] mb-2">
+                      Mr. Pradeep Jaswani
+                    </h3>
+                    <p className="text-sm text-gray-600 mb-1">CEO JP Research India</p>
+                    <p className="text-sm text-orange-600 font-medium">Pvt. Ltd. (USA Based)</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            {/* Bottom Section */}
+            <div className="mt-16 text-center">
+              <div className="bg-gradient-to-r from-orange-50 to-orange-100 rounded-2xl p-8 border border-orange-200">
+                <h3 className="text-2xl font-bold text-[#3D1717] mb-4">
+                  Strategic Guidance for Excellence
+                </h3>
+                <p className="text-gray-700 max-w-4xl mx-auto leading-relaxed">
+                  Our advisory board brings together decades of industry experience, strategic insights, 
+                  and deep understanding of market dynamics. Their guidance ensures that our programs 
+                  remain cutting-edge, relevant, and aligned with the evolving needs of the technology sector.
+                </p>
+              </div>
+            </div>
+
           </div>
         </section>
       )}
