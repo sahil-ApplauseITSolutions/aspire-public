@@ -903,9 +903,9 @@ const About = () => {
 
               {/* Col. Inder S Gahlaut */}
               <div className="group">
-                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
-                  <div className="relative overflow-hidden">
-                    <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[400px] flex flex-col">
+                  <div className="relative overflow-hidden flex-shrink-0">
+                    <div className="h-[240px] bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
                       <img
                         src={colInderImg}
                         alt="Col. Inder S Gahlaut"
@@ -927,9 +927,9 @@ const About = () => {
 
               {/* Ms. Shivi Kalia */}
               <div className="group">
-                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
-                  <div className="relative overflow-hidden">
-                    <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[400px] flex flex-col">
+                  <div className="relative overflow-hidden flex-shrink-0">
+                    <div className="h-[240px] bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
                       <img
                         src={shiviKaliaImg}
                         alt="Ms. Shivi Kalia"
@@ -959,9 +959,9 @@ const About = () => {
 
               {/* Mr. Pravin Mohite */}
               <div className="group">
-                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
-                  <div className="relative overflow-hidden">
-                    <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[400px] flex flex-col">
+                  <div className="relative overflow-hidden flex-shrink-0">
+                    <div className="h-[240px] bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
                       <img
                         src={pravinMohiteImg}
                         alt="Mr. Pravin Mohite"
@@ -991,9 +991,9 @@ const About = () => {
 
               {/* Mr. Mohan Raju */}
               <div className="group">
-                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
-                  <div className="relative overflow-hidden">
-                    <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[400px] flex flex-col">
+                  <div className="relative overflow-hidden flex-shrink-0">
+                    <div className="h-[240px] bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
                       <img
                         src={mohanRajuImg}
                         alt="Mr. Mohan Raju"
@@ -1023,9 +1023,9 @@ const About = () => {
 
               {/* Lt. Gen. Dr SP Kochhar */}
               <div className="group">
-                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
-                  <div className="relative overflow-hidden">
-                    <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[400px] flex flex-col">
+                  <div className="relative overflow-hidden flex-shrink-0">
+                    <div className="h-[240px] bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
                       <img
                         src={ltGenKochharImg}
                         alt="Lt. Gen. Dr SP Kochhar"
@@ -1055,9 +1055,9 @@ const About = () => {
 
               {/* Ms. Sushma Bhayani */}
               <div className="group">
-                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
-                  <div className="relative overflow-hidden">
-                    <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[400px] flex flex-col">
+                  <div className="relative overflow-hidden flex-shrink-0">
+                    <div className="h-[240px] bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
                       <img
                         src={sushmaBhayaniImg}
                         alt="Ms. Sushma Bhayani"
@@ -1087,9 +1087,9 @@ const About = () => {
 
               {/* Mr. Pradeep Jaswani */}
               <div className="group">
-                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
-                  <div className="relative overflow-hidden">
-                    <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[400px] flex flex-col">
+                  <div className="relative overflow-hidden flex-shrink-0">
+                    <div className="h-[240px] bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
                       <img
                         src={pradeepJaswaniImg}
                         alt="Mr. Pradeep Jaswani"
@@ -1144,9 +1144,9 @@ const About = () => {
 
                 {/* Dr. Mukul Sutaone */}
                 <div className="group">
-                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
-                    <div className="relative overflow-hidden">
-                      <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
+                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[400px] flex flex-col">
+                    <div className="relative overflow-hidden flex-shrink-0">
+                      <div className="h-[240px] bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
                         <img
                           src={mukulSutaoneImg}
                           alt="Dr. Mukul Sutaone"
@@ -1168,9 +1168,9 @@ const About = () => {
 
                 {/* Prof. Sunil Bhirud */}
                 <div className="group">
-                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
-                    <div className="relative overflow-hidden">
-                      <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
+                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[400px] flex flex-col">
+                    <div className="relative overflow-hidden flex-shrink-0">
+                      <div className="h-[240px] bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
                         <img
                           src={sunilBhirudImg}
                           alt="Prof. Sunil Bhirud"
@@ -1192,9 +1192,9 @@ const About = () => {
 
                 {/* Dr. Shailendra K. Shukla */}
                 <div className="group">
-                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
-                    <div className="relative overflow-hidden">
-                      <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
+                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[400px] flex flex-col">
+                    <div className="relative overflow-hidden flex-shrink-0">
+                      <div className="h-[240px] bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
                         <img
                           src={shailendraShuklaImg}
                           alt="Dr. Shailendra K. Shukla"
@@ -1237,9 +1237,9 @@ const About = () => {
 
                 {/* Padmashri Manoj Joshi */}
                 <div className="group">
-                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
-                    <div className="relative overflow-hidden">
-                      <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
+                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[400px] flex flex-col">
+                    <div className="relative overflow-hidden flex-shrink-0">
+                      <div className="h-[240px] bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
                         <img
                           src={manojJoshiImg}
                           alt="Padmashri Manoj Joshi"
@@ -1260,9 +1260,9 @@ const About = () => {
 
                 {/* Padmashri Dr. Milind Kamble */}
                 <div className="group">
-                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
-                    <div className="relative overflow-hidden">
-                      <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
+                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[400px] flex flex-col">
+                    <div className="relative overflow-hidden flex-shrink-0">
+                      <div className="h-[240px] bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
                         <img
                           src={milindKambleImg}
                           alt="Padmashri Dr. Milind Kamble"
@@ -1292,9 +1292,9 @@ const About = () => {
 
                 {/* Dr. Deepak Shikarpur */}
                 <div className="group">
-                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
-                    <div className="relative overflow-hidden">
-                      <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
+                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[400px] flex flex-col">
+                    <div className="relative overflow-hidden flex-shrink-0">
+                      <div className="h-[240px] bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
                         <img
                           src={deepakShikarpurImg}
                           alt="Dr. Deepak Shikarpur"
@@ -1324,9 +1324,9 @@ const About = () => {
 
                 {/* Padmashri Shri Bhiku Ramji Idate */}
                 <div className="group">
-                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
-                    <div className="relative overflow-hidden">
-                      <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
+                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[400px] flex flex-col">
+                    <div className="relative overflow-hidden flex-shrink-0">
+                      <div className="h-[240px] bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
                         <img
                           src={bhikuRamjiIdateImg}
                           alt="Padmashri Shri Bhiku Ramji Idate"
@@ -1347,9 +1347,9 @@ const About = () => {
 
                 {/* Mr. Sachin Itkar */}
                 <div className="group">
-                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
-                    <div className="relative overflow-hidden">
-                      <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
+                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[400px] flex flex-col">
+                    <div className="relative overflow-hidden flex-shrink-0">
+                      <div className="h-[240px] bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
                         <img
                           src={sachinItkarImg}
                           alt="Mr. Sachin Itkar"
@@ -1378,9 +1378,9 @@ const About = () => {
 
                 {/* Mr. Vivek Velankar */}
                 <div className="group">
-                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
-                    <div className="relative overflow-hidden">
-                      <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
+                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[400px] flex flex-col">
+                    <div className="relative overflow-hidden flex-shrink-0">
+                      <div className="h-[240px] bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
                         <img
                           src={vivekVelankarImg}
                           alt="Mr. Vivek Velankar"
@@ -1402,9 +1402,9 @@ const About = () => {
 
                 {/* Mr. P. Udayakumar */}
                 <div className="group">
-                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
-                    <div className="relative overflow-hidden">
-                      <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
+                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[400px] flex flex-col">
+                    <div className="relative overflow-hidden flex-shrink-0">
+                      <div className="h-[240px] bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
                         <img
                           src={udayakumarImg}
                           alt="Mr. P. Udayakumar"
@@ -1426,9 +1426,9 @@ const About = () => {
 
                 {/* Mr. Rusen Kumar */}
                 <div className="group">
-                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
-                    <div className="relative overflow-hidden">
-                      <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
+                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[400px] flex flex-col">
+                    <div className="relative overflow-hidden flex-shrink-0">
+                      <div className="h-[240px] bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
                         <img
                           src={rusenKumarImg}
                           alt="Mr. Rusen Kumar"
@@ -1458,9 +1458,9 @@ const About = () => {
 
                 {/* Mr. Rajiv Mitra */}
                 <div className="group">
-                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
-                    <div className="relative overflow-hidden">
-                      <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
+                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[400px] flex flex-col">
+                    <div className="relative overflow-hidden flex-shrink-0">
+                      <div className="h-[240px] bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
                         <img
                           src={rajivMitraImg}
                           alt="Mr. Rajiv Mitra"
@@ -1490,9 +1490,9 @@ const About = () => {
 
                 {/* Mr. Aniruddha Shahapure */}
                 <div className="group">
-                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
-                    <div className="relative overflow-hidden">
-                      <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
+                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[400px] flex flex-col">
+                    <div className="relative overflow-hidden flex-shrink-0">
+                      <div className="h-[240px] bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
                         <img
                           src={aniruddhaShahapureImg}
                           alt="Mr. Aniruddha Shahapure"
@@ -1565,9 +1565,9 @@ const About = () => {
 
               {/* Mr. Prashant Pund */}
               <div className="group">
-                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
-                  <div className="relative overflow-hidden">
-                    <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[400px] flex flex-col">
+                  <div className="relative overflow-hidden flex-shrink-0">
+                    <div className="h-[240px] bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
                       <img
                         src={prashantPundImg}
                         alt="Mr. Prashant Pund"
@@ -1595,9 +1595,9 @@ const About = () => {
 
               {/* Mr. Vikrant Vartak */}
               <div className="group">
-                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
-                  <div className="relative overflow-hidden">
-                    <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[400px] flex flex-col">
+                  <div className="relative overflow-hidden flex-shrink-0">
+                    <div className="h-[240px] bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
                       <img src={vikrantVartakImg} alt="Mr. Vikrant Vartak" className="w-full h-full object-cover rounded-2xl shadow-md group-hover:scale-105 transition-transform duration-300" />
                     </div>
                   </div>
@@ -1621,9 +1621,9 @@ const About = () => {
 
               {/* Mr. Balveer Chawla */}
               <div className="group">
-                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
-                  <div className="relative overflow-hidden">
-                    <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[400px] flex flex-col">
+                  <div className="relative overflow-hidden flex-shrink-0">
+                    <div className="h-[240px] bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
                       <img src={balveerChawlaImg} alt="Mr. Balveer Chawla" className="w-full h-full object-cover rounded-2xl shadow-md group-hover:scale-105 transition-transform duration-300" />
                     </div>
                   </div>
@@ -1647,9 +1647,9 @@ const About = () => {
 
               {/* Mr. Abhijeet Khurpe */}
               <div className="group">
-                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
-                  <div className="relative overflow-hidden">
-                    <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[400px] flex flex-col">
+                  <div className="relative overflow-hidden flex-shrink-0">
+                    <div className="h-[240px] bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
                       <img src={abhijitKhurpeImg} alt="Mr. Abhijeet Khurpe" className="w-full h-full object-cover rounded-2xl shadow-md group-hover:scale-105 transition-transform duration-300" />
                     </div>
                   </div>
@@ -1699,9 +1699,9 @@ const About = () => {
 
               {/* Mr. Kedar Deo */}
               <div className="group">
-                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
-                  <div className="relative overflow-hidden">
-                    <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[400px] flex flex-col">
+                  <div className="relative overflow-hidden flex-shrink-0">
+                    <div className="h-[240px] bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
                       <img src={kedarDeoImg} alt="Mr. Kedar Deo" className="w-full h-full object-cover rounded-2xl shadow-md group-hover:scale-105 transition-transform duration-300" />
                     </div>
                   </div>
@@ -1727,9 +1727,9 @@ const About = () => {
 
               {/* Mr. Girish Khilari */}
               <div className="group">
-                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
-                  <div className="relative overflow-hidden">
-                    <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[400px] flex flex-col">
+                  <div className="relative overflow-hidden flex-shrink-0">
+                    <div className="h-[240px] bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
                       <img
                         src={girishKhilariImg}
                         alt="Mr. Girish Khilari"
@@ -1759,9 +1759,9 @@ const About = () => {
 
               {/* Mr. Ravindra Pal Singh */}
               <div className="group">
-                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
-                  <div className="relative overflow-hidden">
-                    <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[400px] flex flex-col">
+                  <div className="relative overflow-hidden flex-shrink-0">
+                    <div className="h-[240px] bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
                       <img src={ravindrapalSinghImg} alt="Mr. Ravindra Pal Singh" className="w-full h-full object-cover rounded-2xl shadow-md group-hover:scale-105 transition-transform duration-300" />
                     </div>
                   </div>
@@ -1787,9 +1787,9 @@ const About = () => {
 
               {/* Mr. Mandar Halbhavi */}
               <div className="group">
-                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
-                  <div className="relative overflow-hidden">
-                    <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[400px] flex flex-col">
+                  <div className="relative overflow-hidden flex-shrink-0">
+                    <div className="h-[240px] bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
                       <img src={mandarHalbhaviImg} alt="Mr. Mandar Halbhavi" className="w-full h-full object-cover rounded-2xl shadow-md group-hover:scale-105 transition-transform duration-300" />
                     </div>
                   </div>
@@ -1815,9 +1815,9 @@ const About = () => {
 
               {/* Mr. Manoj Deshmukh */}
               <div className="group">
-                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
-                  <div className="relative overflow-hidden">
-                    <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[400px] flex flex-col">
+                  <div className="relative overflow-hidden flex-shrink-0">
+                    <div className="h-[240px] bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
                       <img src={manojDeshmukhImg} alt="Mr. Manoj Deshmukh" className="w-full h-full object-cover rounded-2xl shadow-md group-hover:scale-105 transition-transform duration-300" />
                     </div>
                   </div>
@@ -1869,9 +1869,9 @@ const About = () => {
 
               {/* Dr. Netra Neelam */}
               <div className="group">
-                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
-                  <div className="relative overflow-hidden">
-                    <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[400px] flex flex-col">
+                  <div className="relative overflow-hidden flex-shrink-0">
+                    <div className="h-[240px] bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
                       <img
                         src={netraNeelamImg}
                         alt="Dr. Netra Neelam"
@@ -1901,9 +1901,9 @@ const About = () => {
 
               {/* Dr. Sandeep Meshram */}
               <div className="group">
-                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
-                  <div className="relative overflow-hidden">
-                    <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[400px] flex flex-col">
+                  <div className="relative overflow-hidden flex-shrink-0">
+                    <div className="h-[240px] bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
                       <img
                         src={sandeepMeshramImg}
                         alt="Dr. Sandeep Meshram"
@@ -1933,9 +1933,9 @@ const About = () => {
 
               {/* Dr. Mandar Karyakarte */}
               <div className="group">
-                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
-                  <div className="relative overflow-hidden">
-                    <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[400px] flex flex-col">
+                  <div className="relative overflow-hidden flex-shrink-0">
+                    <div className="h-[240px] bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
                       <img
                         src={mandarKaryakarteImg}
                         alt="Dr. Mandar Karyakarte"
@@ -1993,9 +1993,9 @@ const About = () => {
 
               {/* Mr. Vikram Thite */}
               <div className="group">
-                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
-                  <div className="relative overflow-hidden">
-                    <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center bg-white rounded-2xl relative shadow-inner">
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[400px] flex flex-col">
+                  <div className="relative overflow-hidden flex-shrink-0">
+                    <div className="h-[240px] bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center bg-white rounded-2xl relative shadow-inner">
                       <User className="w-16 h-16 text-orange-300 group-hover:scale-105 transition-transform duration-300" />
                     </div>
                   </div>
@@ -2012,9 +2012,9 @@ const About = () => {
 
               {/* Mrs. Minal Gujarathi */}
               <div className="group">
-                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
-                  <div className="relative overflow-hidden">
-                    <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[400px] flex flex-col">
+                  <div className="relative overflow-hidden flex-shrink-0">
+                    <div className="h-[240px] bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
                       <img
                         src={minalMamImg}
                         alt="Mrs. Minal Gujarathi"
@@ -2035,9 +2035,9 @@ const About = () => {
 
               {/* Mr. Amit Gandhi */}
               <div className="group">
-                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
-                  <div className="relative overflow-hidden">
-                    <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[400px] flex flex-col">
+                  <div className="relative overflow-hidden flex-shrink-0">
+                    <div className="h-[240px] bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
                       {/* Placeholder for image */}
                       <div className="w-full h-full bg-gray-200 rounded-2xl shadow-md flex items-center justify-center">
                         <div className="text-center">
@@ -2062,9 +2062,9 @@ const About = () => {
 
               {/* Mrs. Neha Gupta */}
               <div className="group">
-                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
-                  <div className="relative overflow-hidden">
-                    <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[400px] flex flex-col">
+                  <div className="relative overflow-hidden flex-shrink-0">
+                    <div className="h-[240px] bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
                       <img
                         src={nehaGuptaImg}
                         alt="Mrs. Neha Gupta"
