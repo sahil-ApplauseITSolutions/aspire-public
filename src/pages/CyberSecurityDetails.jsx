@@ -79,7 +79,7 @@ const CyberSecurityDetails = () => {
             {/* Right - Content */}
             <div className="flex-1 lg:ml-8 w-full">
               <h1 className="text-2xl font-bold text-[#EF7F2C] mb-3">
-                Cyber Security Associate
+                Cyber Security 
               </h1>
               
               <p className="text-gray-600 text-16px leading-normal mb-8">
