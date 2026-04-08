@@ -203,8 +203,8 @@ const ImpactReachPage = () => {
                         </div>
                         <div className="timeline-text-content flex-1">
                           <div className="timeline-year text-2xl font-bold text-orange-500 mb-1">2006</div>
-                          <h3 className="timeline-title text-lg font-bold text-[#3D1717] mb-2">Jetking Acquisition</h3>
-                          <p className="timeline-description text-body text-gray-600 text-sm leading-relaxed">Acquired Jetking in Ahilyanagar.</p>
+                          <h3 className="timeline-title text-lg font-bold text-[#3D1717] mb-2">Jetking Launched</h3>
+                          <p className="timeline-description text-body text-gray-600 text-sm leading-relaxed">Ahilyanagar Jetking Launched.</p>
                         </div>
                       </div>
                     </div>
