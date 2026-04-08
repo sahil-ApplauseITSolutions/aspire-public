@@ -186,44 +186,6 @@ const Programs = () => {
                 </div>
               </div>
 
-              {/* AEDP */}
-              <div
-                className="bg-white rounded-xl shadow-lg overflow-hidden"
-                style={{ width: '412.6px', height: '298.96px' }}
-              >
-                {/* Top - Image */}
-                <div className="w-full" style={{ width: '415px', height: '128px' }}>
-                  <img
-                    src={aedpImg}
-                    alt="AEDP"
-                    className="w-full h-full object-cover object-top"
-                  />
-                </div>
-                {/* Bottom - Text Content */}
-                <div className="p-4 flex flex-col justify-between" style={{ height: '170.96px' }}>
-                  <div>
-                    <h3 className="text-lg font-bold text-[#3b2a1a] mb-2">
-                      AEDP
-                    </h3>
-                    <p className="text-gray-600 text-sm leading-relaxed mb-3">
-                      ASPIRE focus on strategic consulting, Training Need
-                      Analysis, Learning Design, e-learning, Training Delivery,
-                      Customized Content Development Competency...
-                    </p>
-                  </div>
-                  <button 
-                    onClick={() => setSelectedProgram({
-                      title: 'AEDP',
-                      description: 'ASPIRE focus on strategic consulting, Training Need Analysis, Learning Design, e-learning, Training Delivery, Customized Content Development Competency',
-                      image: aedpImg
-                    })}
-                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors cursor-pointer"
-                  >
-                    View Details →
-                  </button>
-                </div>
-              </div>
-
               {/* Quantum Computing */}
               <div
                 className="bg-white rounded-xl shadow-lg overflow-hidden"
@@ -244,21 +206,15 @@ const Programs = () => {
                       Quantum Computing
                     </h3>
                     <p className="text-gray-600 text-sm leading-relaxed mb-3">
-                      ASPIRE focus on strategic consulting, Training Need
-                      Analysis, Learning Design, e-learning, Training Delivery,
-                      Customized Content Development Competency...
+                      Explore the cutting-edge field of quantum computing with comprehensive training covering quantum physics, engineering, and practical applications...
                     </p>
                   </div>
-                  <button 
-                    onClick={() => setSelectedProgram({
-                      title: 'Quantum Computing',
-                      description: 'ASPIRE focus on strategic consulting, Training Need Analysis, Learning Design, e-learning, Training Delivery, Customized Content Development Competency',
-                      image: quantumComputingImg
-                    })}
-                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors cursor-pointer"
+                  <Link 
+                    to="/programs/quantum-computing" 
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors"
                   >
                     View Details →
-                  </button>
+                  </Link>
                 </div>
               </div>
 
@@ -282,21 +238,15 @@ const Programs = () => {
                       Credit Linked Courses
                     </h3>
                     <p className="text-gray-600 text-sm leading-relaxed mb-3">
-                      ASPIRE focus on strategic consulting, Training Need
-                      Analysis, Learning Design, e-learning, Training Delivery,
-                      Customized Content Development Competency...
+                      NCVET approved credit courses with industry-recognized certification. 4 credits/60 hours training delivered by industry experts...
                     </p>
                   </div>
-                  <button 
-                    onClick={() => setSelectedProgram({
-                      title: 'Credit Linked Courses',
-                      description: 'ASPIRE focus on strategic consulting, Training Need Analysis, Learning Design, e-learning, Training Delivery, Customized Content Development Competency',
-                      image: creditLinkedImg
-                    })}
-                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors cursor-pointer"
+                  <Link 
+                    to="/programs/credit-linked-courses" 
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors"
                   >
                     View Details →
-                  </button>
+                  </Link>
                 </div>
               </div>
 
@@ -395,42 +345,6 @@ const Programs = () => {
                   >
                     View Details →
                   </Link>
-                </div>
-              </div>
-
-              {/* Advanced Business Intelligence Analyst */}
-              <div
-                className="bg-white rounded-xl shadow-lg overflow-hidden"
-                style={{ width: '412.6px', height: '298.96px' }}
-              >
-                {/* Top - Image */}
-                <div className="w-full" style={{ width: '415px', height: '128px' }}>
-                  <img
-                    src={advancedBusinessIntelligenceImg}
-                    alt="Advanced Business Intelligence Analyst"
-                    className="w-full h-full object-cover object-top"
-                  />
-                </div>
-                {/* Bottom - Text Content */}
-                <div className="p-4 flex flex-col justify-between" style={{ height: '170.96px' }}>
-                  <div>
-                    <h3 className="text-lg font-bold text-[#3b2a1a] mb-2">
-                      Advanced Business Intelligence Analyst
-                    </h3>
-                    <p className="text-gray-600 text-sm leading-relaxed mb-3">
-                      60 Hours | 4 Credit Approved by NHEQF. Comprehensive training in business intelligence, data analysis, and strategic decision-making tools...
-                    </p>
-                  </div>
-                  <button 
-                    onClick={() => setSelectedProgram({
-                      title: 'Advanced Business Intelligence Analyst',
-                      description: '60 Hours | 4 Credit Approved by NHEQF. Comprehensive training in business intelligence, data analysis, and strategic decision-making tools',
-                      image: advancedBusinessIntelligenceImg
-                    })}
-                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors cursor-pointer"
-                  >
-                    View Details →
-                  </button>
                 </div>
               </div>
 

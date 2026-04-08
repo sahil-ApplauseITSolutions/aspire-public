@@ -89,21 +89,101 @@ const CyberSecurityDetails = () => {
               <p className="text-gray-600 text-16px leading-normal mb-6">
                 Students will learn to identify vulnerabilities, implement security measures, and respond to cyber threats effectively, preparing them for careers in the rapidly growing cybersecurity field.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-              {/* Action Buttons */}
-              <div className="flex flex-row gap-4">
-                <button className="bg-[#EF7F2C] text-white font-medium hover:bg-[#d6691f] transition-colors duration-300 shadow-md hover:shadow-lg flex items-center justify-center gap-2" style={{ width: '164px', height: '36px', borderRadius: '8px' }}>
-                  Apply Now
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+      {/* CREDIT COURSES SECTION */}
+      <section className="bg-[#FFF1E4] py-8">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-[#3D1717] mb-4">
+              Cyber Security
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              15-18 Credits - Comprehensive cybersecurity training program
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Course 1 */}
+            <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <svg className="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
                   </svg>
-                </button>
-                <button className="border border-[#EF7F2C] text-[#EF7F2C] bg-white font-medium hover:bg-[#fff1e4] transition-colors duration-300 flex items-center justify-center gap-2" style={{ width: '164px', height: '36px', borderRadius: '8px' }}>
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </div>
+                <div>
+                  <h3 className="font-bold text-gray-800 mb-2">Application Developer - Web & Mobile</h3>
+                  <p className="text-sm text-gray-600 mb-2">60 Hours | 4 Credits</p>
+                  <p className="text-xs text-gray-500">Comprehensive training in web and mobile application development</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Course 2 */}
+            <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <svg className="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                   </svg>
-                  Program Details
-                </button>
+                </div>
+                <div>
+                  <h3 className="font-bold text-gray-800 mb-2">Cyber Security Associate</h3>
+                  <p className="text-sm text-gray-600 mb-2">60 Hours | 4 Credits</p>
+                  <p className="text-xs text-gray-500">Advanced cybersecurity training covering threat analysis and security protocols</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Course 3 */}
+            <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <svg className="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="font-bold text-gray-800 mb-2">Cloud Application Developer</h3>
+                  <p className="text-sm text-gray-600 mb-2">60 Hours | 4 Credits</p>
+                  <p className="text-xs text-gray-500">Master cloud application development with modern frameworks</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Course 4 */}
+            <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <svg className="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="font-bold text-gray-800 mb-2">Certified Financial Fraud Investigator</h3>
+                  <p className="text-sm text-gray-600 mb-2">60 Hours | 4 Credits</p>
+                  <p className="text-xs text-gray-500">Specialized training in financial fraud detection and investigation</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Course 5 */}
+            <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <svg className="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="font-bold text-gray-800 mb-2">BASE (Business Awareness & Skill Enhancement)</h3>
+                  <p className="text-sm text-gray-600 mb-2">60 Hours | 4 Credits</p>
+                  <p className="text-xs text-gray-500">Comprehensive business awareness program focusing on skill enhancement</p>
+                </div>
               </div>
             </div>
           </div>

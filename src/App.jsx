@@ -12,6 +12,8 @@ import UIUXDeveloperDetails from "./pages/UIUXDeveloperDetails";
 import CloudTechnologyDetails from "./pages/CloudTechnologyDetails";
 import CyberSecurityDetails from "./pages/CyberSecurityDetails";
 import EEDPDetails from "./pages/EEDPDetails";
+import CreditLinkedCoursesDetails from "./pages/CreditLinkedCoursesDetails";
+import QuantumComputingDetails from "./pages/QuantumComputingDetails";
 import Careers from "./pages/Careers";
 
 function AdminRedirect() {
@@ -43,6 +45,8 @@ function App() {
         <Route path="/programs/cloud-technology" element={<CloudTechnologyDetails />} />
         <Route path="/programs/cyber-security" element={<CyberSecurityDetails />} />
         <Route path="/programs/eedp" element={<EEDPDetails />} />
+        <Route path="/programs/credit-linked-courses" element={<CreditLinkedCoursesDetails />} />
+        <Route path="/programs/quantum-computing" element={<QuantumComputingDetails />} />
       </Routes>
     </Router>
   );
