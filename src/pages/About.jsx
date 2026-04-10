@@ -60,6 +60,7 @@ import mandarHalbhaviImg from "../assets/images/advisory board/Mandar Halbhavi.j
 import abhijitKhurpeImg from "../assets/images/advisory board/Abhijit Khurpe.jpeg";
 import kedarDeoImg from "../assets/images/advisory board/Mr. Kedar Deo.jpeg";
 import amitGandhiImg from "../assets/images/advisory board/Amit Gandhi Photo Profile.jpg.jpeg";
+import vikramThiteImg from "../assets/images/advisory board/Mr. Vikram Thite.jpeg";
 
 // Import government agencies images
 import aatmanirbharImg from "../assets/images/government agencies/Aatmanirbhar.png";
@@ -1996,8 +1997,12 @@ const About = () => {
               <div className="group">
                 <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[400px] flex flex-col">
                   <div className="relative overflow-hidden flex-shrink-0">
-                    <div className="h-[240px] bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center bg-white rounded-2xl relative shadow-inner">
-                      <User className="w-16 h-16 text-orange-300 group-hover:scale-105 transition-transform duration-300" />
+                    <div className="h-[240px] bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
+                      <img
+                        src={vikramThiteImg}
+                        alt="Mr. Vikram Thite"
+                        className="w-full h-full object-cover rounded-2xl group-hover:scale-105 transition-transform duration-300"
+                      />
                     </div>
                   </div>
                   <div className="p-4 text-center flex-1 flex flex-col justify-center">
