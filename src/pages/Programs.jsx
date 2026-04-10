@@ -371,6 +371,12 @@ const Programs = () => {
                       30 Hours | 1 Credit NSDC. Master the art of analyzing and interpreting financial statements for strategic business...
                     </p>
                   </div>
+                  <Link 
+                    to="/programs/financial-statement-analysis" 
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors"
+                  >
+                    View Details →
+                  </Link>
                 </div>
               </div>
               {/* Financial Modelling */}
@@ -396,6 +402,12 @@ const Programs = () => {
                       30 Hours | 1 Credit NSDC. Master financial modeling techniques for business valuation and forecasting...
                     </p>
                   </div>
+                  <Link 
+                    to="/programs/financial-modelling" 
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors"
+                  >
+                    View Details →
+                  </Link>
                 </div>
               </div>
               {/* Research Analyst Certification */}
@@ -421,6 +433,12 @@ const Programs = () => {
                       30 Hours | 1 Credit NSDC. Become a certified research analyst with comprehensive market research training...
                     </p>
                   </div>
+                  <Link 
+                    to="/programs/research-analyst-certification" 
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors"
+                  >
+                    View Details →
+                  </Link>
                 </div>
               </div>
               {/* Hedge Fund Accounting & Fund Operations */}
@@ -471,6 +489,12 @@ const Programs = () => {
                       30 Hours | 1 Credit NSDC. Learn financial reporting standards and practices for accurate business reporting...
                     </p>
                   </div>
+                  <Link 
+                    to="/programs/certificate-financial-reporting" 
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors"
+                  >
+                    View Details →
+                  </Link>
                 </div>
               </div>
               {/* Certificate in Performance Management */}
@@ -496,6 +520,12 @@ const Programs = () => {
                       30 Hours | 1 Credit NSDC. Master performance management systems and organizational effectiveness strategies...
                     </p>
                   </div>
+                  <Link 
+                    to="/programs/certificate-performance-management" 
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors"
+                  >
+                    View Details →
+                  </Link>
                 </div>
               </div>
               {/* Certificate in Audit */}
@@ -521,6 +551,12 @@ const Programs = () => {
                       30 Hours | 1 Credit NSDC. Comprehensive audit training covering internal controls and compliance procedures...
                     </p>
                   </div>
+                  <Link 
+                    to="/programs/certificate-audit" 
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors"
+                  >
+                    View Details →
+                  </Link>
                 </div>
               </div>
 
@@ -547,6 +583,12 @@ const Programs = () => {
                       30 Hours | 1 Credit NSDC. Learn mutual fund distribution strategies and investment advisory services...
                     </p>
                   </div>
+                  <Link 
+                    to="/programs/certificate-mutual-funds" 
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors"
+                  >
+                    View Details →
+                  </Link>
                 </div>
               </div>
               {/* Certificate in Portfolio Management */}
@@ -572,6 +614,12 @@ const Programs = () => {
                       30 Hours | 1 Credit NSDC. Learn portfolio management strategies and investment optimization techniques...
                     </p>
                   </div>
+                  <Link 
+                    to="/programs/certificate-portfolio-management" 
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors"
+                  >
+                    View Details →
+                  </Link>
                 </div>
               </div>
               {/* Fundamentals of Financial Services */}
@@ -597,6 +645,12 @@ const Programs = () => {
                       30 Hours | 1 Credit NSDC. Understand the fundamentals of financial services industry and operations...
                     </p>
                   </div>
+                  <Link 
+                    to="/programs/fundamentals-financial-services" 
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors"
+                  >
+                    View Details →
+                  </Link>
                 </div>
               </div>
               {/* Global Banking & Investment Banking Operations */}
@@ -622,6 +676,12 @@ const Programs = () => {
                       30 Hours | 1 Credit NSDC. Learn global banking operations and investment banking fundamentals for career...
                     </p>
                   </div>
+                  <Link 
+                    to="/programs/investment-banking-operations" 
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors"
+                  >
+                    View Details →
+                  </Link>
                 </div>
               </div>
               {/* Alternative Investments */}
@@ -647,6 +707,12 @@ const Programs = () => {
                       30 Hours | 1 Credit NSDC. Explore alternative investment strategies including hedge funds and private equity...
                     </p>
                   </div>
+                  <Link 
+                    to="/programs/alternative-investments" 
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors"
+                  >
+                    View Details →
+                  </Link>
                 </div>
               </div>
               {/* Banking Operations, KYC & Anti–Money Laundering (AML) Compliance */}
@@ -697,6 +763,12 @@ const Programs = () => {
                       30 Hours | 1 Credit NSDC. Comprehensive understanding of financial markets structure and operations...
                     </p>
                   </div>
+                  <Link 
+                    to="/programs/certificate-financial-markets" 
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors"
+                  >
+                    View Details →
+                  </Link>
                 </div>
               </div>
               {/* Technical Analysis */}
@@ -722,6 +794,12 @@ const Programs = () => {
                       30 Hours | 1 Credit NSDC. Master technical analysis tools and chart patterns for trading decisions...
                     </p>
                   </div>
+                  <Link 
+                    to="/programs/technical-analysis" 
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors"
+                  >
+                    View Details →
+                  </Link>
                 </div>
               </div>
               {/* Capital Markets & Equity Derivatives */}
@@ -747,6 +825,12 @@ const Programs = () => {
                       30 Hours | 1 Credit NSDC. Understand capital markets dynamics and equity derivatives trading strategies...
                     </p>
                   </div>
+                  <Link 
+                    to="/programs/certificate-equity-derivatives" 
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors"
+                  >
+                    View Details →
+                  </Link>
                 </div>
               </div>
               {/* Stock Market Analytics using Excel and PowerBI */}
@@ -772,6 +856,12 @@ const Programs = () => {
                       30 Hours | 1 Credit NSDC. Analyze stock market data using Excel and PowerBI for informed investment...
                     </p>
                   </div>
+                  <Link 
+                    to="/programs/stock-market-analytics" 
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors"
+                  >
+                    View Details →
+                  </Link>
                 </div>
               </div>
               {/* Python for Finance / Power BI for Finance */}
@@ -797,6 +887,12 @@ const Programs = () => {
                       30 Hours | 1 Credit NSDC. Master Python programming and Power BI for financial analysis and reporting...
                     </p>
                   </div>
+                  <Link 
+                    to="/programs/python-for-finance" 
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors"
+                  >
+                    View Details →
+                  </Link>
                 </div>
               </div>
               {/* Machine Learning for Finance */}
@@ -822,6 +918,12 @@ const Programs = () => {
                       30 Hours | 1 Credit NSDC. Apply machine learning algorithms to financial data analysis and prediction...
                     </p>
                   </div>
+                  <Link 
+                    to="/programs/machine-learning-finance" 
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors"
+                  >
+                    View Details →
+                  </Link>
                 </div>
               </div>
               {/* Generative AI for Automation */}
@@ -847,6 +949,12 @@ const Programs = () => {
                       30 Hours | 1 Credit NSDC. Explore generative AI technologies and their applications in business automation...
                     </p>
                   </div>
+                  <Link 
+                    to="/programs/generative-ai" 
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors"
+                  >
+                    View Details →
+                  </Link>
                 </div>
               </div>
               {/* Fundamental of Digital Manufacturing */}
@@ -897,6 +1005,12 @@ const Programs = () => {
                       30 Hours | 1 Credit NSDC. Learn the fundamentals of digital marketing strategies and online promotion...
                     </p>
                   </div>
+                  <Link 
+                    to="/programs/digital-marketing" 
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors"
+                  >
+                    View Details →
+                  </Link>
                 </div>
               </div>
               {/* SEO and Google Ads */}
@@ -922,6 +1036,12 @@ const Programs = () => {
                       30 Hours | 1 Credit NSDC. Master search engine optimization and Google Ads for effective online marketing...
                     </p>
                   </div>
+                  <Link 
+                    to="/programs/digital-marketing-seo-google-ads" 
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors"
+                  >
+                    View Details →
+                  </Link>
                 </div>
               </div>
               {/* Social Media Marketing */}
@@ -947,6 +1067,12 @@ const Programs = () => {
                       30 Hours | 1 Credit NSDC. Learn social media marketing strategies across platforms for brand growth...
                     </p>
                   </div>
+                  <Link 
+                    to="/programs/digital-marketing-social-media" 
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors"
+                  >
+                    View Details →
+                  </Link>
                 </div>
               </div>
               {/* English - Competitive Exams */}
@@ -972,6 +1098,12 @@ const Programs = () => {
                       30 Hours | 1 Credit NSDC. Comprehensive English preparation for competitive examinations and assessments...
                     </p>
                   </div>
+                  <Link 
+                    to="/programs/english-competitive-exams" 
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors"
+                  >
+                    View Details →
+                  </Link>
                 </div>
               </div>
               {/* Math - Competitive Exams */}
@@ -997,6 +1129,12 @@ const Programs = () => {
                       30 Hours | 1 Credit NSDC. Master mathematical concepts and problem-solving for competitive exams...
                     </p>
                   </div>
+                  <Link 
+                    to="/programs/math-competitive-exams" 
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors"
+                  >
+                    View Details →
+                  </Link>
                 </div>
               </div>
               {/* Logic - Competitive Exams */}
@@ -1022,6 +1160,12 @@ const Programs = () => {
                       30 Hours | 1 Credit NSDC. Develop logical reasoning and analytical thinking skills for competitive exams...
                     </p>
                   </div>
+                  <Link 
+                    to="/programs/logic-competitive-exams" 
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors"
+                  >
+                    View Details →
+                  </Link>
                 </div>
               </div>
               {/* Fundamental of Industrial Communication Protocols */}
